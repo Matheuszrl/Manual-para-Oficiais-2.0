@@ -1,0 +1,96 @@
+/* ACOMPANHAMENTO */
+#pagAC .title h1, 
+#pagAC .content h2, 
+#pagAC h3,
+#pagAC .highlight-AC {
+    color: var(--gitbookGoldYellow);
+}
+
+.ac:hover {
+    border: 1px solid var(--gitbookGoldYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* ABORDAGEM */
+#pagAB .title h1, 
+#pagAB .content h2, 
+#pagAB h3,
+#pagAB h4,
+#pagAB .highlight-AB {
+    color: var(--gitbookBlue);
+}
+
+.ab:hover {
+    border: 1px solid #008afc;
+    outline: 3px solid rgba(0, 137, 250, 0.5);
+}
+
+/* COMUNICAÇÃO OPERACIONAL */
+#pagCO .title h1, 
+#pagCO .content h2, 
+#pagCO h3,
+#pagCO .highlight-CO {
+    color: var(--gitbookGreen);
+}
+
+.co:hover {
+    border: 1px solid #07cf00;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* INSTRUÇÃO AO TABLET */
+#pagTB .title h1, 
+#pagTB .content h2, 
+#pagTB h3,
+#pagTB .highlight-TB {
+    color: var(--gitbookPurple);
+}
+
+.co:hover {
+    border: 1px solid #07cf00;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* PCD */
+#pagPCD .title h1, 
+#pagPCD .content h2, 
+#pagPCD h3,
+#pagPCD .highlight-TB {
+    color: var(--gitbookGreen2);
+}
+
+.co:hover {
+    border: 1px solid #08e900;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* MANUAL DE CONDUTA */
+#pagManual .title h1, 
+#pagManual .content h2, 
+#pagManual h3,
+#pagManual h4,
+#pagManual .highlight-manual {
+    color: var(--gitbookBurnedYellow);
+}
+
+.co:hover {
+    border: 1px solid var(--gitbookBurnedYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* GERAL */
+.highlight-amarelo {
+    color: #c3b571;
+}
+
+.highlight-vermelho {
+    color: #df3737;
+}
+
+.highlight-azul {
+    color: #3b82f6;
+}
+
+.highlight-verde {
+    color: #22c55e;
+}

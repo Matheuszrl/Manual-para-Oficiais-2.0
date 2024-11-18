@@ -1,0 +1,79 @@
+#container {
+    width: 50vw;
+    max-width: 600px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: var(--highlightDark);
+    border: 1px solid var(--borderHighlightDark);
+    border-radius: 10px;
+    
+    padding: 20px;
+}
+
+.warning {
+    text-align: justify;
+}
+
+.warning h1, .home-content a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning ion-icon {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-size: 2rem;
+
+    background: var(--boxImportant);
+    color: var(--yellowHighlight);
+    border: 1px solid var(--borderImportant);
+    border-radius: 30px;
+
+    padding: 10px;
+
+}
+
+.home-content {
+    display: flex;
+
+    gap: 10px;
+}
+
+.home-content a {
+    width: 25vw;
+    background: var(--descriptionText);
+    border: 1px solid var(--borderHighlightDark);
+    border-radius: 5px;
+    padding: 10px;
+
+    outline: 3px solid transparent;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--textColorWhite);
+
+    transition: all .2s;
+}
+
+.home-content .ab:hover {
+    border: 1px solid #008afc;
+    outline: 3px solid rgba(0, 137, 250, 0.5);
+}
+
+.home-content .ac:hover {
+    border: 1px solid var(--gitbookGoldYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+.home-content .co:hover {
+    border: 1px solid #07cf00;
+    outline: 3px solid rgba(0, 250, 83, 0.5); 
+}

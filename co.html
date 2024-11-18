@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/logo-cursos.png">
+    <title>Curso de Comunicação Operacional | BPM-AV</title>
+
+    <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
+
+</head>
+<body>
+    <nav id="sidebar" class="sidebar">
+        <button id="toggleBtn" class="toggle-btn">
+            <span>
+                <div class="imageInLine">
+                    <img src="/src/images/BPM.png" width="20" alt="BPM">
+                </div>1ºBPM-AV - BEM VINDO
+            </span>
+            <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+            </svg>
+        </button>
+        <ul id="menu" class="menu">
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon">🗂️</span>
+                    Documentos
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu">
+                    <li><a href="/manual.html"><span class="submenu-icon">📚</span>Manual de Conduta</a></li>
+                    <li><a href="/pcd.html"><span class="submenu-icon">👨‍🦽</span>PCD (Pessoa com Deficiência)</a></li>
+                    <li><a href="/tablet.html"><span class="submenu-icon">📱</span>Instrução ao Tablet</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon">🎓</span>
+                    Cursos
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu">
+                    <li><a href="/co.html"><span class="submenu-icon">🗣️</span>Curso de Comunicação</a></li>
+                    <li><a href="#desenvolver"><span class="submenu-icon">🗺️</span>Manual de QTH</a></li>
+                    <li><a href="/ab.html"><span class="submenu-icon">🚓</span>Curso de Abordagem</a></li>
+                    <li><a href="/ac.html"><span class="submenu-icon">⚡</span>Curso de Acompanhamento</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="/src/images/CO/header.png" alt="Imagem do header">
+    </header>
+    <div id="container">
+        <div id="pagCO">
+            <div class="title">
+                <h1>CURSO DE COMUNICAÇÃO</h1>
+                <p class="description">Este material é destinado para apoio aos oficiais presente no 1°BPM-AV, tem como objetivo abordar de forma padrão os 
+                    principais pontos referentes a modulação.</p>
+            </div>
+            <div class="content">
+                <div id="topic1">
+                    <h2>Barreiras no Processo de Comunicação</h2>
+                    <p>Embora pareça muito simples, a comunicação encontra uma série de barreiras. Pode-se ter dois tipos de barreiras na organização: <span class="bold highlight-CO">INDIVIDUAIS E </span><span class="bold highlight-CO">ORGANIZACIONAIS</span></p>
+                    <h3><i>Individuais</i></h3>
+                        <div class="expand-section">
+                            <button class="expand-button" aria-expanded="false" aria-controls="content-interpessoais">
+                                Questões Interpessoais
+                                <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="expand-content" id="content-interpessoais">
+                                <p>Por vezes a timidez ou medo de agir podem acarretar em erros na comunicação. Trabalhe estas inseguranças e pratique diariamente, a prática leva a 
+                                    perfeição.</p>
+                            </div>
+                        </div>
+
+                        <div class="expand-section">
+                            <button class="expand-button" aria-expanded="false" aria-controls="content-erros">
+                                Saber lidar com os erros
+                                <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="expand-content" id="content-erros">
+                                <p>É comum que cometamos erros e que situações desagradáveis ocorram durante uma patrulha. Contudo, mantenha a calma, controle sua emoções e procure 
+                                    soluções.</p>
+                            </div>
+                        </div>
+                
+                        <div class="expand-section">
+                            <button class="expand-button" aria-expanded="false" aria-controls="content-ajuda">
+                                Pedir ajuda/auxílio
+                                <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="expand-content" id="content-ajuda">
+                                <p>Não há vergonha em admitir que têm dúvida quanto a um procedimento ou modulação. Em todo o momento haverá superiores dispostos e capacitados para 
+                                    sanar todas as vossas dúvidas.</p>
+                            </div>
+                        </div>
+
+                    <h3><i>Organizacionais</i></h3>
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-modulacao">
+                            Modulação Adequada
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-modulacao">
+                            <p>É de caráter obrigatório que todo o código Q e os código de 0-6 estejam fixados na mente para a realização dos procedimentos com sucesso quando estiverem numa patrulha.</p>
+                        </div>
+                    </div>
+
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-radio">
+                            Comunicação na rádio
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-radio">
+                            <p>Utilize do bom senso na hora de modular na rádio, espere a sua vez e não atropele outra modulação já em andamento. Seja direto e claro ao passar todas as informações necessárias durante a solicitação de apaio numa QRU.</p>
+                        </div>
+                    </div>
+            
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-solucoes">
+                            Procure soluções e não culpados
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-solucoes">
+                            <p>Nem sempre irão concordar com o que vocês pensam, situações desagradáveis podem acabar acontecendo em decorrência disto. Ao sinal de qualquer desavença, procure um superior para resolução dos problemas. Lembrem-se de que são um espelho para os oficiais e cidadãos, então mantenham a postura e boa conduta <b>SEMPRE</b>.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="topic2">
+                    <h2>
+                        <div class="imageInLine">
+                            <img src="/src/images/radio.png" width="18" alt="BPM">
+                        </div>Normas para o Uso da Rádio
+                    </h2>
+                    <ul>
+                        <li class="listItem">Antes de modular qualquer informação, verifique se a rádio já não esta com uma modulação em andamento</li>
+                        <li class="listItem">Não profira (fale) palavras obscenas, xingamentos, linguagem inapropriada ou conteúdos que não fazem sentido de serem modulados na rádio POLICIA</li>
+                        <li class="listItem">Seja breve, direto(a) e objetivo(a) em suas modulações, para não ocupar a rádio</li>
+                        <li class="listItem">Em ordens de oficiais superiores, não conteste as mesmas na rádio</li>
+                    </ul>
+                </div>
+                <br>
+                <hr>
+                <div id="topic3">
+                    <h2>Utilização do CP</h2>
+                    <p>Diferente da rádio, o <span class="bold highlight-CO">CP - Chat policial</span>, deve ser utilizado para comunicações onde não há necessidade de uma compreensão imediata</p>
+                    <p>Deve ser utilizado para informações como entrada e/ou encerramento de serviço; informações sobre perda de visual de veículos de acompanhamentos; números de B.O, etc...</p>
+                </div>
+                <hr>
+                <div id="topic4">
+                    <h2>Código Q</h2>
+
+                    <div class="image-container">
+                        <div class="image-card">
+                            <div class="zoomable-image">
+                                <img src="/src/images/CO/códigos-q.png" alt="Tabela dos Códigos Q utilizados na Polícia do Alta Valley">
+                            </div>
+                            <div class="image-description">
+                                <center><h5>Tabela dos Códigos Q utilizados na Polícia do Alta Valley</h5></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="image-card">
+                            <div class="zoomable-image">
+                                <img src="/src/images/CO/legenda-código-q.png" alt="Legenda para coloração da tabela de Códigos Q">
+                            </div>
+                            <div class="image-description">
+                                <center><h5>Legenda para coloração da tabela de Códigos Q</h5></center>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-QTA">
+                            <span class="highlight-amarelo"><b>⚠️ QTA</b></span>
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-QTA">
+                            <ul>
+                                <li class="listItem">                                    
+                                    <span class="highlight-amarelo"><b>QTA Definitivo:</b></span><br>
+                                    Em situações de: furar pneu, acabar gasolina, capotar veículo, etc. Não retornar a QRU.
+                                </li>
+                                <br>
+                                <li class="listItem">
+                                    <span class="highlight-amarelo"><b>Breve QTA:</b></span><br>
+                                    Terciária deve prestar socorro para acidentes envolvidos na QRU e poderá retornar assim que possível.
+                                </li>
+                            </ul>
+                            <p><span class="highlight-amarelo"><b>OBS: </b></span>Sempre deverá ser informado o motivo do QTA, seja ele definitivo ou breve.</p>
+                        </div>
+                    </div>
+
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-QTI">
+                            <span class="highlight-amarelo"><b>⚠️ QTI</b></span>
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-QTI">
+                            <p>Não garante VAGA! Não informar QTI para verificar denúncia, apenas modular se de fato tiver o visual do acompanhamento.</p>
+                        </div>
+                    </div>
+            
+                    <div class="expand-section">
+                        <button class="expand-button" aria-expanded="false" aria-controls="content-QRX">
+                            <span class="highlight-amarelo"><b>⚠️ QRX/Prioridade</b></span>
+                            <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="expand-content" id="content-QRX">
+                            <ul>
+                                <li class="listItem">Caso alguém esteja realizando uma modulação e uma ocorrência de alto risco se inicie, diga no rádio: “QRX Central, Prioridade” e aguarde o silêncio.</li>
+                                <li class="listItem">Se você estiver realizando uma modulação no rádio e escutar um Oficial dizendo: “QRX Central, Prioridade”, encerre sua modulação IMEDIATAMENTE.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div id="topic5">
+                    <h2>Código 0-6</h2>
+                    <p>Os códigos de 0 a 6 são utilizados para descrever o nível de gravidade da situação na ocorrência.</p>
+
+                    <div class="image-container">
+                        <div class="image-card">
+                            <div class="zoomable-image">
+                                <img src="/src/images/CO/código-0-a-6.png" alt="Tabela de Código de 0 a 6 usado na Polícia do Alta Valley">
+                            </div>
+                            <div class="image-description">
+                                <center><h5>Tabela de Código de 0 a 6 usado na Polícia do Alta Valley</h5></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="topic6">
+                    <h2>Rosa dos Ventos</h2>
+                    <p>Além da utilização dos códigos Q e dos códigos de 0 a 6, alguns oficiais, principalmente os da Unidade Interceptor, utilizam em sua modulação a rosa dos ventos 
+                        para que assim possam facilitar que saibam a direção que o acompanhamento se encontra indo e imaginarem o possível QTH futuro.</p>
+
+                    <div class="image-container">
+                        <div class="image-card">
+                            <div class="zoomable-image">
+                                <img src="/src/images/CO/mapa-rosa-dos-ventos.png" alt="Mapa da Rosa dos Ventos">
+                            </div>
+                            <div class="image-description">
+                                <center><h5>Mapa da Rosa dos Ventos</h5></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="topic7">
+                    <h2>Demais meios de Comunicação</h2>
+                    <blockquote>
+                        <p><span class="highlight-CO"><span class="code">/911</span></span><br>Canal utilizado para nos comunicarmos com <b>OS CIVIS</b> através de texto.</p>
+                        <p><span class="highlight-CO"><b>Exemplo:</b></span><br>Em nosso procedimento para aplicar multas nos veículos abandonados pela cidade, <b>precisamos</b> e 
+                            <b>devemos</b> contatar o cidadão três vezes pelo /911 antes de realizar o procedimento.</p>
+                        <p>"Sr. Alex Teixeira, encontra-se na cidade? Favor responder através do 911 (1/3)</p>
+                        <p>"Seu veículo se encontra parado de forma irregular no HP, favor comparecer no local do mesmo, obrigado!"</p>
+                    </blockquote>
+                    <blockquote>
+                        <p><span class="highlight-CO"><span class="code">/112</span></span><br>Canal utilizado para nos comunicarmos com OS <b>MÉDICOS</b> através de texto</p>
+                        <p><span class="highlight-CO"><b>Exemplo:</b></span><br>Antes de realizarmos qualquer procedimento de reanimação, <b>devemos</b> contatar os médico para saber se os 
+                            mesmos estão disponíveis para auxiliar ou se estamos autorizados a realizar o procedimento.</p>
+                        <p>"Os oficiais estão autorizados a realizar os primeiros socorros?"</p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="close-button">&times;</span>
+                <img class="modal-content" id="zoomedImage">
+                <div id="modalDescription" class="modal-description"></div>
+            </div>
+
+            <footer>
+                <div class="button-container">
+                    <a href="/ac.html" class="ac">Curso de Acompanhamento</a>
+                    <a href="/ab.html" class="ab">Curso de Abordagem</a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script src="/src/scripts/board.js"></script>
+</body>
+</html>

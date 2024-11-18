@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    /* texts */
+    --textColorWhite: #dedede;
+    --descriptionText: rgba(201, 201, 201, 0.1);
+    --redText: #ef4444;
+    --textImportant: #FF9D00;
+
+    /* background */
+    --backgroundDark: #2e3035;
+
+    /* highlight */
+    --borderHighlightDark: #1e1f22;
+    --highlightDark: #2b2d31;
+    --yellowHighlight: #e88f00;
+    
+    /* other's */
+    --borderRedHighlight: #B00000;
+    --boxRedBackground: rgba(107, 0, 0, .4);
+    --toastRedBackground: #6B0000;
+
+    --borderImportant: #FF9900;
+    --boxImportant: rgba(126, 78, 0, .4);
+    --toastImportant: #7E4E00;
+
+    --tabChosen: #1e1f22;
+
+    /* gitbook color's */
+    --gitbookGoldYellow: #c3b571;
+    --gitbookBlue: #3b82f6;
+    --gitbookGreen: #22c55e;
+    --gitbookPurple: #7622c5;
+    --gitbookGreen2: #1ee667;
+    --gitbookBurnedYellow: #ffbf00;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: "SUSE", sans-serif;
+    word-wrap: break-word;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--backgroundDark);
+    color: var(--textColorWhite);
+}
+
+header {
+    /* width: 100vw; */
+
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 90vw;
+    max-width: 768px;
+    border-radius: 10px;
+}
+
+p img {
+    height: 20px;
+}
+
+
+.title, .content {
+    width: 90vw;
+    max-width: 768px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    background: var(--highlightDark);
+    border-radius: 10px;
+    border: 1px solid var(--borderHighlightDark);
+
+    padding: 25px;
+}
+
+
+.description {
+    margin: 0;
+    text-align: justify;
+}
+
+.content {
+    text-align: justify;
+    margin: 10px 0 20px 0;
+}
+
+h1 {
+    word-wrap: break-word;
+    margin-bottom:10px;
+    font-weight: 900;
+    
+}
+.content h2 {
+    /* margin-top: 10px; */
+    word-wrap: break-word;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+hr {
+    border: 1px solid var(--borderHighlightDark);
+    margin: 20px 0;
+}
+
+/* CAIXA DE OPÇÕES LATERAIS */
+.button-container {
+    width: 90vw;
+    max-width: 768px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    margin: 20px 0;
+    /* padding: 20px 0; */
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.button-container a {
+    width: 50%;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--textColorWhite);
+
+    background: var(--highlightDark);
+    border: 1px solid var(--borderHighlightDark);
+    border-radius: 5px;
+
+    outline: 3px solid transparent;
+
+    padding: 15px 10px;
+
+    transition: all .2s;
+}
+
+li::marker {
+    font-weight: bold; 
+}
+
+ol {
+    margin-left: 20px;
+    line-height: 25px;
+}
+
+h3, h4 {
+    margin-bottom: 10px;
+}
+
+/* Estilizações de texto */
+
+.numberListHighlight,
+span.bold {
+    font-weight: 700;
+    /* font-style: italic; */
+}
+
+.listItem {
+    margin-left: 20px
+}
+
+.listItem::marker {
+    color: var(--descriptionText);
+}
+
+blockquote {
+    border-left: 2px solid var(--borderHighlightDark);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.imageInLineBox{
+    display: flex;
+    justify-content: space-between;
+}
+.imageInLine{
+    max-height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.imageInLine2{
+    display: inline-flex;
+    vertical-align: middle;
+}
+.imageInLine2 p{
+    margin:0px;
+    text-align: justify;
+}
+
+.code{
+    background: var(--borderHighlightDark);
+    padding: .125rem .5rem;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 5px;
+    tab-size: 4px;
+}
+
+/* Estilização de avisos */
+
+.toastObs {
+    color: var(--redText);
+    background: var(--toastRedBackground);
+    border: 1px solid var(--borderRedHighlight);
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.toastImportant {
+    color: var(--textImportant);
+    background: var(--toastImportant);
+    border: 1px solid var(--borderImportant);
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.boxObs {
+    color: white;
+    background: var(--boxRedBackground);
+    border: 1px solid var(--borderRedHighlight);
+    border-radius: 5px;
+
+    padding: 20px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.boxObs p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.boxImportant {
+    color: white;
+    background: var(--boxImportant);
+    border: 1px solid var(--borderImportant);
+    border-radius: 5px;
+
+    padding: 20px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.boxImportant p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Estilizações extras */
+
+.emoji {
+    width: 50px;
+
+    background: var(--highlightDark);
+    border: 1px solid var(--textColorWhite);
+    border-radius: 5px;
+    
+    padding: 5px;
+}
+
+/* Quadro de abas */
+
+.tab-container {
+    background-color: var(--backgroundDark);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 0 20px 0;
+
+    border: 1px solid var(--borderHighlightDark);
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid var(--tabChosen);;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #a0a0a0;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+    color: white;
+}
+
+.tab.active {
+    background-color: var(--tabChosen);;
+    color: #ffffff;
+}
+
+
+.boardContent {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content.active p{
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-container a {
+        width: initial;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
+.expand-section {
+    margin-bottom: 8px;
+    border: 1px solid #424242;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.expand-button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #E5E7EB;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expand-button:hover {
+    background-color: rgba(55, 65, 81, 0.5);
+}
+
+.expand-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0);
+    border-top: 1px solid #424242;
+}
+
+.expand-content.open {
+    max-height: 500px;
+    padding: 16px;
+}
+
+.chevron {
+    transition: transform 0.3s ease-out;
+}
+
+.expand-button[aria-expanded="true"] .chevron {
+    transform: rotate(180deg);
+}
+
+.expand-button[aria-expanded="true"] {
+    background-color: rgba(55, 65, 81, 0.3);
+}
+
+.code{
+    background: var(--borderHighlightDark);
+    padding: .125rem .5rem;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 5px;
+    tab-size: 4px;
+} 
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.zoomable-image {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.zoomable-image:hover {
+    transform: scale(1.02);
+}
+
+.zoomable-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-button {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-button:hover {
+    color: #bbb;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 8vh;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--backgroundDark);
+    color: var(--textColorWhite);
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn, .submenu-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu-icon, .submenu-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+}
+
+.toggle-btn:hover, .submenu-btn:hover {
+    background-color: #27272a;
+}
+
+.chevron {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+}
+
+.chevron.rotate {
+    transform: rotate(180deg);
+}
+
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.menu.show {
+    display: block;
+}
+
+.submenu.show {
+    display: block;
+    border-left: 1px solid #27272a;
+    margin-left: 22px;
+    padding-left: 8px;
+}
+
+.menu-item {
+    margin: 2px 0;
+}
+
+.submenu li {
+    margin: 2px 0;
+}
+
+.submenu a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu li a:hover, .menu li a.active {
+    background-color: #3f3f46;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        /*transform: translateX(-100%);*/
+        /*z-index: 1000;*/
+        transform: translateX(-115%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .toggle-btn {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: auto;
+        padding: 10px;
+        background-color: #18181b;
+        z-index: 1001;
+    }
+
+    .toggle-btn span {
+        display: none;
+    }
+
+    .toggle-btn .chevron {
+        transform: rotate(-90deg);
+    }
+
+    .toggle-btn .chevron.rotate {
+        transform: rotate(90deg);
+    }
+
+    .menu {
+        padding-top: 50px;
+    }
+}
