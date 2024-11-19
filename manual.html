@@ -9,9 +9,14 @@
 
     <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <button id="mobileMenuBtn" class="mobile-menu-btn ">
+        <i class="fas fa-bars"></i>
+    </button>
     <nav id="sidebar" class="sidebar">
         <button id="toggleBtn" class="toggle-btn">
             <span>
@@ -24,7 +29,8 @@
                 <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
             </svg>
         </button>
-        <ul id="menu" class="menu">
+        <!--<ul id="menu" class="menu">-->
+        <ul id="menu" class="menu show">
             <li class="menu-item">
                 <button class="submenu-btn">
                     <span class="menu-icon">🗂️</span>
@@ -34,7 +40,7 @@
                         <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
                     </svg>
                 </button>
-                <ul class="submenu">
+                <ul class="submenu show">
                     <li><a href="/manual.html"><span class="submenu-icon">📚</span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon">👨‍🦽</span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon">📱</span>Instrução ao Tablet</a></li>
@@ -708,18 +714,56 @@
                             autorização do Comandante, sendo assim, alterações feitas sem prévio aviso  estarão sujeitas a advertência.</p>
                         <p><b>Conscrito (Masculino ou Feminino):</b><br>
                             O aspirante a ingressar na Corporação deve se apresentar ao recrutamento usando fardamento adequado (apresentado na nossa 
-                            <a href="https://bit.ly/apeccda">APEC</a>), sendo obrigatório juntamente com a utilização do corte de <b>cabelo raspado</b> 
+                            <a href="https://bit.ly/apeccda" style="color: #42abdb">APEC</a>), sendo obrigatório juntamente com a utilização do corte de <b>cabelo raspado</b> 
                             e <b>sem barba</b> para os conscritos <b>masculino</b> e para as <b>femininas</b>, é obrigatório o uso de <b>cabelo curto</b> 
                             ou <b>preso</b>.</p>
                         <p><b>Cadete (Masculino ou Feminino):</b><br>
                             <b>É obrigatório</b> aos alunos a utilização do <b>corte de cabelo raspado</b> e sem <b>barba</b>, e para as alunas o uso 
                             de <b>cabelo curto</b> ou <b>preso</b>. Qualquer tipo de modificação de uniforme ou vestimenta é proibido para alunos.</p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/Manual/cadetes.png" alt="Cadete (Masculino ou Feminino)">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Cadete (Masculino ou Feminino)</h5></center>
+                                </div>
+                            </div>
+                        </div>
 
                         <p><b>Soldado (Masculino ou Feminino):</b></p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/Manual/soldado.png" alt="Soldado (Masculino ou Feminino)">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Soldado (Masculino ou Feminino)</h5></center>
+                                </div>
+                            </div>
+                        </div>
                         <p><b>Cabo (Masculino ou Feminino):</b></p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/Manual/cabo.png" alt="Cabo (Masculino ou Feminino)">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Cabo (Masculino ou Feminino)</h5></center>
+                                </div>
+                            </div>
+                        </div>
                         <p><b>3° Sargento (Masculino ou Feminino):</b></p>
-                        <p><b>2° Sargento (Masculino ou Feminino):</b></p>
-                        <p><b>1° Sargento (Masculino ou Feminino):</b></p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/Manual/3-sargento.png" alt="3° Sargento (Masculino ou Feminino)">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>3° Sargento (Masculino ou Feminino)</h5></center>
+                                </div>
+                            </div>
+                        </div>
                         <h3>Viaturas</h3>
                         <div class="image-container">
                             <div class="image-card">
@@ -780,8 +824,12 @@
                                 maneira interna no batalhão.</li>
                         </ul>
                         <br>
-                        <p><b>Equipamento Padrão:</b></p>
-                        <p><b>Sub-Tenente:</b></p>
+                        <b>Equipamento Padrão:</b>
+                        <br>
+                        <img src = "/src/images/Manual/armamento-base.png" width="350">
+                        <br><br>
+                        <b>Sub-Tenente:</b><br>
+                        <img src = "/src/images/Manual/armamento-sub+.png" width="160">
                     </div>
                     <hr>
                     <div id="topic4">
@@ -805,6 +853,9 @@
                                 </div>
                             </div>
                         </div>
+                        <h3>SPEED</h3>
+                        <p>A SPEED é a unidade da Polícia capacitada para a realização de acompanhamentos de alta velocidade, com foco em corredores 
+                            ilegais e em veículos de alta performance. A SPEED também é responsável pela aplicação da manobra P.I.T durante acompanhamentos.</p>
                     </div>
                     <div id="topic5">
                         <center><h6>Créditos:</h6></center>

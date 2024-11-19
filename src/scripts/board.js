@@ -73,9 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const toggleBtn = document.getElementById('toggleBtn');
     const menu = document.getElementById('menu');
-    const chevron = toggleBtn.querySelector('.chevron');
+
+    mobileMenuBtn.addEventListener('click', function(){
+        sidebar.classList.toggle('open');
+        mobileMenuBtn.classList.toggle('active');
+    })
 
     toggleBtn.addEventListener('click', function() {
         menu.classList.toggle('show');
@@ -91,31 +96,37 @@ document.addEventListener('DOMContentLoaded', function() {
             const chevron = this.querySelector('.chevron');
             submenu.classList.toggle('show');
             chevron.classList.toggle('rotate');
+            
+            if (window.innerWidth <= 768 && !sidebar.contains(e.target) && e.target !== mobileMenuBtn) {
+                sidebar.classList.remove('open');
+                mobileMenuBtn.classList.remove('active');
+            }
         });
     });
 
     // Adiciona a funcionalidade de marcar o item ativo
     const menuItems = document.querySelectorAll('.menu a, .submenu a');
+    const currentPath = window.location.pathname; // Caminho da URL atual.
     menuItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-            menuItems.forEach(i => i.classList.remove('active'));
-            this.classList.add('active');
+        if (item.getAttribute('href') === currentPath) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
             
             // Fecha o menu em telas menores após clicar em um item
-            if (window.innerWidth <= 768) {
-                sidebar.classList.remove('open');
-                menu.classList.remove('show');
-                chevron.classList.remove('rotate');
-            }
-        });
-    });
-
-    // Fecha o menu ao clicar fora dele em telas menores
-    document.addEventListener('click', function(e) {
         if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
             sidebar.classList.remove('open');
             menu.classList.remove('show');
             chevron.classList.remove('rotate');
+            }
+        });
+
+    // Close mobile menu when resizing to desktop view
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            sidebar.classList.remove('open');
+            mobileMenuBtn.classList.remove('active');
         }
     });
 });
