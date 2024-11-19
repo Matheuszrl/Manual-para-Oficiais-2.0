@@ -30,6 +30,7 @@
     --gitbookGoldYellow: #c3b571;
     --gitbookBlue: #3b82f6;
     --gitbookGreen: #22c55e;
+    --gitbookRed: #e34242;
     --gitbookPurple: #7622c5;
     --gitbookGreen2: #1ee667;
     --gitbookBurnedYellow: #ffbf00;
@@ -114,13 +115,21 @@ h1 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-weight: 300;
 }
 
 hr {
     border: 1px solid var(--borderHighlightDark);
+    border-radius: 15px;
     margin: 20px 0;
+}
+
+.embed-highlight {
+    background: var(--backgroundDark);
+    border: 1px solid var(--borderHighlightDark);
+    border-radius: 10px;
+    padding: 20px 15px 0 15px;
 }
 
 /* CAIXA DE OPÇÕES LATERAIS */
@@ -161,10 +170,10 @@ hr {
 }
 
 li::marker {
-    font-weight: bold; 
+    color: var(--borderHighlightDark);
 }
 
-ol {
+ul, ol {
     margin-left: 20px;
     line-height: 25px;
 }
@@ -174,12 +183,6 @@ h3, h4 {
 }
 
 /* Estilizações de texto */
-
-.numberListHighlight,
-span.bold {
-    font-weight: 700;
-    /* font-style: italic; */
-}
 
 .listItem {
     margin-left: 20px
@@ -226,7 +229,6 @@ blockquote {
 }
 
 /* Estilização de avisos */
-
 .toastObs {
     color: var(--redText);
     background: var(--toastRedBackground);
@@ -276,7 +278,6 @@ blockquote {
 }
 
 /* Estilizações extras */
-
 .emoji {
     width: 50px;
 
@@ -322,7 +323,6 @@ blockquote {
     background-color: var(--tabChosen);;
     color: #ffffff;
 }
-
 
 .boardContent {
     padding: 15px;

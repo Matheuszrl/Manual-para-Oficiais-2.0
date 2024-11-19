@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/src/images/logo-cursos.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso de Acompanhamento | BPM-AV</title>
+    <link rel="shortcut icon" href="/src/images/logo-cursos.png">
 
-    <link rel="stylesheet" href="/src/styles/globals.css">
-    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
-
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
     <button id="mobileMenuBtn" class="mobile-menu-btn ">
         <i class="fas fa-bars"></i>
@@ -20,9 +17,11 @@
     <nav id="sidebar" class="sidebar">
         <button id="toggleBtn" class="toggle-btn">
             <span>
-                <div class="imageInLine">
-                    <img src="/src/images/BPM.png" width="20" alt="BPM">
-                </div>1ºBPM-AV - BEM VINDO
+                <a href="/index.html" class="linkClean">
+                    <div class="imageInLine">
+                        <img src="/src/images/BPM.png" width="20" alt="BPM">
+                    </div>1ºBPM-AV - BEM VINDO
+                </a>
             </span>
             <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
                 <path fill="none" d="M0 0h24v24H0z"/>
@@ -65,449 +64,287 @@
         </ul>
     </nav>
     <header>
-        <img src="/src/images/AC/header.png" alt="Imagem do header">
+        <img src="/src/images/AC/header.png" alt="Imagem do header" id="start"/>
     </header>
-    <div id="container">
-        <div id="pagAC">
-            <div class="title">
-                <h1>CURSO DE ACOMPANHAMENTO</h1>
-                <p class="description">Este material é destinado para apoio aos oficiais presente no 1°BPM-AV, tem como objetivo abordar de forma padrão os principais pontos referentes 
-                    aos acompanhamento.</p>
-            </div>
-            <div class="content">
-                <div id="topic1">
-                    <h2>Técnicas de Pilotagem</h2>
-
-                    <p><span class="bold highlight-AC">1. Curvas: </span>A técnica das curvas se dá através da <span class="bold">abertura de angulação antes da curva</span>  (como visto 
-                        em corrida de F1 e MotoGP por exemplo), esse técnica se dá para que durante a realização da curva seja necessário virar menos o volante da viatura, de forma que a 
-                        curva possa ser <span class="bold">efetuada com uma maior velocidade e menor necessidade de frenagem</span>, além que com essa técnica é possível também ter uma 
-                        <span class="bold">melhor visualização do ponto futuro</span> da curva, sabendo o que vem pela frente e dando um maior tempo para reação.</p>
-
-                    <p><span class="bold highlight-AC">2. Dosagem de freio e acelerador: </span>Consiste no uso de <span class="bold">leves toques no freio. </span>A técnica da dosagem de 
-                        freio se dá juntamente com a técnica das curvas. Com a realização das duas técnicas é possível ver que a realização das curvas se dará sem que haja necessidade de 
-                        frenagem brusca antes dela.</p>
-
-                    <p><span class="bold highlight-AC">3. Cautela em calçadas: </span>Em calçadas e meios fios temos muitos fatores adversos que podem gerar um acidente com a viatura, 
-                        sejam pedestres, postes, placas, árvores, etc. Dito isso, para <span class="bold">evitar qualquer colisão</span> com esses elementos é preferível que seja evitado 
-                        sempre que possível a passagem por esses locais.</p>
-
-                    <p><span class="bold highlight-AC">4. Trajeto: </span>Um dos nossos objetivos no 1ºBPM-AV, é o de obter o Código 4, ou seja, o sucesso nos acompanhamentos a individuos 
-                        e, por esse fator, é de extrema importância a <span class="bold">realização do mesmo trajeto do indivíduo</span>. Porém, não se deve esquecer de que, caso este erre, 
-                        podemos e devemos <span class="bold">corrigir o erro cometido pelo veículo acompanhado</span>, para que este não nos prejudique! </p>
+    <main>
+        <div id="container">
+            <div id="pagAC">
+                <div class="title">
+                    <h1>CURSO DE ACOMPANHAMENTO</h1>
+                    <p class="description">Este material é destinado para apoio aos oficiais presente no 1°BPM-AV, tem como objetivo abordar de forma padrão os principais pontos referentes aos acompanhamento.</p>
                 </div>
-                <hr>
-                <div id="topic2">
-                    <h2>Tipos de Acompanhamento</h2>
-
-                    <p>Atualmente, temos três principais tipos de acompanhamentos. Sendo eles o acompanhamento a pé, aquático e veícular.</p>
-
-                    <h3>Acompanhamento Veícular</h3>
-
-                    <p>Ao se iniciar uma abordagem <span class="bold">não sabemos qual será a reação do indivíduo.</span> Apenas sabemos que  <span class="bold">o mesmo pode se evadir da 
-                        abordagem</span>, iniciando assim um acompanhamento veicular de Código 2. Caso a QRU inicial seja uma abordagem de Código 1, a QRU do acompanhamento será Desobediência. 
-                        Nos demais casos, mantêm-se a QRU inicial.</p>
-
-                    <p>A estrutura de um acompanhamento veícular é baseada em viaturas primária, secundária e terciária.</p>
-
-                    <div class="tab-container">
-                        <div class="tabs">
-                            <button class="tab active" tab-group="funcoesVTR" data-tab="primaria" >Primária</button>
-                            <button class="tab" tab-group="funcoesVTR" data-tab="secundaria">Secundária</button>
-                            <button class="tab" tab-group="funcoesVTR" data-tab="terciaria">Terciária</button>
+                <div class="content">
+                    <div id="topic1">
+                        <h2>Técnicas de Pilotagem</h2>
+                        <b class="highlight-AC">1. Curvas:</b>
+                        <p>A técnica das curvas se dá através da abertura de angulação antes da curva (como visto em corrida de F1 e MotoGP por exemplo), essa técnica se dá para que durante a realização da curva seja necessário virar menos o volante da viatura, de forma que a curva possa ser efetuada com uma maior velocidade e menor necessidade de frenagem, além que com essa técnica é possível também ter uma melhor visualização do ponto futuro da curva, sabendo o que vem pela frente e dando um maior tempo para reação.</p>
+                        <hr>
+                        <b class="highlight-AC">2. Dosagem de freio e acelerador:</b>
+                        <p>A técnica de dosagem do freio e acelerador, consiste no uso de leves toques no freio e não só utilizar do acelerador da viatura como se esta fosse um carro de corrida. Esta técnica, preferencialmente deve utilizada juntamente a técnica de curvas pois, com a realização das duas técnicas, uma se beneficiará da outra.</p>
+                        <hr>
+                        <b class="highlight-AC">3. Cautela em calçadas:</b>
+                        <p>Em calçadas e meios fios temos muitos fatores adversos que podem gerar um acidente com a viatura, sejam pedestres, postes, placas, árvores, etc. Dito isso, para evitar qualquer colisão com esses elementos é preferível que seja evitado sempre que possível a passagem por esses locais.</p>
+                        <hr>
+                        <b class="highlight-AC">4. Trajeto:</b>
+                        <p>Um dos nossos objetivos no 1ºBPM-AV, é o de obter o Código 4, ou seja, o sucesso nos acompanhamentos a individuos e, por esse fator, é de extrema importância a realização do mesmo trajeto do indivíduo porém, não devemos esquecer de que, caso este erre, podemos e devemos corrigir o erro cometido pelo veículo acompanhado para que este não nos prejudique!</p>
+                        <hr>
+                    <div id="topic2">
+                        <h2>Tipos de Acompanhamento</h2>
+                        <p>Atualmente, temos três principais tipos de acompanhamentos. Sendo eles o acompanhamento a pé, aquático e veícular.</p>
+                        <h3>Acompanhamento Veícular</h3>
+                        <p>Ao se iniciar uma abordagem, não sabemos qual será a reação do individuo. Apenas sabemos que o mesmo poderá se evadir da abordagem, iniciando assim um acompanhamento veicular de Código 2.</p>
+                        <p>Caso a QRU inicial seja uma abordagem de Código 1, a QRU do acompanhamento será em Código 2 por "Desobediência". Nos demais casos, mantêm-se a QRU inicial</p>
+                        <p>A estrutura de um acompanhamento veícular é baseada em viaturas primária, secundária e terciária.</p>
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab active" tab-group="funcoesVTR" data-tab="primaria">
+                                    Primária
+                                </button>
+                                <button class="tab" tab-group="funcoesVTR" data-tab="secundaria">
+                                    Secundária
+                                </button>
+                                <button class="tab" tab-group="funcoesVTR" data-tab="terciaria">
+                                    Terciária
+                                </button>
+                            </div>
+                            <div class="boardContent">
+                                <div id="primaria" class="tab-content active" tab-group="funcoesVTR">
+                                    <p>Responsável por todo o acompanhamento (visual, modulação e liberação do código 5 caso seja necessário).</p>
+                                </div>
+                                <div id="secundaria" class="tab-content" tab-group="funcoesVTR">
+                                    <p>Responsável por se manter próximo a primária e assumir a mesma caso a primária venha dar QTA, além disso, também fica responsável por fazer cercos (desde que não atrapalhe sua posição como secundária).</p>
+                                </div>
+                                <div id="terciaria" class="tab-content" tab-group="funcoesVTR">
+                                    <p>Responsável pelo cerco, e, caso ocorra alguma acidente com civil, será a QSV que dará um breve QTA para prestar apoio.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="boardContent">
-                            <div id="primaria" class="tab-content active" tab-group="funcoesVTR">
-                                <p>Responsável por todo o acompanhamento (visual, modulação e liberação do código 5
-                                    caso seja necessário).</p>
+                        <h4 class="highlight-AC code">Cerco</h4>
+                        <blockquote>
+                            <p>O cerco é o <b>adiantamento </b>dos locais por onde o individuo poderá passar; sem bloquear a passagem do mesmo. Dito isso, é é importante reforçar que essa geralmente é uma das funções da terciária e é principalmente útil se a primária e a secundária forem ficar "travadas" em um beco ou passagem que levará tempo para as mesmas realizarem.</p>
+                        </blockquote>
+                        <h4 class="highlight-AC code">Roadblock</h4>
+                        <blockquote>
+                            <p>Assim como o cerco, o Roadblock também consiste no adiantamento do local por onde o individuo passará. Todavia, neste, se faz o fechamento total do local por onde este passará com o objetivo de impedir a passagem total do individuo</p>
+                        </blockquote>
+                        <h4 class="highlight-AC code">Negação de fuga / Desembarque</h4>
+                        <blockquote>
+                            <p>Caso o individuo se negue a dar fuga ou, a descer do veículo <b class="highlight-vermelho">É PROIBIDA </b>a utilização de qualquer "artíficio" da polícia para a remoção do individuo, do veiculo; incluindo utilizar o <b>tazer</b> ou o comando <b class="code">/rv</b></p>
+                        </blockquote>
+                        <blockquote>
+                            <p>Caso ocorra alguma das situações citadas acima, o oficial deverá ter o passaporte do individuo e a gravação do ocorrido e deverá abrir um ticket, relatando a situação por falta de bom senso do cidadão acompanhado.</p>
+                        </blockquote>
+                        <h3>Acompanhamento a Pé</h3>
+                        <p>Caso o individuo venha a abandonar o seu veículo ou, simplesmente se evada de uma abordagem a pé, é necessário que seja informado na rádio esse início, juntamente com uma breve descrição dos indivíduos que estão prestando fuga a pé.</p>
+                        <blockquote>
+                            <div class="imageInLineBox">
+                                <div class="imageInLine">
+                                    <img src="/src/images/radio.png" alt="Imagem de um Rádio" />
+                                </div>
+                                <div class="imageInLine2">
+                                    <p>"QAP Central, iniciando acompanhamento a pé nos indivíduos do T20 da QRU de Caixa Eletrônico, o individuo segue de calça preta, blusa roxa e cabelo de dread azul"</p>
+                                </div>
                             </div>
-                            <div id="secundaria" class="tab-content" tab-group="funcoesVTR">
-                                <p>Responsável por se manter próximo a primária e assumir a mesma caso a primária
-                                    venha dar QTA, além disso, também fica responsável por fazer cercos (desde que
-                                    não atrapalhe sua posição como secundária).</p>
+                        </blockquote>
+                        <p><b class="highlight-vermelho">Obs: </b>A utilização do <b>Tazer </b>somente é permitida em casos em que o individuo utilize algum meio de comunicação (celular ou rádio)</p>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante</span>
+                            <p>A aplicação do Tazer é proibida caso o indivíduo esteja molhado, seja por ter entrado na água, por estar chovendo ou qualquer outro motivo adverso, assim como é proibido também a utilização de Tazer dentro da viatura ou para furar pneu de algum veículo.</p>
+                        </div>
+                        <h3>Acompanhamento Aquático</h3>
+                        <p>Assim como quando é iniciado um acompanhamento a pé, no acompanhamento aquático também se faz é necessário que seja informado na rádio esse início, onde somente e, no máximo <b>DOIS OFICIAIS </b>devem ficar em solo para realizarem a modulacão para demais unidades, enquantos os oficiais da <b>PRIMÁRIA </b>pulam junto com o individuo</p>
+                        <blockquote>
+                            <div class="imageInLineBox">
+                                <div class="imageInLine">
+                                    <img src="/src/images/radio.png" alt="Imagem de um Rádio" />
+                                </div>
+                                <div class="imageInLine2">
+                                    <p>"QAP Central, iniciando acompanhamento aquático nos indivíduos do Penumbra da QRU de Corrida Ilegal, o individuo segue de calça preta, blusa roxa e cabelo de dread"</p>
+                                </div>
                             </div>
-                            <div id="terciaria" class="tab-content" tab-group="funcoesVTR">
-                                <p>Responsável pelo cerco, e, caso ocorra alguma acidente com civil, será a QSV que
-                                    dará um breve QTA para prestar apoio.</p>
+                        </blockquote>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante</span>
+                            <p>Com o individuo na água, os oficiais deveram avisa-lo pelo total de 3x de que este deve sair da água imediatamente ou, após 3 avisos <b>(1 a cada 30 segundos)</b>, a manobra de soco estará liberada no(a) mesmo(a)</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="topic3">
+                        <h2>Boosting</h2>
+                        <p>A QRU de Boosting nada mais é que o <b>roubo organizado de veículos </b>podendo estes, serem de todas as classes de veículos disponíveis na cidade (D a S+) e, somente nesta QRU, todos os oficiais são autorizados a realizarem a <b>Manobra P.I.T </b>nos momentos corretos</p>
+                        <p>Sua viatura sempre deverá estar no mesmo rank do veículo que será acompanhado</p>
+                        <p>Nesta QRU, os individuos podem "levar" veículos de apoio, totalizando 4 veículos (O veículo roubado + 3 de apoio)</p>
+                        <p>O contingente policial deve ser de 3 unidades no veículo principal e, 1 unidade adicional para cada veículo de apoio</p>
+                        <p>Em todas as QRU's de Boosting, se existe a chance de residentes locais abrirem fogo contra os bandidos, nestes casos a polícia somente poderá agir quando e se, os individuos conseguirem realizar o roubo do veículo; sem nunca se envolver na troca de tiros</p>
+                        <p>Caso os bandidos consigam obter o veículo e se evadam / saiam do local; assim iniciamos um acompanhamento de Código 2, na QRU de Boosting!</p>
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab active" data-tab="classDtoB" tab-group="boosting">
+                                    D até B
+                                </button>
+                                <button class="tab" data-tab="classAtoS+" tab-group="boosting">
+                                    A até S+
+                                </button>
+                            </div>
+                            <div class="boardContent">
+                                <div id="classDtoB" class="tab-content active" tab-group="boosting">
+                                    <p>Nestas classes de veículos, a manobra é permitida, somente no veículo principal e, a cada 30 segundos - porém, somente a partir do momento em que os veículos de apoio atrapalhem o acompanhamento de alguma forma; seja aplicando P.I.T, fechando becos, etc...</p>
+                                </div>
+                                <div id="classAtoS+" class="tab-content" tab-group="boosting">
+                                    <p>Nestas classes, podemos começar a aplicar o P.I.T de 30 em 30 segundos, assim que o Tracker (Rastreador / Localizador) seja desativado <b>OU</b> caso os veículos de apoio atrapalhem o acompanhamento antes disso!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <h4>Cerco</h4>
-
-                    <blockquote>
-                        <p> O cerco é o <span class="bold">adiantamento</span> dos locais por onde o individuo passará, <span class="bold">sem bloquear a passagem</span> do mesmo. Dito isso, 
-                            é importante reforçar que essa geralmente é uma das funções da <span class="bold">terciária</span> e é principalmente útil se a primária e a secundária forem ficar 
-                            "travadas" em um beco ou passagem que levará tempo para as mesmas realizarem.
-                    </blockquote>
-
-                    <h4> Roadblock</h4>
-
-                    <blockquote>
-                        <p>Assim como o cerco, o Roadblock também consiste no adiantamente do local por onde o individuo passará. Todavia, neste, se faz o <span class="bold"> fechamento 
-                            total do local</span> por onde este passará com o objetivo de <span class="bold">impedir a passagem do mesmo</span>.</p>
-                    </blockquote>
-
-                    <h4>Negação de fuga / Desembarque</h4>
-
-                    <blockquote>
-                        <p>Caso o individuo se negue a dar fuga ou, a descer do veículo <span class="highlight-AC bold">É PROIBIDA</span> a utilização de qualquer artíficio da polícia para 
-                            a remoção do mesmo, do veículo, tal como o <span class="bold">tazer</span> ou o comando <span class="code">/rv</span>.</p>
-
-                        <p>Caso ocorra alguma das situações citadas acima, o oficial deverá ter o passaporte do individuo e a gravação do ocorrido e deverá abrir um ticket, relatando a 
-                            situação por falta de bom senso do cidadão acompanhado. </p>
-                    </blockquote>
-
-                    <h3>Acompanhamento a Pé</h3>
-
-                    <p>Caso o individuo venha a abandonar o seu veículo ou, simplesmente se evada de uma abordagem a pé, é necessário que seja informado na rádio esse início, juntamente 
-                        com uma breve  descrição dos indivíduos que estão prestando fuga a pé.</p>
-                    
-                    <blockquote>
-                        <div class="imageInLineBox">
-                            <div class="imageInLine">
-                                <img src="/src/images/radio.png" alt="Imagem de um Rádio">
+                    <div id="topic4">
+                        <h2>Funções Compartilhadas</h2>
+                        <p>Em um acompanhamento, sempre teremos funções compartilhadas entre as QSV's / viaturas que, são essenciais para que um bom acompanhamento possa ser desenvolvido, nos permitindo o Código 4 no mesmo. Dentre as funções compartilhadas existentes, podemos citar:</p>
+                        <b class="highlight-AC">SSL (Sinais Sonoros & Luminosos)</b>
+                        <p>A utilização dos sinais sonoros e luminosos são de extrema importância para que as demais viaturas e civis saibam da sua intenção, quando estiver passando por um local</p>
+                        <p>Atualmente, temos 3 códigos sonoros diferentes na nossa viatura, cada um com sua intensidade e objetivo, que devem ser executados da seguinte forma:</p>
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab active" data-tab="intensidade1" tab-group="intensidades">
+                                    Intensidade 1
+                                </button>
+                                <button class="tab" data-tab="itensidade2" tab-group="intensidades">
+                                    Intensidade 2
+                                </button>
+                                <button class="tab" data-tab="intensidade3" tab-group="intensidades">
+                                    Intensidade 3
+                                </button>
                             </div>
-                            <div  class="imageInLine2">
-                                <p>"QAP Central, iniciando acompanhamento a pé nos indivíduos do T20 da QRU de Caixa Eletrônico, o individuo segue de calça preta, blusa roxa e cabelo de dread azul"</p>
+                            <div class="boardContent">
+                                <div id="intensidade1" class="tab-content active" tab-group="intensidades">
+                                    <p>Usa-se no início de abordagens de Código 1 e 2</p>
+                                </div>
+                                <div id="itensidade2" class="tab-content" tab-group="intensidades">
+                                    <p>Usa-se durante todo o acompanhamento</p>
+                                </div>
+                                <div id="intensidade3" class="tab-content" tab-group="intensidades">
+                                    <p>Usa-se quando, durante um acompanhamento a viatura necessita trafegar pelo lado contrário da via ou venha a passar em uma região com grande número de terceiros (Praça, Hospital, Mecânica)</p>
+                                </div>
                             </div>
                         </div>
-                    </blockquote>
-
-                    <p><span class="bold">Tazer: </span>A ultilização do tazer <span class="bold">SOMENTE SE</span> o individuo utilize algum meio de comunicação (celular ou rádio) e, 
-                        caso o individuo venha a atacar os oficiais com objetos não letais ou cortantes (taco de beisebol, taco de sinuca, chave inglesa, etc...).</p>
-
-                    <div class="boxImportant">
-                        <span class="toastImportant">Importante</span>
-                        <p>A aplicação do Tazer é proibida caso o indivíduo esteja molhado, seja por ter entrado na água, por estar chovendo ou qualquer outro motivo adverso, assim 
-                            como é proibido também a utilização de Tazer dentro da viatura ou para furar pneu de algum veículo.</p>
+                        <hr>
+                        <b class="highlight-AC">QTA & Breve QTA</b>
+                        <p>
+                            <b class="highlight-AC code">QTA</b>
+                            <blockquote>
+                                <p>Para o "primeiro tipo" de QTA, podemos chama-lo também de QTA definitivo e, usaremos em situações em que sua viatura fica impossibilidata de continuar o acompanhamento (seja por quebra de motor, falta de combustível, queda da GTM, etc...)</p>
+                            </blockquote>
+                            <b class="highlight-AC code">Breve QTA</b>
+                            <blockquote>
+                                <p>Para o "segundo tipo" de QTA, tem-se o Breve QTA que, somente poderá ser utilizado pela terciária com o único objetivo de prestar apoio a civis ou GTM's atropelados e, pelo GSA para abastecimento ou, embarque de operadores</p>
+                            </blockquote>
+                        </p>
+                        <hr>
+                        <b class="highlight-AC">QTI</b>
+                        <p>Estar a caminho de uma QRU, somente precisa e pode ser modulado, quando as unidades estiverem próximas da QRU, ainda assim, é importante ressaltar que modular "a QTI"</p>
+                        <hr>
+                        <b class="highlight-AC">GPS</b>
+                        <p>O GPS age como um grande diferencial durante os acompanhamentos distantes e/ou próximos, isso porque o mesmo indica/informa a todos os oficiais, a localização exata de onde os demais oficiais em serviço estão</p>
+                        <hr>
+                        <b class="highlight-AC">Modulação</b>
+                        <p>Em todos os acompanhamentos, ter uma modulação direta e objetiva é essencial. Seja para as demais viaturas se localizarem ou, para outras viaturas próximas estarem cientes da situação que esta ocorrendo naquele local; por isso é fundamental ser direto e objetivo!</p>
+                        <hr>
+                        <b class="highlight-AC">Ultrapassagem</b>
+                        <p>Do início ao fim dos acompanhamentos, pode-se ocorrer ultrapassagens porém, toda ultrapassagem, deve ser feita com cuidado e, sempre pela esquerda. Ainda assim, é preciso ter atenção ao fato de que as posições de primária, secundária e terciária sempre devem ser mantidas</p>
                     </div>
-                    
-                    <h3>Acompanhamento a Aquático</h3>
-                    <p>Assim como quando é iniciado um acompanhamento a pé, no acompanhamento aquático também se faz é necessário que seja informado na rádio esse início, onde somente e, 
-                        no máximo <span class="bold">DOIS OFICIAIS</span> ficaram em solo para poder realizarem a modulação enquanto os oficiais preferencialmente da 
-                        <span class="bold">PRIMÁRIA </span>pulam junto com o individuo.</p>
-
-                    <blockquote>
-                        <div class="imageInLineBox">
-                            <div class="imageInLine">
-                                <img src="/src/images/radio.png" alt="Imagem de um Rádio">
-                            </div>
-                            <div  class="imageInLine2">
-                                <p>"QAP Central, iniciando acompanhamento aquático nos indivíduos do Penumbra da QRU de Corrida Ilegal, o individuo segue de calça preta, blusa roxa e 
-                                    cabelo de dread"</p>
-                            </div>
+                    <hr>
+                    <div id="topic5">
+                        <h2>Limite de Viaturas por QRU</h2>
+                        <p>Durante todo o nosso Código 0, sabe-se que existem diversas QRU's pela cidade porém, para que todas as unidades não se ocupem com uma única QRU, devemos seguir a seguinte regra</p>
+                        <div class="embed-highlight">
+                            <ul>
+                                <li>Roubo / Furto a ATM e Caixa registradora</li>
+                                <li>Tráfico de Entorpecentes / Venda de drogas</li>
+                                <li>Roubo / Furto de Veículo</li>
+                                <li>Corrida Ilegal</li>
+                            </ul>
+                            <p>3 QSV's 4 rodas <b>ou</b> 2 QSV's 4 rodas + 1 unidade GTM</p>
                         </div>
-                    </blockquote>
-
-                    <div class="boxObs">
-                        <span class="toastObs">Observação</span>
-                        <p>Com o individuo na água, os oficiais deveram avisa-lo pelo total de 3x de que este deve sair da água imediatamente ou, após 3 avisos<span class="bold"> (1 a cada 30
-                            segundos)</span>, a manobra de soco estará liberada no(a) mesmo(a)</p>
+                        <p><b class="highlight-AC code">Boosting:</b> 3 QSV's para o veículo principal (roubado) + 1 QSV's para cada veículo de apoio</p>
+                        <p><b class="highlight-AC code">Roubo a Residência:</b> Não contabilizamos por número de unidades 4 rodas ou GTM's mas sim, por quantidade de oficiais; limitado a <b>5 oficiais</b></p>
+                        <p><b class="highlight-vermelho code">Obs:</b> 1 unidade GTM = 2 motos</p>
                     </div>
-                </div>
-                <hr>
-                <div id="topic3">
-                    <h2>Boosting</h2>
-
-                    <p>A QRU de <span class="bold">Boosting </span>consiste no <span class="bold">roubo organizado </span> de veículos, de todas as classes de veículos existentes na cidade 
-                        (D a S+) e, somente para esta QRU, todos os oficiais são autorizados, nos momentos corretos a, aplicarem a manobra <span class="highlight-AC bold">P.I.T</span></p>
-
-                    <p>Sua viatura sempre deverá estar no mesmo rank do veículo que será acompanhado</p>
-
-                    <p>Nesta QRU, podem haver veículos de apoio dos meliantes (máximo 3, totalizando 4: <span class="bold">veículo principal + 3</span>)</p>
-
-                    <p>O contingente policial deve ser de <span class="bold">3 unidades no veículo principal</span> e, <span class="bold">1 unidade</span> para <span class="bold">cada 
-                        veículo de apoio</span> exceto se o veículo de apoio for das classes S ou S+. Neste caso, é permitido por parte da polícia, levar uma unidade adicional 
-                        para <span class="bold">cada veículo de apoio - caso este seja das classes </span><span class="highlight-AC bold"> S</span> e/ou <span class="highlight-AC bold">S+</span>, 
-                        totalizando 9 unidades, <span class="bold">3 no principal + 2 unidades para cada veículo de apoio</span></p>
-
-                    <p>Em todas as QRU's de Boosting, existem a chance de residentes locais abrirem fogo contra os bandidos, nestes casos, a polícia <span class="bold">somente deve 
-                        </span>permanecer no perímetro <span class="bold">sem se envolver na troca de tiros.</span> Caso os bandidos consigam obter o veículo e se evadam / saem do local, 
-                        então sim, iniciamos o acompanhamento de Código 2, na QRU de Boosting!</p>
-
-                    <div class="tab-container">
-                        <div class="tabs">
-                            <button class="tab active" data-tab="classDtoB" tab-group="boosting">D até B</button>
-                            <button class="tab" data-tab="classAtoS+" tab-group="boosting">A até S+</button>
+                    <div id="topic6">
+                        <h2>Neutralização de Veículo</h2>
+                        <p>Em casos de tentativa e execução de resgate, onde o individuo muda de um veículo para outro, considera-se o ato um "resgate". Assim, seguimos o seguinte procedimento: </p>
+                        <p><b>1° Resgate: </b>A primária deve verificar e solicitar via CP ou rádio a disponibilidade do GSA (Grupamento de Suporte Aéreo). Para que este possa realizar o procedimento de disparos nos pneus do veículo que realizou o resgate</p>
+                        <p><b>2° Resgate: </b>Caso venha a ocorrer uma segunda mudança de veículo / um segundo resgate. O GSA estando presente no acompanhamento, terá a autorização para realizar os disparos no motor do veículo, até a parada total do mesmo</p>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante</span>
+                            <p>Caso não haja um GSA em QRV, as unidades deverão chamar pela SPEED, para que um <b>Piloto Oficial+ </b>realize a manobra de P.I.T a cada 30 segundos (no limite de até 200 km/h)</p>
                         </div>
-                        <div class="boardContent">
-                            <div id="classDtoB" class="tab-content active" tab-group="boosting">
-                                <p>Nestas classes de veículos, a manobra é permitida, <span class="bold">somente no veículo principal</span> e, a cada <span class="bold">30 segundos -
-                                    porém,</span> somente a partir do momento em que os veículos de apoio atrapalhem o acompanhamento de alguma forma; seja aplicando P.I.T, fechando
-                                    becos, etc...</p>
-                            </div>
-
-                            <div id="classAtoS+" class="tab-content" tab-group="boosting">
-                                <p>Nestas classes, podemos começar a aplicar o P.I.T de 30 em 30 segundos, assim que o Tracker (Rastreador / Localizador) seja <span
-                                    class="bold highlight-AC">desativado</span><span class="bold"> OU </span>caso os veículos de apoio atrapalhem o acompanhamento antes disso!</p>
-                            </div>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante²</span>
+                            <p>Na falta do GSA e da SPEED, a primária do acompanhamento deverá chamar por um <b>Sargento+ </b>via CP e, explicar a situação em que se encontra o acompanhamento em uma rádio diferente da rádio POLICIA; na tentativa de obter a autorização para que o <b>P2 da primária </b>possa disparar nos pneus do veículo acompanhado</p>
+                        </div>
+                        <h3>Atropelo de Civil / GTM</h3>
+                        <p>Em situações onde o veículo acompanhado atropele civis e/ou GTM's, a primária deverá tentar realizar a verbalização com o veículo acompanhado, para que este volte <b>OBRIGATORIAMENTE </b>volte ao local do acidente para prestar apoio aos que foram prejudicados no acidente</p>
+                        <p>Caso o mesmo se negue a cooperar com o contato ou a ir ao local prestar apoio, as unidades deverão informar na rádio a negação do mesmo, para que então o GSA ou a SPEED possam realizar os mesmos procedimentos utilizados no <b>"1° Resgate"</b></p>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante</span>
+                            <p>Na falta do GSA e da SPEED, a primária deve contatar um <b>Sargento+ </b>para a liberação dos disparos no pneu, pelo P2 da primária</p>
                         </div>
                     </div>
-
-                    <div class="boxImportant">
-
-                        <span class="toastImportant">Importante</span>
-
-                        <p><span class="bold">1.</span> A GTM somente poderá participar do Boosting <span class="bold">somente</span> quando algum veículo de apoio for uma motocicleta!</p>
-
-                        <p><span class="bold">2.</span> O GSA somente poderá participar do Boosting <span class="bold">somente</span> caso o <span class="bold highlight-AC">veículo
-                            principal</span> seja das classes <span class="bold highlight-AC">S</span> ou <span class="bold highlight-AC">S+</span></p>
+                    <div id="topic7">
+                        <h2>Manobra P.I.T</h2>
+                        <p>Tem se como P.I.T (Pursuit Technique Interception) ou (Técnica de Interceptação em Perseguição), uma manobra exclusiva do grupamento SPEED</p>
+                        <p>Logo, esta pode ser executada na ausência do GSA, quando há o resgate (mudança de um veículo para o outro) ou, quando o individuo forçar a frente de um carro esportivo em um local alto ou em escadas e, SOMENTE seguindo as regras abaixo</p>
+                        <ul>
+                            <li>Necessário um Piloto Oficial+ do grupamento</li>
+                            <li>Somente pode ser realizada abaixo de 200 km/h em acompanhamentos</li>
+                            <li>Somente pode ser realizada abaixo de 180 km/h em QRU's de Boosting</li>
+                        </ul>
+                        <p>A intenção da realização da manobra, nada mais é que, "no vento"; forçar a frente da viatura na roda traseira (esquerda ou direita), do veículo acompanhado</p>
                     </div>
-                </div>
-                <hr>
-                <div id="topic4">
-                    <h2>Funções Compartilhadas</h2>
-
-                    <p>Em um acompanhamento, sempre teremos funções compartilhadas entre as QSV's / viaturas que, são essenciais para que um bom acompanhamento possa ser desenvolvido, 
-                        nos permitindo o sucesso no mesmo.</p>
-
-                    <p><span class="bold highlight-AC">SSL (Sinais Sonoros e Luminosos): </span>A utilização dos sinais sonoros e luminosos são de extrema importância para que as 
-                        demais viaturas e civis saibam sua intenção quando estiver passando por um local.</p>
-
-                    <p>Atualmente, temos 3 códigos sonoros diferentes na nossa viatura, cada um com sua intensidade e objetivo, que devem ser executados da seguinte forma:</p>
-
-                    <div class="tab-container">
-                        <div class="tabs">
-                            <button class="tab active" data-tab="intensidade1" tab-group="intensidades">Intensidade 1</button>
-                            <button class="tab" data-tab="itensidade2" tab-group="intensidades">Intensidade 2</button>
-                            <button class="tab" data-tab="intensidade3" tab-group="intensidades">Intensidade 3</button>
-                        </div>
-
-                        <div class="boardContent">
-                            <div id="intensidade1" class="tab-content active" tab-group="intensidades">
-                                <p>Usa-se no início de abordagens de <span class="bold highlight-AC">Código 1 e 2</span></p>
-                        </div>
-
-                        <div id="itensidade2" class="tab-content" tab-group="intensidades">
-                            <p>Usa-se durante todo o acompanhamento</p>
-                        </div>
-
-                        <div id="intensidade3" class="tab-content" tab-group="intensidades">
-                            <p>Usa-se quando, durante um acompanhamento a viatura necessita trafegar pelo lado contrário da via ou venha a passar em uma região com grande número de terceiros
-                                (Praça, Hospital, Mecânica)</p>
+                    <div id="topic8">
+                        <h2>Situações de Código 3 e Código 5</h2>
+                        <h3>Código 3</h3>
+                            <p>Em situações de Código 3, sabe-se que não há limite de unidades, ou seja, todas as unidades em QRV / Disponíveis podem auxiliar nestas situações porém, em acompanhamentos, devemos seguir uma ordem, para que a situação venha a ficar controlada o mais breve possível</p>
+                            <p>Esta ordem é definida por: </p>
+                                <blockquote>
+                                    <p>Para veículos 4 rodas: <br>SPEED ➡️ GTM ➡️ CORE ➡️ RPM</p>
+                                    <p>Para motocicletas: <br>GTM ➡️ SPEED ➡️ CORE ➡️ RPM</p>
+                                </blockquote>
+                        <h3>Código 5</h3>
+                        <p>Situações de Código 5, são situações de alta periculosidade por isso, devemos ter atenção as situações para termos a certeza de quando poderemos liberar o Código 5 no indivíduo e/ou no pneu</p>
+                        <p class="highlight-AC code">No indivíduo: </p>
+                            <ul>
+                                <li>Ao tentar empurrar as viaturas na água</li>
+                                <li>Ao apontar armas de fogo para os oficiais</li>
+                                <li>Ao tentar roubar uma viatura do BPM</li>
+                            </ul>
+                            <hr>
+                        <p class="highlight-AC code">No pneu: </p>
+                            <ul>
+                                <li>Ao ficar "brincando de bate-bate" ou usando do "break-check" para as viaturas baterem em seu veículo</li>
+                                <li>Ao roubar uma viatura de americano (policial, bombeiros, ambulâncias, etc...)</li>
+                                <li>Ao derrubar a GTM intencionalmente</li>
+                                <li>Ao atropelar um civil / oficial e não prestar apoio (ignorando a verbalização - caso "não tenha percebido")</li>
+                            </ul>
+                        <br>
+                        <div class="boxImportant">
+                            <span class="toastImportant">Importante</span>
+                            <p>Em situações de Código 3 ou Código 5, as unidades não precisam igual a classe da viatura a do veículo acompanhado, logo é permitido utilizar a classe máxima da viatura em acompanhamentos de Código 3</p>
                         </div>
                     </div>
+                    <div id="topic9">
+                        <h2>Saltos e Rampas</h2>
+                        <p>Atualmente saltos e rampas são permitidos na cidade! Dito isso, caso qualquer individuo realize qualquer salto ou rampa de um lugar para outro, nós do 1° BPM-AV realizamos as seguintes técnicas para mantermos o acompanhamento</p>
+                    </div>
                 </div>
-
-                <p><span class="bold highlight-AC">QTA / Breve QTA: </span>Para o <span class="bold highlight-AC">"primeiro tipo" </span> de QTA, denomina-se <span class="bold">QTA 
-                    definitivo, </span>quando sua viatura fica impossibilidata de continuar o acompanhamento (seja por quebra de motor, falta de combustível, queda da GTM, etc...)</p>
-
-                <p>Para o <span class="bold highlight-AC">"segundo tipo" </span>de QTA, tem-se o <span
-                            class="bold">breve QTA </span>utilizado geralmente e somente pela <span
-                            class="bold">terciária </span>de um acompanhamento, para prestar apoio a civis
-                        atropelados, batidas de viaturas ou do individuo acompanhado, com outros veículos</p>
-
-                <div class="boxImportant">
-                    <span class="toastImportant">Importante</span>
-
-                    <p>O<span class="bold highlight-AC"> GSA, </span>assim como a terciária, também pode realizar o breve QTA durante os acompanhamento. Pelos motivos de 
-                        <span class="bold highlight-AC">reabastecimento</span> e <span class="bold highlight-AC">embarque de operadores</span></p>
-
-                </div>
-
-                <p><span class="bold highlight-AC">QTI: </span>Estar a caminho de uma QRU, somente precisa e pode ser modulado, quando as unidades estiverem próximas da QRU, ainda assim, 
-                    é importante ressaltar que modular "a QTI" <span class="bold highlight-AC">(não garante vaga na QRU)</span></p>
-
-                <p><span class="bold highlight-AC">GPS: </span>O GPS age como um grande diferencial durante os acompanhamentos distantes e/ou próximos, isso porque o mesmo indica/informa 
-                    a todos os oficiais, a localização exata de onde os demais oficiais em serviço estão</p>
-
-                <p><span class="bold highlight-AC">Modulação: </span>Em todos os acompanhamentos, uma modulação <span class="bold">direta </span>e <span class="bold">objetiva</span>, 
-                    é essencial. Seja para as demais viaturas se localizarem ou, para outras viaturas próximas estarem cientes da situação que esta ocorrendo naquele local; por isso é 
-                    fundamental ser direto e objetivo!</p>
-
-                <p><span class="bold highlight-AC">Ultrapassagem: </span>Do início ao fim dos acompanhamentos, pode-se ocorrer ultrapassagens porém, toda ultrapassagem, deve ser feita 
-                    com <span class="bold">cuidado </span>e <span class="bold highlight-AC">sempre pela esquerda</span>. Ainda assim, é preciso ter atenção ao fato de que as posições de 
-                    <span class="bold">primária, secundária e terciária sempre devem ser mantidas</span>.</p>
-
-                <blockquote>
-                    <p>Toda e qualquer unidade, <span class="bold highlight-AC">somente pode ultrapssar e manter uma posição</span>, com a autorização da unidade que já estava 
-                        naquela posição</p>
-                </blockquote>
-
-                <p><span class="bold highlight-AC">Distanciamento de Segurança: </span>Para que um bom acompanhamento possa ser desenvolvido, manter um distanciamento de segurança entre as
-                    unidades e, entre o veículo do individuo acompanhado, é <span class="bold">essencial </span>para obtermos o Código. 4 em todos os acompanhamentos! Assim, evitamos 
-                    que GTM's deem QTA e possíveis "bate-bate" entre as viaturas</p>
-            </div>
-            <hr>
-            <div id="topic5">
-                <h2>Limite de Viaturas por QRU</h2>
-
-                <p>Sabemos que toda e qualquer QRU possui limite de 3 unidades, exceto em algumas situações destacadas abaixo!</p>
-
-                <p><span class="bold highlight-AC">Roubo / Furto a ATM e Caixa registradora: </span>3 QSV's ou 2 QSV's + 1 unidade GTM</p>
-
-                <p><span class="bold highlight-AC">Venda de drogas: </span>3 QSV's ou 2 QSV's + 1 unidade GTM</p>
-
-                <p><span class="bold highlight-AC">Roubo / Furto a veículo: </span>3 QSV's ou 2 QSV's + 1
-                    unidade GTM</p>
-
-                <p><span class="bold highlight-AC">Corrida Ilegal: </span>3 QSV's ou 2 QSV's + 1 unidade GTM</p>
-
-                <p><span class="bold highlight-AC">Boosting: </span>3 QSV's para o veículo principal + 1 QSV's para cada veículo de apoio<span class="bold highlight-AC"> ou </span>2 
-                    unidades para cada veículo de apoio (caso os veículos de apoio sejam das classes <spanclass="bold highlight-AC">S</span> ou <span class="bold highlight-AC">S+</span>)</p>
-
-                <p><span class="bold highlight-AC">Roubo a resiência: </span></p>
-
-                <div class="boxImportant">
-                    <span class="toastImportant">Importante</span>
-
-                    <p>Situações de <span class="bold highlight-AC">Código 3</span> e <span
-                            class="bold highlight-AC">Código 5</span>, não possuem limites de unidades</p>
-
-                    <p><span class="bold highlight-AC">Lembrete¹: </span>1 unidade GTM = 2 motos<br><span class="bold highlight-AC">Lembrete²: </span>Em todas as QRU's o <span
-                        class="highligh-AC">GSA</span> é considerado como unidade bônus</p>
-
-                </div>
-            </div>
-            <hr>
-            <div id="topic6">
-                <h2>Neutralização de Veículo</h2>
-
-                <h3>Em resgate</h3>
-
-                <p>Em casos de tentativa e execução de resgate, onde o individuo muda de um veículo para outro.
-                    O seguinte procedimento deve ser seguido</p>
-
-                <blockquote>
-                    <p><span class="bold">1° Resgate: </span>A primária deve solicitar via CP ou rádio, a
-                    presença de um GSA, para que este realize o procedimento de disparos nos pneus do
-                    veículo que realizou o resgate</p>
-
-                    <p><span class="bold">2° Resgate: </span>Caso venha ocorrer uma segunda mudança de veículo /
-                    um segundo resgate. O GSA estando presente no acompanhamento, terá a autorização de
-                    disparar no motor do veículo, para danificar o mesmo totalmente</p>
-                </blockquote>
-
-                <p>Caso não haja um GSA em QRV, as unidades do acompanhamento deverão chamar pela <span
-                    class="bold highlight-AC">SPEED</span> para que um <span class="bold">Piloto
-                    Oficial+</span> realize a manobra de P.I.T de 30 em 30 segundos (sem limite de
-                    velocidade)</p>
-                    
-                <p>Na falta do GSA e da Speed, as unidades do acompanhamento, deverão chamar por um <span
-                    class="bold">Sargento+</span> via CP e explicar a situação em que se encontra o
-                    acompanhamento em uma rádio a ser decidida pela primária do acompanhamento; na tentativa de
-                    obter a autorização para que o <span class="bold highlight-AC">P2 da primária</span> possa
-                    disparar nos pneus do individuo</p>
-
-                <h3>Atropelo a Civil / GTM</h3>
-
-                <p>Em situações onde o veículo acompanhado atropele civis e/ou GTM's, a primária deverá tentar
-                    realizar a verbalização com o veículo acompanhado para que este volte <span
-                    class="bold">OBRIGATORIAMENTE</span> ao local do acidente para prestar apoio aos
-                    envolvidos no acidente</p>
-
-                <p>Caso o mesmo se negue a cooperar com o contato ou a ir ao local prestar apoio, as unidades
-                    deverão informar na rádio a negação de contato do mesmo, para que então o GSA ou a
-                    Speed realizem os mesmos procedimentos utilizados no <span class="bold">"1°
-                    Resgate"</span></p>
-
-                <blockquote>
-                    <p><span class="bold">GSA: </span>Disparos nos pneus</p>
-                    <p><span class="bold">Speed: </span>Manobra P.I.T</p>
-                </blockquote>
-
-                <p>Na falta do GSA e da Speed, o contato para a autorização de disparos no pneu, deve ser
-                    feito a um <span class="bold">Sargento+</span></p>
-
-            </div>
-            <hr>
-            <div id="topic7">
-                <h2>Manobra P.I.T</h2>
-
-                <p>Considera-se <span class="bold">P.I.T</span>, uma manobra exclusiva do grupamento <span
-                    class="bold highlight-AC">Speed</span>, podendo ser executada somente por <span
-                    class="bold highlight-AC">Pilotos Oficiais+</span> e, <span class="bold">abaixo de 200
-                    Km/h</span>; onde a intenção de sua realização, é fazer com que um veículo perca
-                    totalmente o controle, sem fazer com que todos os envolvidos no acompanhamento, tenham
-                    ferimentos graves</p>
-
-                <p>A manobra é executada totalmente "no vento" e consiste em um único movimento - Forçar a
-                    frente da viatura na parte traseira (esquerda ou direita), do veículo acompanhado</p>
-            </div>
-            <div id="topic8">
-                <h2>Situações de Código 3 e Código 5</h2>
-
-                <h3>Código 3</h3>
-
-                <p>Em situações de Código 3, sabe-se que não há limite de unidades no mesmo <span
-                    class="bold">porém</span>, uma ordem de acompanhamento deve existir, para que a situação
-                    venha a ficar controlada o mais breve possível</p>
-
-                <p><span class="bold">Está ordem é definida por: </span></p>
-
-                <blockquote>
-                    <p><span class="bold highlight-AC">Para veículos 4 rodas: </span><br>SPEED ➡️ GTM ➡️
-                        CORE ➡️ RPM</p>
-
-                    <p><span class="bold highlight-AC">Para motocicletas: </span><br>GTM ➡️ SPEED ➡️ CORE
-                        ➡️ RPM</p>
-                </blockquote>
-
-                <hr>
-                <h3>Código 5</h3>
-
-                <p>Situações de <span class="bold highlight-AC">Código 5</span>, são situações de alta
-                    intesidade porém, devemos ter atenção nas seguintes situações de <span
-                        class="bold highlight-AC">quando liberar</span> no <span
-                        class="bold highlight-AC">individuo</span> e no <span
-                        class="bold highlight-AC">pneu</span></p>
-
-                <p><span class="bold highlight-AC">No individuo: </span>Caso o individuo tente algo contra os
-                    oficiais ou viaturas oficiais</p>
-
-                <ol>
-                    <li>Empurrar viaturas na água</li>
-                    <li>Apontar armas de fogo</li>
-                    <li>Roubo de viatura</li>
-                </ol>
-                <hr>
-
-                <p><span class="bold highlight-AC">No pneu: </span>Caso o individuo realize alguma das ações
-                    citadas abaixo</p>
-                    
-                <ol>
-                    <li>Fique de "brincando de bate-bate" com as viaturas</li>
-                    <li>Roube uma viatura de americano (caminhão dos bombeiros, ambulâncias, viaturas policiais,
-                        etc...)</li>
-                    <li>Derrube a GTM intencionalmente</li>
-                    <li>Atropele um civil / oficial e não preste socorro (ignorando a verbalização - caso este
-                        não tenha "percebido")</li>
-                </ol>
-                
-                 <div class="boxImportant">
-                    <span class="toastImportant">Importante</span>
-                    <p>Em ambas as situações, as unidades não precisam igualar a classe da viatura a do veículo
-                        acompanhado, pode e deve-se <span class="bold">utilizar a classficação máxima</span> da
-                        viatura</p>
-                </div>
-            </div>
-            <hr>
-            <div id="topic9">
-                <h2>Saltos e Rampas</h2>
-
-                <p>Atualmente, <span class="bold">Saltos e Rampas</span> são permitidos na cidade! Dito isso,
-                    caso qualquer individuo realize qualquer salto ou rampa de um lugar para outro, nós do 1°
-                    BPM-AV mantemos o acompanhamento</p>
-
-                <div class="boxImportant">
-                    <span class="toastImportant">Importante</span>
-                    <p>Sempre que possível e necessário, na realização do salto, utilize da manobra 360º. Tal
-                        manobra consiste em puxar o freio de mão e virar a viatura para um lado da sua escolha;
-                        fazendo assim com que a viatura gire em seu próprio eixo, no ar e, caia com as 4 rodas
-                        para o chão</p>
-                </div>
-
             </div>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="button-container">
             <a href="/ab.html" class="ab">Curso de Abordagem</a>
             <a href="/index.html" class="pr">Manuais do 1°BPM-AV</a>
         </div>
     </footer>
-    </div>
     <script src="/src/scripts/board.js"></script>
 </body>
-
 </html>

@@ -98,11 +98,11 @@
 
 /* GERAL */
 .highlight-amarelo {
-    color: #c3b571;
+    color: var(--gitbookGoldYellow);
 }
 
 .highlight-vermelho {
-    color: #df3737;
+    color: var(--gitbookRed);
 }
 
 .highlight-azul {
@@ -111,4 +111,10 @@
 
 .highlight-verde {
     color: #22c55e;
+}
+
+.highlight-AC, 
+.highlight-AB,
+.highlight-CO {
+    font-weight: 700;
 }
