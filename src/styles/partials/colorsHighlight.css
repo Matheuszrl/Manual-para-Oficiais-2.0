@@ -1,3 +1,55 @@
+/* PRINCIPAL */
+#pagPrincipal h1, 
+#pagPrincipal .content h2, 
+#pagPrincipal h3,
+#pagPrincipal .highlight-pr {
+    color: var(--gitbookGoldYellow);
+}
+.pr:hover {
+    border: 1px solid var(--gitbookGoldYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* MANUAL DE CONDUTA */
+#pagManual .title h1, 
+#pagManual .content h2, 
+#pagManual h3,
+#pagManual h4,
+#pagManual .highlight-manual {
+    color: var(--gitbookBurnedYellow);
+}
+
+.mn:hover {
+    border: 1px solid var(--gitbookBurnedYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* PCD */
+#pagPCD .title h1, 
+#pagPCD .content h2, 
+#pagPCD h3,
+#pagPCD .highlight-TB {
+    color: var(--gitbookGreen2);
+}
+
+.pcd:hover {
+    border: 1px solid #08e900;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* INSTRUÇÃO AO TABLET */
+#pagTB .title h1, 
+#pagTB .content h2, 
+#pagTB h3,
+#pagTB .highlight-TB {
+    color: var(--gitbookPurple);
+}
+
+.tb:hover {
+    border: 1px solid #7622c5;
+    outline: 3px solid rgba(87, 0, 250, 0.5);
+}
+
 /* ACOMPANHAMENTO */
 #pagAC .title h1, 
 #pagAC .content h2, 
@@ -9,6 +61,12 @@
 .ac:hover {
     border: 1px solid var(--gitbookGoldYellow);
     outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* MANUAL DE QTH */
+.qth:hover {
+    border: 1px solid #fff;
+    outline: 3px solid rgba(218, 218, 218, 0.5)
 }
 
 /* ABORDAGEM */
@@ -36,46 +94,6 @@
 .co:hover {
     border: 1px solid #07cf00;
     outline: 3px solid rgba(0, 250, 83, 0.5);
-}
-
-/* INSTRUÇÃO AO TABLET */
-#pagTB .title h1, 
-#pagTB .content h2, 
-#pagTB h3,
-#pagTB .highlight-TB {
-    color: var(--gitbookPurple);
-}
-
-.co:hover {
-    border: 1px solid #07cf00;
-    outline: 3px solid rgba(0, 250, 83, 0.5);
-}
-
-/* PCD */
-#pagPCD .title h1, 
-#pagPCD .content h2, 
-#pagPCD h3,
-#pagPCD .highlight-TB {
-    color: var(--gitbookGreen2);
-}
-
-.co:hover {
-    border: 1px solid #08e900;
-    outline: 3px solid rgba(0, 250, 83, 0.5);
-}
-
-/* MANUAL DE CONDUTA */
-#pagManual .title h1, 
-#pagManual .content h2, 
-#pagManual h3,
-#pagManual h4,
-#pagManual .highlight-manual {
-    color: var(--gitbookBurnedYellow);
-}
-
-.co:hover {
-    border: 1px solid var(--gitbookBurnedYellow);
-    outline: 3px solid rgba(250, 212, 0, 0.5)
 }
 
 /* GERAL */
