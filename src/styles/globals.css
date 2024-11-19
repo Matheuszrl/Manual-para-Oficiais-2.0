@@ -633,9 +633,4 @@ blockquote {
     .mobile-menu-btn {
         display: block;
     }
-
-    #container {
-        margin-left: 0;
-        padding-top: 60px;
-    }
 }
