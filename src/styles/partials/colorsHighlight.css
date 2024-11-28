@@ -1,0 +1,120 @@
+/* PRINCIPAL */
+#pagPrincipal h1, 
+#pagPrincipal .content h2, 
+#pagPrincipal h3,
+#pagPrincipal .highlight-pr {
+    color: var(--gitbookGoldYellow);
+}
+.pr:hover {
+    border: 1px solid var(--gitbookGoldYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* MANUAL DE CONDUTA */
+#pagManual .title h1, 
+#pagManual .content h2, 
+#pagManual h3,
+#pagManual h4,
+#pagManual .highlight-manual {
+    color: var(--gitbookBurnedYellow);
+}
+
+.mn:hover {
+    border: 1px solid var(--gitbookBurnedYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* PCD */
+#pagPCD .title h1, 
+#pagPCD .content h2, 
+#pagPCD h3,
+#pagPCD .highlight-TB {
+    color: var(--gitbookGreen2);
+}
+
+.pcd:hover {
+    border: 1px solid #08e900;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* INSTRUÇÃO AO TABLET */
+#pagTB .title h1, 
+#pagTB .content h2, 
+#pagTB h3,
+#pagTB .highlight-TB {
+    color: var(--gitbookPurple);
+}
+
+.tb:hover {
+    border: 1px solid #7622c5;
+    outline: 3px solid rgba(87, 0, 250, 0.5);
+}
+
+/* ACOMPANHAMENTO */
+#pagAC .title h1, 
+#pagAC .content h2, 
+#pagAC h3,
+#pagAC .highlight-AC {
+    color: var(--gitbookGoldYellow);
+}
+
+.ac:hover {
+    border: 1px solid var(--gitbookGoldYellow);
+    outline: 3px solid rgba(250, 212, 0, 0.5)
+}
+
+/* MANUAL DE QTH */
+.qth:hover {
+    border: 1px solid #fff;
+    outline: 3px solid rgba(218, 218, 218, 0.5)
+}
+
+/* ABORDAGEM */
+#pagAB .title h1, 
+#pagAB .content h2, 
+#pagAB h3,
+#pagAB h4,
+#pagAB .highlight-AB {
+    color: var(--gitbookBlue);
+}
+
+.ab:hover {
+    border: 1px solid #008afc;
+    outline: 3px solid rgba(0, 137, 250, 0.5);
+}
+
+/* COMUNICAÇÃO OPERACIONAL */
+#pagCO .title h1, 
+#pagCO .content h2, 
+#pagCO h3,
+#pagCO .highlight-CO {
+    color: var(--gitbookGreen);
+}
+
+.co:hover {
+    border: 1px solid #07cf00;
+    outline: 3px solid rgba(0, 250, 83, 0.5);
+}
+
+/* GERAL */
+.highlight-amarelo {
+    color: var(--gitbookGoldYellow);
+}
+
+.highlight-vermelho {
+    color: var(--gitbookRed);
+}
+
+.highlight-azul {
+    color: #3b82f6;
+}
+
+.highlight-verde {
+    color: #22c55e;
+}
+
+.highlight-AC, 
+.highlight-AB,
+.highlight-CO {
+    font-weight: 700;
+}

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/logo-cursos.png">
+    <title>Instrução ao Tablet | BPM-AV</title>
+
+    <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <button id="mobileMenuBtn" class="mobile-menu-btn ">
+        <i class="fas fa-bars"></i>
+    </button>
+    <!--<nav id="sidebar" class="sidebar">
+        <button id="toggleBtn" class="toggle-btn">
+            <span>
+                <a href="/index.html" class="linkClean">
+                    <div class="imageInLine">
+                        <img src="/src/images/icons/BPM.png" width="20" alt="BPM">
+                    </div>1ºBPM-AV - BEM VINDO
+                </a>
+            </span>
+            <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+            </svg>
+        </button>
+        <ul id="menu" class="menu show">
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon">🗂️</span>
+                    Documentos
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu show">
+                    <li><a href="/manual.html"><span class="submenu-icon">📚</span>Manual de Conduta</a></li>
+                    <li><a href="/pcd.html"><span class="submenu-icon">👨‍🦽</span>PCD (Pessoa com Deficiência)</a></li>
+                    <li><a href="/tablet.html"><span class="submenu-icon">📱</span>Instrução ao Tablet</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon">🎓</span>
+                    Cursos
+                    <svg class="chevron rotate" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu">
+                    <li><a href="/co.html"><span class="submenu-icon">🗣️</span>Curso de Comunicação</a></li>
+                    <li><a href="/QTH.html"><span class="submenu-icon">🗺️</span>Manual de QTH</a></li>
+                    <li><a href="/ab.html"><span class="submenu-icon">🚓</span>Curso de Abordagem</a></li>
+                    <li><a href="/ac.html"><span class="submenu-icon">⚡</span>Curso de Acompanhamento</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>-->
+    <nav id="sidebar" class="sidebar">
+        <button id="toggleBtn" class="toggle-btn">
+            <span>
+                <a href="/index.html" class="linkClean">
+                    <div class="imageInLine">
+                        <img src="/src/images/icons/BPM.png" width="20" alt="BPM">
+                    </div>1ºBPM-AV - BEM VINDO
+                </a>
+            </span>
+            <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+            </svg>
+        </button>
+        <ul id="menu" class="menu show">
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon"><img src="/src/images/icons/manuais.png" width="18" alt="MAN"></span>
+                    Documentos
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu show">
+                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
+                    </span>Manual de Conduta</a></li>
+                    <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
+                    </span>PCD (Pessoa com Deficiência)</a></li>
+                    <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
+                        </span>Instrução ao Tablet</a>
+                    </li>
+                    <li><a href="/calculator.html"><span class="submenu-icon"><img src="/src/images/icons/algema.png" width="18" alt="TAB">
+                        </span>Calculadora Penal</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon"><img src="/src/images/icons/logo-cursos.png" width="18" alt="CUR"></span>
+                    Cursos
+                    <svg class="chevron rotate" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu">
+                    <li><a href="/co.html"><span class="submenu-icon"><img src="/src/images/icons/radio.png" width="11" alt="AB">
+                    </span>Curso de Comunicação</a></li>
+                    <li><a href="/QTH.html"><span class="submenu-icon"><img src="/src/images/icons/mapa.png" width="18" alt="QTH">
+                    </span>Manual de QTH</a></li>
+                    <li><a href="/ab.html"><span class="submenu-icon"><img src="/src/images/icons/sirene.gif" width="18" alt="AB">
+                    </span>Curso de Abordagem</a></li>
+                    <li><a href="/ac.html"><span class="submenu-icon"><img src="/src/images/icons/raio.gif" width="18" alt="TAB"></span>Curso de Acompanhamento</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="/src/images/TB/header.png" alt="Imagem do header">
+        
+    </header>
+    <main>
+        <div id="container">
+            <div id="pagTB">
+                <div class="title">
+                    <h1>Instrução ao Tablet</h1>
+                    <p class="description">O Tablet da Polícia é muito intuitivo e fácil de utilizar, porém esse guia serve para melhor explicação do mesmo e eventuais retiradas 
+                        de dúvidas.</p>
+
+                </div>
+                <div class="content">
+                    <div id="topic1">
+                        <h2>Introdução ao Tablet</h2>
+                        <p>Para acessarmos o tablet, é necessário que compremos o mesmo no nosso arsenal, ao utilizar o item será aberto a seguinte tela:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-inicio.png" alt="Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)</h5></center>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <p>Ao entrar em serviço, será disponibilizada diversas abas, como aba para criação de B.O, consulta de indivíduos, código penal e outros.</p>
+                        <p>Para podermos abrir um B.O (Boletim de Ocorrência), iremos acessar <span class="highlight-azul">sua devida aba</span> e selecionar o 
+                            <span class="highlight-TB"><b>botão "Adicionar"</b></span>.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-b.o.png" alt="Tela que irá aparecer após selecionar a aba Ocorrências">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela que irá aparecer após selecionar a aba "Ocorrências"</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Para criar um novo boletim basta clicar no botão <span class="highlight-TB"><b>"Adicionar"</b></span>, e ele irá te encaminhar para a página de 
+                            criação de boletins de ocorrência, conforme a imagem abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-b.o-aberto.png" alt="Tela que irá aparecer após clicar no botão Selecionar">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela que irá aparecer após clicar no botão "Selecionar"</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab active" tab-group="preenchimento" data-tab="requerente" >Requerente</button>
+                                <button class="tab" tab-group="preenchimento" data-tab="policiais">Policiais</button>
+                                <button class="tab" tab-group="preenchimento" data-tab="envolvidos">Envolvidos</button>
+                                <button class="tab" tab-group="preenchimento" data-tab="descricao">Descrição</button>
+                            </div>
+                            <div class="boardContent">
+                                <div id="requerente" class="tab-content active" tab-group="preenchimento">
+                                    <p>Nesse espaço colocaremos o nome da pessoa envolvida na QRU.</p><br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="highlight-vermelho"><b>Obs: </b></span>caso seja uma QRU com vários indivíduos envolvidos, dê preferência por colocar como 
+                                        requerente o nome da pessoa que é a dona ou que está em posse da chave do veículo que será apreendido.</p>
+                                </div>
+                                <div id="policiais" class="tab-content" tab-group="preenchimento">
+                                    <p>Deverá ser acrescentado todos os oficiais que estavam presentes na QRU.</p>
+                                </div>
+                                <div id="envolvidos" class="tab-content" tab-group="preenchimento">
+                                    <p>Deverá ser acrescentado todos os indivíduos que estejam envolvidos na QRU.</p>
+                                </div>
+                                <div id="descricao" class="tab-content" tab-group="preenchimento">
+                                    <p>Deverá ser escrito com o máximo de detalhes o que aconteceu durante a ocorrência.</p><br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="highlight-vermelho"><b>Obs: </b></span> assim que o B.O for criado, já tera uma base de B.O para ser utilizada, basta preencher as
+                                        informações de maneira adequada.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p>Após todas as informações serem preenchidas basta confirmar que o Boletim de Ocorrência será criado.</p>
+
+                        <p><b>Exemplo</b> de como o B.O ficará após todas as informações serem preenchidas de acordo com os modelos disponibilizados acima:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-b.o-aberto-preenchido.png" alt="Exemplo de como o seu B.O irá ficar após preenchido">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Exemplo de como o seu B.O irá ficar após preenchido</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div id="topic2">
+                        <h2>Prisão de Indivíduos</h2>
+
+                        <p>Para podermos efetuar a prisão de um indivíduo, na aba de "Ocorrências", iremos procurar o B.O que criamos e iremos clicar no ícone das 
+                            <span class="highlight-vermelho"><b>algemas</b></span> para podermos ir para a aba de prisão conforme a imagem abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-nome-marca-algema.png" alt="Tela onde irá acessar um B.O aberto para realizar a prisão">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela onde irá acessar um B.O aberto para realizar a prisão</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Será aberta uma nova página para que possamos seguir com os procedimentos de prisão, informando quem será preso, um breve relato da QRU 
+                            e os crimes do Código Penal que foram cometidos pelo mesmo.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-prisão.png" alt="Página do B.O aberto">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página do B.O aberto</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-container">
+                            <div class="tabs">
+                                <button class="tab active" tab-group="preenchimentoprisao" data-tab="acusado" >Acusado</button>
+                                <button class="tab" tab-group="preenchimentoprisao" data-tab="descricaoprisao">Descrição</button>
+                                <button class="tab" tab-group="preenchimentoprisao" data-tab="codigopenal">Código Penal</button>
+                                <button class="tab" tab-group="preenchimentoprisao" data-tab="agravantes">Agravantes</button>
+                                <button class="tab" tab-group="preenchimentoprisao" data-tab="atenuantes">Atenuantes</button>
+                            </div>
+                            <div class="boardContent">
+                                <div id="acusado" class="tab-content active" tab-group="preenchimentoprisao">
+                                    <p>Deverá constar o indivíduo que participou da QRU e que foi anexado ao B.O anteriormente.</p>
+                                </div>
+                                <div id="descricaoprisao" class="tab-content" tab-group="preenchimentoprisao">
+                                    <p>Deverá ser feito um breve relato do ocorrido, nada extenso, a situação completa já foi descrita na Descrição geral do B.O, sendo assim, 
+                                        pode escrever algo bem breve nesse espaço.</p>
+                                </div>
+                                <div id="codigopenal" class="tab-content" tab-group="preenchimentoprisao">
+                                    <p>Deverá ser acrescido todos os crimes que foram cometidos, vale lembrar que dependendo do crime, deverá ser realizado o calculo da pena 
+                                        de acordo com o que o individuo possuía, exemplos:</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/lockpick.png" width="25" alt="Lockpick" />
+                                    </div><b>Posse de Ferramentas Ilícitas:</b> A cada 1 ferramenta ilícita, adiciona-se 10 meses. Exemplo: 4 Lockpicks equivale a 40 meses. 
+                                        (4x10 + mínima de 10).</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/entorpecente.png" width="25" alt="Entorpecente" />
+                                    </div><b>Tráfico de Entorpecentes:</b> A cada duas drogas, adiciona-se um mês. (Pega o total e divide por 2) Exemplo: 100 irá equivaler a 50 meses. 
+                                        (100÷2=50 + mínima de 15).</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/municao.png" width="25" alt="Munição" />
+                                    </div><b>Posse de Munição:</b> A cada 20 munições, adiciona-se 5 meses. (Pega o total e divide por 4) Exemplo: 200 irá equivaler a 50 meses. (200÷4=50 + 
+                                        mínima de 5).</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/pe-de-cabra.png" width="25" alt="Pé de Cabra" />
+                                    </div><b>Receptação de Produtos Roubados:</b> A cada 1 produto, adiciona-se 2 meses. (Pega o total e multiplica por 2) Exemplo: 20 irá equivaler a 40 meses. 
+                                        (20x2=40 + mínima de 10).</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/dinheiro.png" width="25" alt="Dinheiro Sujo" />
+                                    </div><b>Dinheiro Ilícito:</b> A cada R$1.000, adiciona-se 1 mês. Exemplo: R$10.000 irá equivaler a 10 meses. (10x1=10 + mínima 10).</p>
+                                </div>
+                                <div id="agravantes" class="tab-content" tab-group="preenchimentoprisao">
+                                    <p>Deverá ser utilizado quando tivermos algo que agrave os crimes cometidos pelo individuo, como por exemplo, um homicídio doloso qualificado 
+                                        contra oficiais, que possui um agravante de 20%.</p>
+                                </div>
+                                <div id="atenuantes" class="tab-content" tab-group="preenchimentoprisao">
+                                    <p>Deverá ser usado quando tivermos fatores que diminuem a pena do indivíduo acusado, como exemplo, o mesmo ser réu primário.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <blockquote>
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/cifrao.png" width="15" alt="Liberação" />
+                            </div><span class="highlight-verde"><span class="code"><b>Liberação:</b></span></span></p>
+                            <p>Vale lembrar que nem todos os crimes são afiançáveis, sendo assim, caso vá realizar a prisão de algum indivíduos e contenha crimes como Homicídio, 
+                                Sequestro, Desacato e afins, deverá informar ao cidadão que está sendo preso, que por mais que ele pague a fiança, será encaminhado por tal crime 
+                                juntamente com a quantidade de tempo que ficará preso</p>
+                        </blockquote>
+
+                        <p>Ao fim do processo prisional, o página deverá estar com ao menos as abas <b>"Acusado"</b>, <b>"Descrição da Prisão"</b> e <b>"Código Penal"</b> preenchidas 
+                            (exemplo com foto abaixo) para que o indivíduo possa ser enviado com sucesso.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-prisão-preenchido.png" alt="Página da Prisão de Indivíduos preenchida">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página da Prisão de Indivíduos preenchida</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Após todas as informações serem preenchidas, basta clicar no botão <span class="highlight-verde"><b>"Confirmar"</b></span> e o indivíduo será encaminhado 
+                            para o presidio</p>
+                        
+                        <blockquote>
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
+                            </div><span class="highlight-TB"><b><i>"Preciso informar algo ao cidadão antes de confirmar a prisão?"</i></b></span><br>
+                                A resposta é <b>sim</b>, você deverá passar a quantidade de tempo de prisão juntamente com o valor da multa e alguns informes, como abaixo:</p>
+
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
+                            </div><i>"Cidadão, a sua pena deu um total de 65 meses de prisão e R$4.800,00 em multas pelos crimes de Corrida Ilegal e Posse de Dinheiro Ilícito e caso tenha
+                                interesse, a fiança dará um valor de R$16.000,00, o senhor possui interesse ou alguma dúvida?"</i></p>
+
+                            <p><span class="highlight-TB"><span class="code"><b>Caso seja preso:</b></span></span><br>
+                                <div class="imageInLine">
+                                    <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
+                                </div><i>"Estarei chamando o carcereiro para lhe encaminhar, quando ele chegar, estará te dando uma peça de roupas laranjas para o senhor poder realizar os 
+                                    serviços e não sujar a sua roupa atual, caso sinta fome ou sede, receberá um biscoito Cream Cracker e uma Água, caso necessite de tratamento, possui 
+                                    uma ala no presidio para isso, tenha uma ótima estadia e espero não velo novamente."</i></p>
+
+                            <p><span class="highlight-TB"><span class="code"><b>Caso opte por fiança:</b></span></span><br>
+                                <div class="imageInLine">
+                                    <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
+                                </div><i>"Estarei chamando o carcereiro, quando ele chegar você irá realizar o pagamento da fiança para o mesmo e ele irá lhe deixar na frente na DP, espero 
+                                    não velo novamente."</i></p>
+                        </blockquote>
+                        <h3>Apreensão de Itens</h3>
+                        <p>Dentro do 1°BPM-AV, além da legalidade de revista, temos alguns itens que podem ou não ser apreendidos, visando isso, deixarem anexado
+                            uma tabela informando o que pode ou não ser apreendido e suas devidas observações:</p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/itens-apreendidos.png" alt="Itens que podem ou não ser apreendidos">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Itens que podem ou não ser apreendidos</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="topic3">
+                        <h2>Apreensão de Veículos</h2>
+
+                        <p>Para podermos efetuar a apreensão de um veículo, na aba "Ocorrências", iremos procurar o B.O que criamos e iremos clicar no ícone do 
+                            <span class="highlight-azul"><b>carro</b></span> para podermos ir para a aba de apreensão do veículo conforme a imagem abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizar a apreensão">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela onde irá acessar um B.O aberto para realizar a apreensão</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Após clicarmos no botão com desenho do carro, será aberta uma nova página para que possamos seguir com os procedimentos de apreensão veicular, como na 
+                            foto abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-apreensão-veículo.png" alt="Página que irá aparecer para que possa preencher para apreensão veicular">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página que irá aparecer para que possa preencher para apreensão veicular</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Deverá ser colocado a placa do veículo no campo <b>"Veículos"</b> onde irá aparecer uma "mini aba" para que possa selecionar o veículo que está a procura, o mesmo 
+                            deverá ser selecionado e a "caixinha" com descrição <span class="highlight-vermelho"><b>"Apreendido"</b></span> deverá ser marcada, como nos exemplos abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>"Circulado" em branco é como irá aparecer após inserir o emplacamento</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/apreendido.png" alt="Após ser selecionado o veículo e marcada a caixinha para apreender">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Após ser selecionado o veículo e marcada a "caixinha" para apreender</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Após os procedimentos acima serem realizados, basta clicar no botão <span class="highlight-verde"><b>"Confirmar"</b></span> e o veículo será apreendido 
+                            com sucesso.</p>
+                    </div>
+                    <hr>
+                    <div id="topic4">
+                        <h2>Registrar Veículo como Roubado</h2>
+
+                        <p>Para podermos registrar um veículo como roubado, deveremos antes de tudo realizar um B.O, após o mesmo ser realizado, na aba "Ocorrências", iremos procurar 
+                            o B.O que criamos e iremos clicar no ícone do <span class="highlight-azul"><b>carro</b></span> para podermos ir para aba adequada, conforme a imagem abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Assim como em <span class="highlight-TB"><b>"Apreensão de Veículos"</b></span>, após clicarmos no botão do desenho do carro, teremos uma nova página que 
+                            será idêntica a que foi apresentada no B.O de Apreensão e então poderemos seguir com os procedimentos para se registrar o veículo como roubado.</p>
+
+                        <p>A placa do veículo que será registrado deverá ser colocada no campo "Veículos" onde irá aparecer uma "mini aba" para que possa selecionar o veículo que 
+                            está a procura, o mesmo deverá ser selecionado e a "caixinha" com descrição <span class="highlight-vermelho"><b>"Roubado"</b></span> deverá ser marcada, 
+                            como nos exemplos abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>"Circulado" em branco é como irá aparecer após inserir o emplacamento</h5></center>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/roubado.png" alt="Após ser selecionado o veículo e marcada a caixinha para registrar como roubado">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Após ser selecionado o veículo e marcada a "caixinha" para registrar como roubado</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Após os procedimentos acima serem realizados, basta clicar no botão <span class="highlight-verde"><b>"Confirmar"</b></span> e o veículo será apreendido 
+                            com sucesso.</p>
+                    </div>
+                    <hr>
+                    <div id="topic5">
+                        <h2>Liberação de Veículos</h2>
+
+                        <p>Para realizar a liberação de um veículo apreendido, basta procurarmos pelo ID da pessoa na aba de “Consultar ID” e depois iremos na aba de veículos</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/veiculo-individuo.png" alt="Como irá aparecer ao acessar a aba Veículos no perfil do cidadão">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Como irá aparecer ao acessar a aba "Veículos" no perfil do cidadão</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Basta clicar no cadeado verde e o veículo será liberado.</p>
+
+                        <p><div class="imageInLine">
+                            <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                        </div><span class="bold highlight-vermelho"><b>Obs: </b></span>a liberação de veículos deve ser realizada em frente ao balcão da recepção conforme a 
+                            foto a baixo.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/computador-liberação.png" alt="Local da recepção onde é realizada a liberação">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Local da recepção onde é realizada a liberação</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Vale lembrar que sempre deverá verificar se a vaga para liberação de veículos está livre ou não, a vaga é a primeira da esquerda, no estacionamento do 
+                            jardim da DP S.</p>
+                    </div>
+                    <hr>
+                    <div id="topic6">
+                        <h2>Consulta de Indivíduos e Veículos</h2>
+
+                        <p>Nosso tablet também traz algumas outras funcionalidades como o sistema de consulta de indivíduos e de veículos</p>
+
+                        <p>Na aba "Consultar Indivíduos" podemos procurar por uma pessoa em específico e teremos toda a sua ficha criminal, aparecerá conforme imagem abaixo:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/consulta-de-individuos.png" alt="Página para consultar dados dos cidadãos da cidade">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página para consultar dados dos cidadãos da cidade</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Ao selecionarmos um passaporte para realizar a consulta, a tela abaixo será mostrada:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/consulta-de-individuos-especifico.png" alt="Página da consulta de uma pessoa especifica">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página da consulta de uma pessoa especifica</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Ao clicar em "Veículos" podemos ver todos os veículos que essa pessoa possui, ao clicar em "Residências" consultamos todos os imóveis que está pessoa 
+                            possui em seu nome e ao clicar em "Débitos Pendentes", teremos o informe de todas as dividas dele, sejam elas multas, IPVA ou IPTU.</p>
+
+                        <p>Já na aba de "Consulta de Veículos" podemos visualizar os veículos adquiridos pelos cidadãos de nossa cidade.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/veiculos.png" alt="Página para consultar veículos dos cidadãos da cidade">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página para consultar veículos dos cidadãos da cidade</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Ao selecionar um veículo para realizar a consulta, a seguinte tela irá aparecer:</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/veiculos-especificos.png" alt="Página da consulta de um veículo especifico">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página da consulta de um veículo especifico</h5></center>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Nesta tela temos o visual de todas as informações do veículo e do seu dono, se o veículo possui multa, está roubado ou se está apreendido.</p>
+
+                        <p>Essas duas abas geram um acesso muito mais fácil e rápido das informações dos moradores de nossa cidade.</p>
+                    </div>
+                    <hr>
+                    <div id="topic7">
+                        <h2>Código Penal</h2>
+
+                        <p>Na aba de Código Penal do nosso tablet poderá ser consultado todas as descrições dos crimes que constam em nosso código penal e também quais são 
+                            os agravantes e atenuantes de penas que possuímos.</p>
+
+                        <p>Vale lembrar que nas descrições dos crimes também teremos descrito sobre o calculo que deverá ser realizado para chegar ao tempo adequado que o 
+                            cidadão será encaminhado.</p>
+                            
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/TB/código-penal.png" alt="Página para se consultar os códigos penais, agravantes e atenuantes">
+                                </div>
+                                <div class="image-description">
+                                    <center><h5>Página para se consultar os códigos penais, agravantes e atenuantes</h5></center>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+        <div id="modalDescription" class="modal-description"></div>
+    </div>
+    <footer>
+        <div class="button-container">
+            <a href="/pcd.html" class="pcd">PCD (Pessoa com Deficiência)</a>
+            <a href="/co.html" class="co">Curso de Comunicação Operacional</a>
+        </div>
+    </footer>
+    <script src="/src/scripts/board.js"></script>
+</body>
+
+</html>

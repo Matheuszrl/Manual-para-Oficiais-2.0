@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
+    <title>Calculadora Penal | BPM-AV</title>
+
+    <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <button id="mobileMenuBtn" class="mobile-menu-btn ">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav id="sidebar" class="sidebar">
+        <button id="toggleBtn" class="toggle-btn">
+            <span>
+                <a href="/index.html" class="linkClean">
+                    <div class="imageInLine">
+                        <img src="/src/images/icons/BPM.png" width="20" alt="BPM">
+                    </div>1ºBPM-AV - BEM VINDO
+                </a>
+            </span>
+            <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="none" d="M0 0h24v24H0z"/>
+                <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+            </svg>
+        </button>
+        <!--<ul id="menu" class="menu">-->
+        <ul id="menu" class="menu show">
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon"><img src="/src/images/icons/manuais.png" width="18" alt="MAN"></span>
+                    Documentos
+                    <svg class="chevron" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu show">
+                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
+                    </span>Manual de Conduta</a></li>
+                    <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
+                    </span>PCD (Pessoa com Deficiência)</a></li>
+                    <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
+                        </span>Instrução ao Tablet</a>
+                    </li>
+                    <li><a href="/calculator.html"><span class="submenu-icon"><img src="/src/images/icons/algema.png" width="18" alt="TAB">
+                        </span>Calculadora Penal</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="submenu-btn">
+                    <span class="menu-icon"><img src="/src/images/icons/logo-cursos.png" width="18" alt="CUR"></span>
+                    Cursos
+                    <svg class="chevron rotate" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"/>
+                        <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <ul class="submenu">
+                    <li><a href="/co.html"><span class="submenu-icon"><img src="/src/images/icons/radio.png" width="11" alt="AB">
+                    </span>Curso de Comunicação</a></li>
+                    <li><a href="/QTH.html"><span class="submenu-icon"><img src="/src/images/icons/mapa.png" width="18" alt="QTH">
+                    </span>Manual de QTH</a></li>
+                    <li><a href="/ab.html"><span class="submenu-icon"><img src="/src/images/icons/sirene.gif" width="18" alt="AB">
+                    </span>Curso de Abordagem</a></li>
+                    <li><a href="/ac.html"><span class="submenu-icon"><img src="/src/images/icons/raio.gif" width="18" alt="TAB"></span>Curso de Acompanhamento</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="/src/images/header.png" alt="Imagem do header">
+    </header>
+    <main>
+        <div id="container">
+            <div id="pagCAL">
+                <div class="title">
+                    <h1>CALCULADORA PENAL</h1>
+                    <p class="description">Este material é destinado para apoio aos oficiais presente no 1°BPM-AV, tem como objetivo auxiliar e facilitar o procedimento prisional,
+                        sendo assim, aqueles que possuem dificuldade ou querem agilizar o calculo total da pena, poderá utilizar a calculadora que disponibilizamos.
+                    </p>
+                </div>
+                <div class="content">
+                    <div id="topic1">            
+                        <div class="calculator-card">
+                            <div class="header-cal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 3 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calculator-icon">
+                                    <rect width="16" height="20" x="4" y="2" rx="2"></rect>
+                                    <line x1="8" x2="16" y1="6" y2="6"></line>
+                                    <line x1="16" x2="16" y1="14" y2="18"></line>
+                                    <path d="M16 10h.01"></path>
+                                    <path d="M12 10h.01"></path>
+                                    <path d="M8 10h.01"></path>
+                                    <path d="M12 14h.01"></path>
+                                    <path d="M8 14h.01"></path>
+                                    <path d="M12 18h.01"></path>
+                                    <path d="M8 18h.01"></path>
+                                </svg>
+                                <h1>Calculadora Penal</h1>
+                            </div>
+                            
+                            <div class="info-box">
+                                <h4>Mínimas Fixas do Tablet:</h4>
+                                <ul>
+                                    <li>Posse de Ferramentas Ilícitas: 10 meses</li>
+                                    <li>Tráfico de Entorpecentes: 15 meses</li>
+                                    <li>Posse de Munição Ilegal: 5 meses</li>
+                                    <li>Posse de Dinheiro Ilícito: 10 meses</li>
+                                    <li>Multas Pendentes: 10 meses</li>
+                                </ul>
+                            </div>
+                            <form id="penaltyForm" class="input-form">
+                                <div class="input-group">
+                                    <label for="illegalTools">Posse de Ferramentas Ilícitas</label>
+                                    <input type="number" id="illegalTools" min="0" value="0">
+                                </div>
+            
+                                <div class="input-group">
+                                    <label for="drugTrafficking">Tráfico de Entorpecentes</label>
+                                    <input type="number" id="drugTrafficking" min="0" value="0">
+                                </div>
+            
+                                <div class="input-group">
+                                    <label for="illegalAmmunition">Posse de Munição Ilegal</label>
+                                    <input type="number" id="illegalAmmunition" min="0" value="0">
+                                </div>
+            
+                                <div class="input-group">
+                                    <label for="illegalMoney">Posse de Dinheiro Ilícito</label>
+                                    <input type="number" id="illegalMoney" min="0" value="0">
+                                </div>
+            
+                                <div class="input-group">
+                                    <label for="pendingFines">Multas Pendentes</label>
+                                    <input type="number" id="pendingFines" min="0" value="0">
+                                </div>
+            
+                                <div class="button-group">
+                                    <button type="submit" class="calculate-button">Calcular Pena</button>
+                                    <button type="button" id="resetButton" class="reset-button">Zerar</button>
+                                </div>
+                            </form>
+                        </div>
+            
+                        <div id="resultCard" class="result-card hidden">
+                            <h3>Resultado do Cálculo</h3>
+                            <p class="calculation-info">Pena = Mínima + Cálculo dos Itens</p>
+                            
+                            <div class="result-items">
+                                <div class="result-item">
+                                    <span>Ferramentas Ilícitas:</span>
+                                    <span id="illegalToolsResult">0 meses</span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Tráfico de Entorpecentes:</span>
+                                    <span id="drugTraffickingResult">0 meses</span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Munição Ilegal:</span>
+                                    <span id="illegalAmmunitionResult">0 meses</span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Dinheiro Ilícito:</span>
+                                    <span id="illegalMoneyResult">0 meses</span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Multas Pendentes:</span>
+                                    <span id="pendingFinesResult">0 meses</span>
+                                </div>
+                                
+                                <div class="total-result">
+                                    <span>Pena Total:</span>
+                                    <span id="totalPenalty">0 meses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="boxObs">
+                            <span class="toastObs">Observação</span>
+                            <p>O cálculo feito já é o valor <b>TOTAL</b> da pena, sendo assim, é a minima + valor adicional do crime, ou seja, no tablet deverá ser colocado 
+                                exatamente o valor informado pela calculadora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+        <div id="modalDescription" class="modal-description"></div>
+    </div>
+    <footer>
+        <div class="button-container">
+            <a href="/co.html" class="co">Curso de Comunicação Operacional</a>
+            <a href="/tablet.html" class="tb">Instrução ao Tablet</a>
+        </div>
+    </footer>
+    <script src="/src/scripts/calculadora/calculadora.js"></script>
+    <script src="/src/scripts/board.js"></script>
+</body>
+
+</html>
