@@ -131,75 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-/* document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('penaltyForm');
-    const resultCard = document.getElementById('resultCard');
-    const resetButton = document.getElementById('resetButton');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const values = {
-            illegalTools: Number(document.getElementById('illegalTools').value) || 0,
-            drugTrafficking: Number(document.getElementById('drugTrafficking').value) || 0,
-            illegalAmmunition: Number(document.getElementById('illegalAmmunition').value) || 0,
-            illegalMoney: Number(document.getElementById('illegalMoney').value) || 0,
-            pendingFines: Number(document.getElementById('pendingFines').value) || 0
-        };
-
-        const result = calculatePenalties(values);
-
-        // Update result elements
-        document.getElementById('illegalToolsResult').textContent = `${result.illegalToolsPenalty.toFixed(1)} meses`;
-        document.getElementById('drugTraffickingResult').textContent = `${result.drugTraffickingPenalty.toFixed(1)} meses`;
-        document.getElementById('illegalAmmunitionResult').textContent = `${result.illegalAmmunitionPenalty.toFixed(1)} meses`;
-        document.getElementById('illegalMoneyResult').textContent = `${result.illegalMoneyPenalty.toFixed(1)} meses`;
-        document.getElementById('pendingFinesResult').textContent = `${result.pendingFinesPenalty.toFixed(1)} meses`;
-        document.getElementById('totalPenalty').textContent = `${result.totalPenalty.toFixed(1)} meses`;
-
-        // Show result card
-        resultCard.classList.remove('hidden');
-    });
-
-    resetButton.addEventListener('click', () => {
-        // Reset all input fields
-        form.reset();
-
-        // Hide result card
-        resultCard.classList.add('hidden');
-
-        // Reset all result elements
-        const resultElements = document.querySelectorAll('.result-item span:last-child, .total-result span:last-child');
-        resultElements.forEach(element => {
-            element.textContent = '0 meses';
-        });
-    });
-
-    // Input validation
-    const inputs = form.querySelectorAll('input[type="number"]');
-    inputs.forEach(input => {
-        input.addEventListener('input', (e) => {
-            if (e.target.value < 0) {
-                e.target.value = 0;
-            }
-        });
-
-        // Clear default value on focus
-        input.addEventListener('focus', (e) => {
-            if (e.target.value === '0') {
-                e.target.value = '';
-            }
-        });
-
-        // Reset to 0 if empty on blur
-        input.addEventListener('blur', (e) => {
-            if (e.target.value === '') {
-                e.target.value = '0';
-            }
-        });
-    });
-}); */
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('penaltyForm');
     const resultCard = document.getElementById('resultCard');
@@ -209,8 +140,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const minimumPenalties = {
         illegalTools: 10,
         drugTrafficking: 15,
-        illegalAmmunition: 5,
+        illegalAmmunition: 15,
         illegalMoney: 10,
+        stolenProducts: 10,
         pendingFines: 10
     };
 
@@ -222,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             drugTrafficking: Number(document.getElementById('drugTrafficking').value) || 0,
             illegalAmmunition: Number(document.getElementById('illegalAmmunition').value) || 0,
             illegalMoney: Number(document.getElementById('illegalMoney').value) || 0,
+            stolenProducts: Number(document.getElementById('stolenProducts').value) || 0,
             pendingFines: Number(document.getElementById('pendingFines').value) || 0
         };
 

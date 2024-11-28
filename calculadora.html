@@ -77,7 +77,7 @@
         </ul>
     </nav>
     <header>
-        <img src="/src/images/header.png" alt="Imagem do header">
+        <img src="/src/images/header-cal.png" alt="Imagem do header">
     </header>
     <main>
         <div id="container">
@@ -112,8 +112,9 @@
                                 <ul>
                                     <li>Posse de Ferramentas Ilícitas: 10 meses</li>
                                     <li>Tráfico de Entorpecentes: 15 meses</li>
-                                    <li>Posse de Munição Ilegal: 5 meses</li>
+                                    <li>Posse de Munição Ilegal: 15 meses</li>
                                     <li>Posse de Dinheiro Ilícito: 10 meses</li>
+                                    <li>Receptação de Produtos Roubados: 10 meses</li>
                                     <li>Multas Pendentes: 10 meses</li>
                                 </ul>
                             </div>
@@ -136,6 +137,11 @@
                                 <div class="input-group">
                                     <label for="illegalMoney">Posse de Dinheiro Ilícito</label>
                                     <input type="number" id="illegalMoney" min="0" value="0">
+                                </div>
+            
+                                <div class="input-group">
+                                    <label for="stolenProducts">Receptação de Produtos Roubados</label>
+                                    <input type="number" id="stolenProducts" min="0" value="0">
                                 </div>
             
                                 <div class="input-group">
@@ -173,6 +179,11 @@
                                 <div class="result-item">
                                     <span>Dinheiro Ilícito:</span>
                                     <span id="illegalMoneyResult">0 meses</span>
+                                </div>
+                                
+                                <div class="result-item">
+                                    <span>Receptação de Produtos Roubados:</span>
+                                    <span id="stolenProducts">0 meses</span>
                                 </div>
                                 
                                 <div class="result-item">

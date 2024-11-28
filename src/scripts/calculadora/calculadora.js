@@ -1,27 +1,3 @@
-/* function calculatePenalties(values) {
-    const illegalToolsPenalty = values.illegalTools * 10;
-    const drugTraffickingPenalty = values.drugTrafficking / 2;
-    const illegalAmmunitionPenalty = (values.illegalAmmunition / 20) * 5;
-    const illegalMoneyPenalty = values.illegalMoney / 1000;
-    const pendingFinesPenalty = values.pendingFines / 1000;
-
-    const totalPenalty = 
-        illegalToolsPenalty +
-        drugTraffickingPenalty +
-        illegalAmmunitionPenalty +
-        illegalMoneyPenalty +
-        pendingFinesPenalty;
-
-    return {
-        illegalToolsPenalty,
-        drugTraffickingPenalty,
-        illegalAmmunitionPenalty,
-        illegalMoneyPenalty,
-        pendingFinesPenalty,
-        totalPenalty
-    };
-} */
-
 function calculatePenalties(values, minimumPenalties) {
     const penalties = {
         illegalTools: {
@@ -44,6 +20,11 @@ function calculatePenalties(values, minimumPenalties) {
             additional: values.illegalMoney / 1000,
             total: minimumPenalties.illegalMoney + values.illegalMoney / 1000
         },
+        stolenProducts: {
+            minimum: minimumPenalties.stolenProducts,
+            additional: values.stolenProducts / 2,
+            total: minimumPenalties.stolenProducts + values.stolenProducts / 2
+        },
         pendingFines: {
             minimum: minimumPenalties.pendingFines,
             additional: values.pendingFines / 1000,
@@ -60,6 +41,7 @@ function getPenaltyLabel(key) {
         drugTrafficking: 'Tráfico de Entorpecentes',
         illegalAmmunition: 'Posse de Munição Ilegal',
         illegalMoney: 'Posse de Dinheiro Ilícito',
+        stolenProducts: 'Receptação de Produtos Roubados',
         pendingFines: 'Multas Pendentes'
     };
     return labels[key] || key;
