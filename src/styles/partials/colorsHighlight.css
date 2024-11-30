@@ -113,6 +113,10 @@
     color: #22c55e;
 }
 
+.highlight-roxo {
+    color: var(--gitbookPurple);
+}
+
 .highlight-AC, 
 .highlight-AB,
 .highlight-CO {
