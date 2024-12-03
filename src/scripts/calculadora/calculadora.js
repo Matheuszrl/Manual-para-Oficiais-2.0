@@ -22,8 +22,8 @@ function calculatePenalties(values, minimumPenalties) {
         },
         stolenProducts: {
             minimum: minimumPenalties.stolenProducts,
-            additional: values.stolenProducts / 2,
-            total: minimumPenalties.stolenProducts + values.stolenProducts / 2
+            additional: values.stolenProducts * 2,
+            total: minimumPenalties.stolenProducts + values.stolenProducts * 2
         },
         pendingFines: {
             minimum: minimumPenalties.pendingFines,
