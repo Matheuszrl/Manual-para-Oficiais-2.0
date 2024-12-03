@@ -664,7 +664,7 @@ fique cortado em resolução baixa*/
     align-items: center;
     gap: 0.75rem;
     margin-bottom: 1rem;
-    color: var(--gray-900);
+    color: #ffffff;
 }
 
 .calculator-icon {
@@ -672,7 +672,8 @@ fique cortado em resolução baixa*/
 }
 
 .calculator-card, .result-card {
-    background-color: white;
+    background-color: #1e1e2f;
+    color: #ffffff;
     border-radius: 0.5rem;
     padding: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -690,7 +691,7 @@ fique cortado em resolução baixa*/
     display: block;
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--gray-700);
+    color: #ffffff;
     margin-bottom: 0.25rem;
 }
 
@@ -701,6 +702,8 @@ fique cortado em resolução baixa*/
     border-radius: 0.375rem;
     font-size: 1rem;
     transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #3f3f5e;
+    color: #ffffff;
 }
 
 .input-group input:focus {
@@ -727,27 +730,27 @@ fique cortado em resolução baixa*/
 }
 
 .calculate-button {
-    background-color: var(--primary-color);
+    background-color: #4caf50;
     color: white;
 }
 
 .calculate-button:hover {
-    background-color: var(--primary-hover);
+    background-color: #275328;
 }
 
 .reset-button {
-    background-color: var(--primary-color);
+    background-color: #f44336;
     color: white;
 }
 
 .reset-button:hover {
-    background-color: var(--primary-hover);
+    background-color: #551c18;
 }
 
 .result-card h3 {
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--gray-900);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -786,7 +789,7 @@ fique cortado em resolução baixa*/
 }
 
 .total-result span:first-child {
-    color: var(--gray-900);
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -800,7 +803,7 @@ fique cortado em resolução baixa*/
 }
 
 .info-box {
-    background-color: var(--gray-100);
+    background-color: #3f3f5e;
     border-radius: 0.375rem;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -817,7 +820,7 @@ fique cortado em resolução baixa*/
 }
 
 .info-box li {
-    color: var(--gray-700);
+    color: #ffffff;
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
 }
@@ -841,4 +844,63 @@ fique cortado em resolução baixa*/
     .calculator-card, .result-card {
         padding: 1rem;
     }
+}
+/* Estilo para harmonizar a calculadora com o tema do site */
+.calculadora {
+    background-color: #1e1e2f; /* Fundo principal da calculadora */
+    border-radius: 8px;
+    padding: 20px;
+    color: #ffffff; /* Texto principal */
+}
+
+.calculadora h1 {
+    background-color: #27293d; /* Fundo do cabeçalho */
+    color: #f5c242; /* Texto dourado do cabeçalho */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.minimas-fixas {
+    background-color: #2c2f48; /* Fundo das mínimas fixas */
+    color: #d1d1d1; /* Texto suave */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.input-field {
+    background-color: #3f3f5e; /* Fundo dos campos de entrada */
+    color: #ffffff; /* Texto dos campos */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #ffffff; /* Texto dos botões */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button#calcular {
+    background-color: #4caf50; /* Verde para "Calcular Pena" */
+}
+
+button#zerar {
+    background-color: #f44336; /* Vermelho para "Zerar" */
+}
+
+/* Estilo para a seção de resultados */
+.resultados {
+    background-color: #2c2f48; /* Fundo dos resultados */
+    color: #d1d1d1; /* Texto suave */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
 }
