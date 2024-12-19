@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
-    <title>Manual de Conduta | BPM-AV</title>
+    <title>Manual de Conduta | 1°BPM-AV</title>
 
     <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
+    <!--menu lateral-->
     <button id="mobileMenuBtn" class="mobile-menu-btn ">
         <i class="fas fa-bars"></i>
     </button>
@@ -75,6 +76,26 @@
             </li>
         </ul>
     </nav>
+    <!--botão tema claro/escuro-->
+    <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+    <!--corpo da página-->
     <header>
         <img src="/src/images/Manual/header.png" alt="Imagem do header">
     </header>
@@ -205,7 +226,7 @@
                             <li>A modulação de um acompanhamento é feito <b>apenas</b> pelo P2 da viatura primária. Caso haja algum problema cabe a este responsável solicitar 
                                 que outro oficial realize a modulação, mas é de extrema importância que apenas uma pessoa seja responsável por tal para evitar informações repetidas que podem 
                                 levar a confusões e erros.</li>
-                            <li>Em situações de acompanhamentos que exista um Águia (G.S.A.) na ocorrência, a modulação ficará por responsabilidade do mesmo.</li>
+                            <li>Em situações de acompanhamentos que exista um Águia (G.R.A.) na ocorrência, a modulação ficará por responsabilidade do mesmo.</li>
                             <li>Em um acompanhamento que todas as viaturas da QRU já estejam com visual do veículo, deve ser cessado a modulação.</li>
                             <li>Caso haja mais de um acompanhamento em andamento, tome cuidado para não atropelar as outras modulações em andamento e utilize mensagens objetivas 
                                 identificando sua QRU para não haver confusões.</li>
@@ -354,18 +375,18 @@
                                 <blockquote>
                                     O indivíduo que embarcou no veículo de resgate, é de alta performance (<b>A+, S, S+, E</b>)?<br><br>
                                     <ul>
-                                        <li>Se a resposta for <b>SIM</b>: solicitar ao GSA para aplicar o disparo no pneu.</li>
+                                        <li>Se a resposta for <b>SIM</b>: solicitar ao GRA para aplicar o disparo no pneu.</li>
                                         <li>Se a resposta for <b>NÃO</b> (O indivíduo embarcou no veículo de resgate normal (A, B, C, D)): Não é aplicável, segue o acompanhamento 
                                             normalmente.</li>
                                     </ul>
                                     <br>
-                                    <b>Observação:</b> Caso não haja a GSA com Operador em QRV, deve-se solicitar a uma unidade SPEED para aplicar a manobra P.I.T, quando não houver, solicitar um Sgt.+ uma 
+                                    <b>Observação:</b> Caso não haja a GRA com Operador em QRV, deve-se solicitar a uma unidade SPEED para aplicar a manobra P.I.T, quando não houver, solicitar um Sgt.+ uma 
                                         autorização, na Central, para o P2 da primária aplicar no Pneu.
                                 </blockquote>
-                                <b>2° Resgate:</b> caso ocorra um segundo resgate no acompanhamento, deverá ser acionado a <b>GSA</b> para <b>realizar os disparos no pneu</b>, caso não possua GSA 
+                                <b>2° Resgate:</b> caso ocorra um segundo resgate no acompanhamento, deverá ser acionado a <b>GRA</b> para <b>realizar os disparos no pneu</b>, caso não possua GRA 
                                     disponível, deverá ser acionada a <b>SPEED</b> para fazer a aplicação dos <b>P.I.T’s em conjunto com o uso da spike</b> e na falta de ambos, deverá ser contatado 
                                     um <b>Sargento+</b> na central para <b>autorização de disparos</b> realizado pela primária.
-                                <center><h6><i>Disparo GSA > PIT+SPIKE > Disparo autorizado pelo Sgt. na Central</i></h6></center><br>
+                                <center><h6><i>Disparo GRA > PIT+SPIKE > Disparo autorizado pelo Sgt. na Central</i></h6></center><br>
                                 
                             </div>
                         </div>
@@ -381,11 +402,11 @@
                                 <p>Em caso de <b>Atropelo de Civil/GTM</b> a primária irá tentar verbalizar com o veículo acompanhado para que ele seja <b>OBRIGADO</b> a retornar ao local do acidente e prestar apoio, 
                                     caso o mesmo se negue a cooperar com o contato ou ir ao local prestar apoio, será passado o feedback na central e será seguido da seguinte forma:</p>
             
-                                    Será acionada a <b>GSA</b> para realizar os <b>disparos no pneu</b>, caso não possua GSA disponível, deverá ser acionada a <b>SPEED</b> para fazer a aplicação dos 
+                                    Será acionada a <b>GRA</b> para realizar os <b>disparos no pneu</b>, caso não possua GRA disponível, deverá ser acionada a <b>SPEED</b> para fazer a aplicação dos 
                                     <b>P.I.T’s em conjunto com o uso da spike</b> e na falta de ambos, deverá ser contatado um <b>Sargento+</b> na central para <b>autorização de disparos</b> 
                                     realizado pela primária.
 
-                                    <center><h6><i>Disparo GSA > PIT+SPIKE > Disparo autorizado pelo Sgt. na Central</i></h6></center><br>
+                                    <center><h6><i>Disparo GRA > PIT+SPIKE > Disparo autorizado pelo Sgt. na Central</i></h6></center><br>
                                 
                                 <div class="boxObs">
                                     <span class="toastObs">Observação</span>
@@ -509,8 +530,8 @@
                         <br>
                         <div class="boxObs">
                             <span class="toastObs">Observação</span>
-                            <p>Código 5 nos pneus do veículo durante acompanhamento só pode ser liberado pela GSA, o disparo deve ser feito na roda de tração para forçar a parada do veículo 
-                                (Quando não existir GSA em QRV deverá ser solicitado uma unidade Speed para realização da manobra PIT). É <b>proibido</b> liberação de código 5 em pneus de 
+                            <p>Código 5 nos pneus do veículo durante acompanhamento só pode ser liberado pela GRA, o disparo deve ser feito na roda de tração para forçar a parada do veículo 
+                                (Quando não existir GRA em QRV deverá ser solicitado uma unidade Speed para realização da manobra PIT). É <b>proibido</b> liberação de código 5 em pneus de 
                                 motocicletas.</p>
                         </div>
                         <p>Comportamento durante o acompanhamento:</p>
@@ -617,7 +638,7 @@
                             <br>
                             <h3>Revista Feminina</h3>
                             <ul>
-                                <li>O procedimento de revista em um individuo do sexo feminino deve ser realizado sempre por uma policial feminina. 
+                                <li>O procedimento de revista em um indivíduo do sexo feminino deve ser realizado sempre por uma policial feminina. 
                                     Deve-se <b>sempre</b> solicitar por uma perita feminina em QRV caso haja necessidade de revista.</li>
                                 <li><b>Caso haja alguma disponível, a mesma deverá se deslocar até o referido QTH para realizar a revista.</li>
                                 <li>Caso não haja nenhuma oficial feminina da perícia disponível no momento</b>, o policial responsável deverá pedir 
@@ -735,7 +756,7 @@
                                         <img src="/src/images/Manual/vstr.png" alt="Pol. VSTR: Alunos e Soldado">
                                     </div>
                                     <div class="image-description">
-                                        <center><h5>Pol. VSTR: Alunos e Soldado</h5></center>
+                                        Pol. VSTR: Alunos e Soldado
                                     </div>
                                 </div>
                             </div>
@@ -745,7 +766,7 @@
                                         <img src="/src/images/Manual/sx.png" alt="Pol. SX: Cabo+">
                                     </div>
                                     <div class="image-description">
-                                        <center><h5>Pol. SX: Cabo+ e através de certificação</h5></center>
+                                        Pol. SX: Cabo+ e através de certificação
                                     </div>
                                 </div>
                             </div>
@@ -755,7 +776,7 @@
                                         <img src="/src/images/Manual/scout.png" alt="Pol. Scout: Sargento+">
                                     </div>
                                     <div class="image-description">
-                                        <center><h5>Pol. Scout: Sargento+</h5></center>
+                                        Pol. Scout: Sargento+
                                     </div>
                                 </div>
                             </div>
@@ -820,7 +841,7 @@
                                         <img src="/src/images/Manual/gtm.png" alt="Viatura: BF400">
                                     </div>
                                     <div class="image-description">
-                                        <center><h5>Viatura: BF400</h5></center>
+                                        Viatura: BF400
                                     </div>
                                 </div>
                             </div>
@@ -833,7 +854,7 @@
                                         <img src="/src/images/Manual/speed.png" alt="Viatura: Vectre">
                                     </div>
                                     <div class="image-description">
-                                        <center><h5>Viatura: Emperor Vectre</h5></center>
+                                        Viatura: Emperor Vectre
                                     </div>
                                 </div>
                             </div>
@@ -848,11 +869,13 @@
                 </div>
             </div>
         </main>
+        <!--div para funcionalidade do zoom das imagens-->
         <div id="imageModal" class="modal">
             <span class="close-button">&times;</span>
             <img class="modal-content" id="zoomedImage">
             <div id="modalDescription" class="modal-description"></div>
         </div>
+        <!--botões da parte inferior da página-->
         <footer>
             <div class="button-container">
                 <a href="/index.html" class="pr">Manuais do 1°BPM-AV</a>
@@ -860,6 +883,7 @@
             </div>
         </footer>
         <script src="/src/scripts/board.js"></script>
+        <script src="/src/scripts/theme.js"></script>
     </body>
     
     </html>

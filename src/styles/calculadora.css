@@ -1,0 +1,244 @@
+.header-cal {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--principalText);
+}
+
+.calculator-icon {
+    color: var(--primary-color);
+}
+
+.calculator-card, .result-card {
+    background-color: var(--principalBackground);
+    color: var(--principalText);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--principalText);
+    margin-bottom: 0.25rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--valoresBorda);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: var(--valoresBackground);
+    color: var(--valoresText);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.calculate-button, .reset-button {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculate-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.calculate-button:hover {
+    background-color: #275328;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #551c18;
+}
+
+.result-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--valoresText);
+    margin-bottom: 1rem;
+}
+
+.result-items {
+    color: var(--gray-600);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.result-item, .total-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.result-item:last-of-type {
+    border-bottom: none;
+}
+
+.result-item span:first-child {
+    color: var(--gray-600);
+}
+
+.result-item span:last-child {
+    font-weight: 500;
+}
+
+.total-result {
+    margin-top: 0.5rem;
+    border-top: 2px solid var(--gray-300);
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.total-result span:first-child {
+    color: var(--valoresText);
+    font-weight: 600;
+}
+
+.total-result span:last-child {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-box {
+    background-color: var(--boxInfo);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-box h4 {
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-box li {
+    color: var(--principalText);
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.calculation-info {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.calculadora {
+    background-color: var(--principalBackground);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--principalText);
+}
+
+.calculadora h1 {
+    background-color: var(--fundoCabecalho);
+    color: var(--textDourado);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.minimas-fixas {
+    background-color: var(--minimasBackground);
+    color: var(--minimasText);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.input-field {
+    background-color: var(--valoresBackground);
+    color: var(--valoresText);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.calculadora button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: var(--textButton);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculadora button#calcular {
+    background-color: #4caf50;
+}
+
+.calculadora button#zerar {
+    background-color: #f44336;
+}
+
+.resultados {
+    background-color: var(--resultadosBackground);
+    color: var(--textBackground);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media (max-width: 640px) {
+    #container-cal {
+        padding: 0.5rem;
+    }
+
+    #pagCAL {
+        padding: 1rem;
+    }
+
+    .calculator-card, .result-card {
+        padding: 1rem;
+    }
+}

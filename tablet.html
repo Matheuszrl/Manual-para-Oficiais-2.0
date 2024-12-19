@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
-    <title>Instrução ao Tablet | BPM-AV</title>
+    <title>Instrução ao Tablet | 1°BPM-AV</title>
 
     <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
+    <!--menu lateral-->
     <button id="mobileMenuBtn" class="mobile-menu-btn ">
         <i class="fas fa-bars"></i>
     </button>
@@ -75,6 +76,26 @@
             </li>
         </ul>
     </nav>
+    <!--botão tema claro/escuro-->
+    <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+    <!--corpo da página-->
     <header>
         <img src="/src/images/TB/header.png" alt="Imagem do header">
         
@@ -101,7 +122,7 @@
                                     <img src="/src/images/TB/tablet-inicio.png" alt="Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)</h5></center>
+                                    Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)
                                 </div>
                             </div>
                         </div>
@@ -116,7 +137,7 @@
                                     <img src="/src/images/TB/tablet-b.o.png" alt="Tela que irá aparecer após selecionar a aba Ocorrências">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela que irá aparecer após selecionar a aba "Ocorrências"</h5></center>
+                                    Tela que irá aparecer após selecionar a aba "Ocorrências"
                                 </div>
                             </div>
                         </div>
@@ -130,11 +151,11 @@
                                     <img src="/src/images/TB/tablet-b.o-aberto.png" alt="Tela que irá aparecer após clicar no botão Selecionar">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela que irá aparecer após clicar no botão "Selecionar"</h5></center>
+                                    Tela que irá aparecer após clicar no botão "Selecionar"
                                 </div>
                             </div>
                         </div>
-                        
+                        <br>
                         <div class="tab-container">
                             <div class="tabs">
                                 <button class="tab active" tab-group="preenchimento" data-tab="requerente" >Requerente</button>
@@ -176,7 +197,7 @@
                                     <img src="/src/images/TB/tablet-b.o-aberto-preenchido.png" alt="Exemplo de como o seu B.O irá ficar após preenchido">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Exemplo de como o seu B.O irá ficar após preenchido</h5></center>
+                                    Exemplo de como o seu B.O irá ficar após preenchido
                                 </div>
                             </div>
                         </div>
@@ -195,7 +216,7 @@
                                     <img src="/src/images/TB/tablet-nome-marca-algema.png" alt="Tela onde irá acessar um B.O aberto para realizar a prisão">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela onde irá acessar um B.O aberto para realizar a prisão</h5></center>
+                                    Tela onde irá acessar um B.O aberto para realizar a prisão
                                 </div>
                             </div>
                         </div>
@@ -209,11 +230,11 @@
                                     <img src="/src/images/TB/tablet-prisão.png" alt="Página do B.O aberto">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página do B.O aberto</h5></center>
+                                    Página do B.O aberto
                                 </div>
                             </div>
                         </div>
-                        
+                        <br>
                         <div class="tab-container">
                             <div class="tabs">
                                 <button class="tab active" tab-group="preenchimentoprisao" data-tab="acusado" >Acusado</button>
@@ -232,7 +253,7 @@
                                 </div>
                                 <div id="codigopenal" class="tab-content" tab-group="preenchimentoprisao">
                                     <p>Deverá ser acrescido todos os crimes que foram cometidos, vale lembrar que dependendo do crime, deverá ser realizado o calculo da pena 
-                                        de acordo com o que o individuo possuía, exemplos:</p>
+                                        de acordo com o que o indivíduo possuía, exemplos:</p>
                                     <br>
                                     <p><div class="imageInLine">
                                         <img src="/src/images/icons/lockpick.png" width="25" alt="Lockpick" />
@@ -241,29 +262,41 @@
                                     <br>
                                     <p><div class="imageInLine">
                                         <img src="/src/images/icons/entorpecente.png" width="25" alt="Entorpecente" />
-                                    </div><b>Tráfico de Entorpecentes:</b> A cada duas drogas, adiciona-se um mês. (Pega o total e divide por 2) Exemplo: 100 irá equivaler a 50 meses. 
-                                        (100÷2=50 + mínima de 15).</p>
+                                    </div><b>Tráfico de Entorpecentes:</b> A cada duas drogas, adiciona-se um mês. (Pega o total e divide por 2) Exemplo: 100 irá equivaler a 
+                                    50 meses. (100÷2=50 + mínima de 15).</p>
                                     <br>
                                     <p><div class="imageInLine">
                                         <img src="/src/images/icons/municao.png" width="25" alt="Munição" />
-                                    </div><b>Posse de Munição:</b> A cada 20 munições, adiciona-se 5 meses. (Pega o total e divide por 4) Exemplo: 200 irá equivaler a 50 meses. (200÷4=50 + 
-                                        mínima de 5).</p>
+                                    </div><b>Posse de Munição:</b> A cada 20 munições, adiciona-se 5 meses. (Pega o total e divide por 4) Exemplo: 200 irá equivaler a 
+                                    50 meses. (200÷4=50 + mínima de 5).</p>
                                     <br>
                                     <p><div class="imageInLine">
                                         <img src="/src/images/icons/pe-de-cabra.png" width="25" alt="Pé de Cabra" />
-                                    </div><b>Receptação de Produtos Roubados:</b> A cada 1 produto, adiciona-se 2 meses. (Pega o total e multiplica por 2) Exemplo: 20 irá equivaler a 40 meses. 
-                                        (20x2=40 + mínima de 10).</p>
+                                    </div><b>Receptação de Produtos Roubados:</b> A cada 1 produto, adiciona-se 2 meses. (Pega o total e multiplica por 2) Exemplo: 20 irá 
+                                    equivaler a 40 meses. (20x2=40 + mínima de 10).</p>
                                     <br>
                                     <p><div class="imageInLine">
                                         <img src="/src/images/icons/dinheiro.png" width="25" alt="Dinheiro Sujo" />
                                     </div><b>Dinheiro Ilícito:</b> A cada R$1.000, adiciona-se 1 mês. Exemplo: R$10.000 irá equivaler a 10 meses. (10x1=10 + mínima 10).</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="bold highlight-vermelho"><b>Obs:</b></span> caso o cidadão que está sendo preso acabe cometendo desacato, chame 
+                                    um Sargento+ para consultar sobre a adição do crime.</p>
+                                    
                                 </div>
                                 <div id="agravantes" class="tab-content" tab-group="preenchimentoprisao">
-                                    <p>Deverá ser utilizado quando tivermos algo que agrave os crimes cometidos pelo individuo, como por exemplo, um homicídio doloso qualificado 
-                                        contra oficiais, que possui um agravante de 20%.</p>
+                                    <p>Deverá ser utilizado quando tivermos algo que agrave os crimes cometidos pelo indivíduo, como por exemplo, um homicídio doloso qualificado 
+                                        contra oficiais, que possui um agravante de 20%.</p><br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="bold highlight-vermelho"><b>Obs:</b></span> em casos onde você julgue necessário utilizar desta função, consulte um superior.</p>
                                 </div>
                                 <div id="atenuantes" class="tab-content" tab-group="preenchimentoprisao">
-                                    <p>Deverá ser usado quando tivermos fatores que diminuem a pena do indivíduo acusado, como exemplo, o mesmo ser réu primário.</p>
+                                    <p>Deverá ser usado quando tivermos fatores que diminuem a pena do indivíduo acusado, como exemplo, o mesmo ser réu primário.</p><br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="bold highlight-vermelho"><b>Obs:</b></span> em casos onde você julgue necessário utilizar desta função, consulte um superior.</p>
                                 </div>
                             </div>
                         </div>
@@ -272,9 +305,8 @@
                             <p><div class="imageInLine">
                                 <img src="/src/images/icons/cifrao.png" width="15" alt="Liberação" />
                             </div><span class="highlight-verde"><span class="code"><b>Liberação:</b></span></span></p>
-                            <p>Vale lembrar que nem todos os crimes são afiançáveis, sendo assim, caso vá realizar a prisão de algum indivíduos e contenha crimes como Homicídio, 
-                                Sequestro, Desacato e afins, deverá informar ao cidadão que está sendo preso, que por mais que ele pague a fiança, será encaminhado por tal crime 
-                                juntamente com a quantidade de tempo que ficará preso</p>
+                            <p>Vale lembrar que atualmente a fiança é paga no presídio, visando isso, informe ao cidadão que está sendo preso que caso ele tenha interesse
+                                em pagar a fiança, deverá procurar o mudinho presente no presente para consultar o valor e realizar o pagamento.</p>
                         </blockquote>
 
                         <p>Ao fim do processo prisional, o página deverá estar com ao menos as abas <b>"Acusado"</b>, <b>"Descrição da Prisão"</b> e <b>"Código Penal"</b> preenchidas 
@@ -286,7 +318,7 @@
                                     <img src="/src/images/TB/tablet-prisão-preenchido.png" alt="Página da Prisão de Indivíduos preenchida">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página da Prisão de Indivíduos preenchida</h5></center>
+                                    Página da Prisão de Indivíduos preenchida
                                 </div>
                             </div>
                         </div>
@@ -302,21 +334,18 @@
 
                             <p><div class="imageInLine">
                                 <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
-                            </div><i>"Cidadão, a sua pena deu um total de 65 meses de prisão e R$4.800,00 em multas pelos crimes de Corrida Ilegal e Posse de Dinheiro Ilícito e caso tenha
-                                interesse, a fiança dará um valor de R$16.000,00, o senhor possui interesse ou alguma dúvida?"</i></p>
-
-                            <p><span class="highlight-TB"><span class="code"><b>Caso seja preso:</b></span></span><br>
+                            </div><i>"Cidadão, a sua pena deu um total de 65 meses de prisão e R$4.800,00 em multas pelos crimes de Corrida Ilegal e Posse de Dinheiro Ilícito 
+                                e caso tenhainteresse, o senhor possui alguma dúvida?"</i></p>
+                            <p><span class="highlight-TB"><span class="code"><b>Após informar não possuir nenhuma dúvida:</b></span></span><br>
                                 <div class="imageInLine">
                                     <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
-                                </div><i>"Estarei chamando o carcereiro para lhe encaminhar, quando ele chegar, estará te dando uma peça de roupas laranjas para o senhor poder realizar os 
-                                    serviços e não sujar a sua roupa atual, caso sinta fome ou sede, receberá um biscoito Cream Cracker e uma Água, caso necessite de tratamento, possui 
-                                    uma ala no presidio para isso, tenha uma ótima estadia e espero não velo novamente."</i></p>
-
-                            <p><span class="highlight-TB"><span class="code"><b>Caso opte por fiança:</b></span></span><br>
-                                <div class="imageInLine">
-                                    <img src="/src/images/icons/aluno.png" width="15" alt="Imagem de um Aluno" />
-                                </div><i>"Estarei chamando o carcereiro, quando ele chegar você irá realizar o pagamento da fiança para o mesmo e ele irá lhe deixar na frente na DP, espero 
-                                    não velo novamente."</i></p>
+                                </div><i>"Estarei chamando o carcereiro para lhe encaminhar, quando ele chegar, estará te dando uma peça de roupas laranjas para o senhor poder 
+                                    realizar os serviços e não sujar a sua roupa atual, caso sinta fome ou sede, receberá um biscoito Cream Cracker e uma Água, caso necessite 
+                                    de tratamento, possui uma ala no presidio para isso, tenha uma ótima estadia e espero não velo novamente."</i></p>
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                            </div><span class="bold highlight-vermelho"><b>Obs:</b></span> lembre-se sempre de pedir para que o cidadão retire seus adornos para que o carcereiro
+                            possa realizar as fotos.</p>
                         </blockquote>
                         <h3>Apreensão de Itens</h3>
                         <p>Dentro do 1°BPM-AV, além da legalidade de revista, temos alguns itens que podem ou não ser apreendidos, visando isso, deixarem anexado
@@ -327,10 +356,14 @@
                                     <img src="/src/images/TB/itens-apreendidos.png" alt="Itens que podem ou não ser apreendidos">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Itens que podem ou não ser apreendidos</h5></center>
+                                    Itens que podem ou não ser apreendidos
                                 </div>
                             </div>
                         </div>
+                        <p><div class="imageInLine">
+                            <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                        </div><span class="bold highlight-vermelho"><b>Obs:</b></span> caso você necessite realizar a revista a um bolso e o indivíduo se negue a 
+                        enviar o mesmo, deverá ser aberto um ticket explicando a situação.</p>
                     </div>
                     <hr>
                     <div id="topic3">
@@ -345,7 +378,7 @@
                                     <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizar a apreensão">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela onde irá acessar um B.O aberto para realizar a apreensão</h5></center>
+                                    Tela onde irá acessar um B.O aberto para realizar a apreensão
                                 </div>
                             </div>
                         </div>
@@ -359,7 +392,7 @@
                                     <img src="/src/images/TB/tablet-apreensão-veículo.png" alt="Página que irá aparecer para que possa preencher para apreensão veicular">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página que irá aparecer para que possa preencher para apreensão veicular</h5></center>
+                                    Página que irá aparecer para que possa preencher para apreensão veicular
                                 </div>
                             </div>
                         </div>
@@ -373,18 +406,18 @@
                                     <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>"Circulado" em branco é como irá aparecer após inserir o emplacamento</h5></center>
+                                    "Circulado" em branco é como irá aparecer após inserir o emplacamento
                                 </div>
                             </div>
                         </div>
-                            
+                        <br>
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
                                     <img src="/src/images/TB/apreendido.png" alt="Após ser selecionado o veículo e marcada a caixinha para apreender">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Após ser selecionado o veículo e marcada a "caixinha" para apreender</h5></center>
+                                    Após ser selecionado o veículo e marcada a "caixinha" para apreender
                                 </div>
                             </div>
                         </div>
@@ -405,7 +438,7 @@
                                     <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo</h5></center>
+                                    Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo
                                 </div>
                             </div>
                         </div>
@@ -423,18 +456,18 @@
                                     <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>"Circulado" em branco é como irá aparecer após inserir o emplacamento</h5></center>
+                                    "Circulado" em branco é como irá aparecer após inserir o emplacamento
                                 </div>
                             </div>
                         </div>
-                            
+                        <br>                            
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
                                     <img src="/src/images/TB/roubado.png" alt="Após ser selecionado o veículo e marcada a caixinha para registrar como roubado">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Após ser selecionado o veículo e marcada a "caixinha" para registrar como roubado</h5></center>
+                                    Após ser selecionado o veículo e marcada a "caixinha" para registrar como roubado
                                 </div>
                             </div>
                         </div>
@@ -454,7 +487,7 @@
                                     <img src="/src/images/TB/veiculo-individuo.png" alt="Como irá aparecer ao acessar a aba Veículos no perfil do cidadão">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Como irá aparecer ao acessar a aba "Veículos" no perfil do cidadão</h5></center>
+                                    Como irá aparecer ao acessar a aba "Veículos" no perfil do cidadão
                                 </div>
                             </div>
                         </div>
@@ -472,7 +505,7 @@
                                     <img src="/src/images/TB/computador-liberação.png" alt="Local da recepção onde é realizada a liberação">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Local da recepção onde é realizada a liberação</h5></center>
+                                    Local da recepção onde é realizada a liberação
                                 </div>
                             </div>
                         </div>
@@ -494,7 +527,7 @@
                                     <img src="/src/images/TB/consulta-de-individuos.png" alt="Página para consultar dados dos cidadãos da cidade">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página para consultar dados dos cidadãos da cidade</h5></center>
+                                    Página para consultar dados dos cidadãos da cidade
                                 </div>
                             </div>
                         </div>
@@ -507,7 +540,7 @@
                                     <img src="/src/images/TB/consulta-de-individuos-especifico.png" alt="Página da consulta de uma pessoa especifica">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página da consulta de uma pessoa especifica</h5></center>
+                                    Página da consulta de uma pessoa especifica
                                 </div>
                             </div>
                         </div>
@@ -523,7 +556,7 @@
                                     <img src="/src/images/TB/veiculos.png" alt="Página para consultar veículos dos cidadãos da cidade">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página para consultar veículos dos cidadãos da cidade</h5></center>
+                                    Página para consultar veículos dos cidadãos da cidade
                                 </div>
                             </div>
                         </div>
@@ -536,7 +569,7 @@
                                     <img src="/src/images/TB/veiculos-especificos.png" alt="Página da consulta de um veículo especifico">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página da consulta de um veículo especifico</h5></center>
+                                    Página da consulta de um veículo especifico
                                 </div>
                             </div>
                         </div>
@@ -561,7 +594,7 @@
                                     <img src="/src/images/TB/código-penal.png" alt="Página para se consultar os códigos penais, agravantes e atenuantes">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Página para se consultar os códigos penais, agravantes e atenuantes</h5></center>
+                                    Página para se consultar os códigos penais, agravantes e atenuantes
                                 </div>
                             </div>
                         </div>                    
@@ -570,11 +603,13 @@
             </div>
         </div>
     </main>
+    <!--div para funcionalidade do zoom das imagens-->
     <div id="imageModal" class="modal">
         <span class="close-button">&times;</span>
         <img class="modal-content" id="zoomedImage">
         <div id="modalDescription" class="modal-description"></div>
     </div>
+    <!--botões da parte inferior da página-->
     <footer>
         <div class="button-container">
             <a href="/pcd.html" class="pcd">PCD (Pessoa com Deficiência)</a>
@@ -582,6 +617,7 @@
         </div>
     </footer>
     <script src="/src/scripts/board.js"></script>
+    <script src="/src/scripts/theme.js"></script>
 </body>
 
 </html>

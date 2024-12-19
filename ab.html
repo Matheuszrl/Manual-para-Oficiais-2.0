@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curso de Abordagem | BPM-AV</title>
+    <title>Curso de Abordagem | 1°BPM-AV</title>
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
     <link rel="stylesheet" href="/src/styles/globals.css" />
+    <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!--menu lateral-->
     <button id="mobileMenuBtn" class="mobile-menu-btn ">
         <i class="fas fa-bars"></i>
     </button>
@@ -72,6 +75,26 @@
             </li>
         </ul>
     </nav>
+    <!--botão tema claro/escuro-->
+    <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+    <!--corpo da página-->
     <header>
         <img src="/src/images/AB/header.png" alt="Imagem do header">
     </header>
@@ -158,49 +181,54 @@
                         
                         <h3><img src="/src/images/icons/fem.png" width="27" alt="Imagem de uma FEM"/> Revista Pessoal em Feminina:</h3>
 
-                        <p>Durante o procedimento para revista pessoal em uma cidadão feminina as situações que nos dão legalidade para realizar a revista se mantém nos mesmos casos 
-                            citados a cima, porém, caso você seja um oficial masculino, temos alguns procedimento a serem realizado.</p>
+                        <p>Durante o procedimento para revista pessoal em uma cidadão feminina as situações que nos dão legalidade para realizar a revista se mantém 
+                            nos mesmos casos citados a cima, porém, caso você seja um oficial masculino, temos alguns procedimento a serem realizado.</p>
 
                         <ul>
-                            <li>Quando for notado que você possui legalidade para realizar a revista na abordada, deverá imediatamente contatar uma PFEM da Perícia 
-                                (Policial Feminina) através do no cp em um total de até 3x.<br>
+                            <li>Quando for notado que você possui legalidade para realizar a revista na abordada, deverá imediatamente contatar uma PFEM (Policial 
+                                Feminina) através do cp em um total de até 3x.<br>
                                 <i><div class="imageInLine">
                                         <img src="/src/images/icons/pager.png" width="21" alt="Pager" />
-                                    </div>"QAP Central, Perícia em QRV? (PFEM)"</i>
+                                    </div>"QAP Central, PFEM em QRV?"</i>
                             </li>
-                            <li>Caso você não possua resposta após tentar contatar uma PFEM da Perícia, deverá ser feita a tentativa de contatar uma PFEM que não seja 
-                                pertencente ao grupamento da Perícia Criminal, porém, deverá ter um Perito no local para reconhecimento dos ilícito apreendidos da cidadã abordada.<br>
-                                <i><div class="imageInLine">
-                                    <img src="/src/images/icons/radio.png" width="15" alt="Imagem de um Rádio" />
-                                </div>"QAP rádio Perícia, PFEM em QRV?"</i><br>
-                                <i><div class="imageInLine">
-                                    <img src="/src/images/icons/radio.png" width="15" alt="Imagem de um Rádio" />
-                                </div>"QAP rádio Perícia, Perícia em QRV para auxiliar uma PFEM?"</i>
+                            <li>Caso você não possua resposta após tentar contatar uma PFEM, você ou o oficial responsável pela QRU deverá prosseguir com o 
+                                procedimento da caixa.
                             </li>
                         </ul>
-                        <p><div class="imageInLine">
-                            <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
-                        </div><span class="bold highlight-vermelho"><b>Obs: </b></span>Se não for possível o contato com uma PFEM, o Perito contatado deverá prosseguir com o procedimento da caixa e caso não tenha nenhum Perito em QRV, o 
-                            oficial responsável pela QRU deverá seguir com o procedimento.</p>
 
                         <blockquote>
                             <p><div class="imageInLine">
-                                <img src="/src/images/icons/lupa.png" width="22" alt="Lupa" />
+                                <img data-theme-image 
+                                    data-light-src="/src/images/icons/lupa-d.png" 
+                                    data-dark-src="/src/images/icons/lupa-w.png" 
+                                    src="/src/images/icons/lupa-d.png" 
+                                    width="22" 
+                                    alt="Ícone de tema dinâmico">
                             </div><span class="bold highlight-AB"><b>Como realizar o Procedimento da Caixa?</b></span></p>
-                            <p>Após a cidadã abordada aceitar realizar o procedimento, você utilizara o comando /revistarcaixa para poder passar uma caixa para a cidadã, para 
-                                que assim ela possa colocar seus itens na mesma.</p>
+                            <p>Após a cidadã abordada aceitar realizar o procedimento, você utilizará o comando /revistarcaixa ou irá olhar para a cidadã (segurando 
+                                o alt e mirando na mesma, após isso, apenas selecione a opção de Revistar Caixa) para poder passar uma caixa para a cidadã, para que 
+                                assim ela possa colocar seus itens na mesma.</p>
+                            <div class="image-container">
+                                <div class="image-card">
+                                    <div class="zoomable-image">
+                                            <img src="/src/images/AB/revista-caixa.gif" alt="Demonstração de revista através da caixa">
+                                    </div>
+                                    <div class="image-description">
+                                        Demonstração de revista através da caixa
+                                    </div>
+                                </div>
+                            </div>
                         </blockquote>
                         
                         <ul>
-                            <li>Caso não possua nenhuma PFEM em QRV e a cidadão abordada <span class="bold highlight-vermelho">NÃO</span> aceite realizar o procedimento da caixa, informe a mesma que ela estará 
-                                sendo encaminhada para a DP, encaminhe ela e mantenha a mesma ALGEMADA dentro das celas até a chegada de uma PFEM ou até que a mesma possua interesse em 
-                                realizar o procedimento da caixa.
+                            <li>Caso não possua nenhuma PFEM em QRV e a cidadã abordada <span class="bold highlight-vermelho">NÃO</span> aceite realizar o procedimento 
+                                da caixa, informe a mesma que ela estará sendo encaminhada para a DP, encaminhe ela e mantenha a mesma ALGEMADA dentro das celas até 
+                                a chegada de uma PFEM ou até que a mesma possua interesse em realizar o procedimento da caixa.
                             </li>
                         </ul>
                         <br>
-                        <h3>Revista Veicular</h3>
-                        
-                        <div class="expand-section">
+                        <h3>Revista Veicular</h3>                        
+                        <!--<div class="expand-section">
                             <button class="expand-button" aria-expanded="false" aria-controls="content-luvas">
                                 Porta-Luvas
                                 <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -211,11 +239,11 @@
                                 <p>Toda abordagem de código 2+ é obrigatório realizar a revista no porta-luvas (não porta-malas), o porta-luvas se abre com o botão page up (PGUP) quando 
                                     você está dentro do veículo.</p>
                                 <p><span class="bold highlight-amarelo"><b>⚠️ Obs: </b></span>A revista do porta-luvas só é realizada caso o abordado seja revistado. O mesmo precisa 
-                                    estar destrancado para tal ato, você pode solicitar a chave com o individuo na hora que algemar o mesmo</p>
+                                    estar destrancado para tal ato, você pode solicitar a chave com o indivíduo na hora que algemar o mesmo</p>
                             </div>
-                        </div>
+                        </div>-->
                         
-                        <div class="expand-section">
+                        <!--<div class="expand-section">
                             <button class="expand-button" aria-expanded="false" aria-controls="content-malas">
                                 Porta-Malas
                                 <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -230,7 +258,14 @@
                                         no nome de outra pessoa, caso haja confirmação de que o abordado tenha mexido no porta-malas, deve se realizar a revista)</i></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>-->
+                        <blockquote>
+                            <p>Em todas as ocorrências de Código 2 em diante, nos, policiais, teremos legalidade para realizar a revista no porta-malas do veículo abordado.</p>
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                            </div><span class="bold highlight-vermelho"><b>Obs:</b></span> vale lembrar que é necessário verificar se o indivíduo abordado é o dono do veículo 
+                            ou se possui a chave do mesmo.</p>
+                        </blockquote>
 
                         <p>Vale lembrar que em abordagens de transito (Código 1), não há legalidade para realizarmos uma revista, a menos que o comportamento do abordado traga atitude 
                             suspeita, como contestação excessiva ou desobediência/desacato. </p>
@@ -238,65 +273,48 @@
                     </div>
                     <hr>
                     <div id="topic4">
-                        <h2>Teste Residual da Perícia Criminal</h2>
-                        <p>Durante uma abordagem de suspeita de tráfico de entorpecentes, é obrigatório realizar o chamado para a Perícia Criminal 3x através do cp, caso não haja 
-                            respostas entrem na rádio da perícia (PoliciaPericia) para realizar a verificação se há algum perito em QRV, na ausência de um perito, peça para que um Sd+ 
-                            siga com os seguintes procedimentos para as devidas situações:</p>
+                        <h2>Teste Residual</h2>
+                        <p>Durante uma abordagem de suspeita de tráfico de entorpecentes, um Sd+ deverá efetuar os seguintes procedimentos para as devidas situações:</p>
                         
                         <div class="tab-container">
                             <div class="tabs">
-                                <button class="tab active" tab-group="testePER" data-tab="flagrante" >Flagrante</button>
-                                <button class="tab" tab-group="testePER" data-tab="positivo">Teste Positivo</button>
-                                <button class="tab" tab-group="testePER" data-tab="negativo">Teste Negativo</button>
-                                <button class="tab" tab-group="testePER" data-tab="observacoes">Observações</button>
+                                <button class="tab active" tab-group="teste-residual" data-tab="flagrante" >Flagrante</button>
+                                <button class="tab" tab-group="teste-residual" data-tab="positivo">Teste Positivo</button>
+                                <button class="tab" tab-group="teste-residual" data-tab="negativo">Teste Negativo</button>
+                                <button class="tab" tab-group="teste-residual" data-tab="observacoes">Observações</button>
                             </div>
                             <div class="boardContent">
-                                <div id="flagrante" class="tab-content active" tab-group="testePER">
+                                <div id="flagrante" class="tab-content active" tab-group="teste-residual">
                                     <p>Caso veja o indivíduo mexendo ou desmontando a bancada com drogas, o mesmo deve ser revistado.</p>
                                 </div>
-                                <div id="positivo" class="tab-content" tab-group="testePER">
-                                    <p>O abordado pode ser revistado e conduzido.</p><br>
-                                    <p><div class="imageInLine">
-                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
-                                    </div><span class="bold highlight-vermelho"><b>Obs:</b></span> Independente da quantidade de substâncias que o indivíduo tenha em mãos, deverá ser tirado uma foto da mochila do mesmo (como na foto abaixo) 
-                                        e enviar na aba 📷・apreensões-pericia do nosso discord da policia.</p>
-                                    <div class="image-container">
-                                        <div class="image-card">
-                                            <div class="zoomable-image">
-                                                <img src="/src/images/AB/teste-positivo.png" alt="Foto exemplo de como deverá ser mandado na aba do discord">
-                                            </div>
-                                            <div class="image-description">
-                                                <center><h5>Foto exemplo de como deverá ser mandado na aba do discord</h5></center>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="positivo" class="tab-content" tab-group="teste-residual">
+                                    <p>O abordado pode ser revistado e conduzido.</p>
                                 </div>
-                                <div id="negativo" class="tab-content" tab-group="testePER">
-                                    <p>Caso haja a confirmação que o indivíduo abordado adentrou na água e fez a utilização de um sabonete para limpar os resíduos, o teste dará negativo 
-                                        e o abordado deverá ser revistado. Caso o abordado esteja apenas nas proximidades, não sendo flagrante e o teste der negativo, o mesmo deverá ser 
-                                        liberado.</p>
+                                <div id="negativo" class="tab-content" tab-group="teste-residual">
+                                    <p>Caso haja a confirmação de que o indivíduo abordado adentrou na água e fez a utilização de um sabonete para limpar os resíduos, o 
+                                        teste dará negativo e o abordado deverá ser revistado. Caso o abordado esteja apenas nas proximidades, não sendo flagrante e o 
+                                        teste der negativo, o mesmo deverá ser liberado.</p>
                                 </div>
-                                <div id="observacoes" class="tab-content" tab-group="testePER">
-                                    <p>Não necessariamente o indivíduo que está desmontando uma bancada deve ter o teste realizado ou ser revistado. Quando iniciamos a abordagem o 
-                                        indivíduo decide se quer ser abordado ou se inicia um acompanhamento. Lembrem-se, conversem com os indivíduos abordados e levem em consideração o 
-                                        que for falado. Não fiquem apreensivos em liberar um indivíduo se ele tiver uma história convincente.</p>
+                                <div id="observacoes" class="tab-content" tab-group="teste-residual">
+                                    <p>Quando iniciamos a abordagem o indivíduo decide se quer ser abordado ou se inicia um acompanhamento. Lembrem-se, conversem com 
+                                        os indivíduos abordados e levem em consideração o que for falado. Não fiquem apreensivos em liberar um indivíduo se ele tiver 
+                                        uma história convincente.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <div id="topic5">
-                        <h2>Teste de Pólvora da Perícia Criminal</h2>
+                        <h2>Teste de Pólvora</h2>
                         <ul>
-                            <li>Quando houver uma abordagem por QRU de disparos, deve-se procurar um Perito Criminal para realizar o teste de pólvora, caso não haja um 
-                                perito no local, o teste deve ser realizado por um Sd+, porém, dando prioridade para a maior patente em QRV por se tratar de uma situação mais delicada.</li>
-                            <li>Caso em uma abordagem de código 1, o abordado não esteja portando seu documento de identificação, pode ser solicitado ao mesmo para 
+                            <li>Quando houver uma abordagem por QRU de disparos, deve-se realizar o teste de pólvora por um Sd+.</li>
+                            <li>Caso, em uma abordagem de código 1, o abordado não esteja portando seu documento de identificação, pode ser solicitado ao mesmo para 
                                 descer do veículo para realizar o teste a fim de pegar sua digital e suas informações.</li>
                         </ul>
                         <p><div class="imageInLine">
                             <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
-                        </div><span class="bold highlight-vermelho"><b>Obs:</b></span> em situações onde o teste é utilizado para identificação, caso haja alguma confirmação a mais, ela 
-                            deve ser ignorada, visto que o mesmo era para fins de identificação do indivíduo.</p>
+                        </div><span class="bold highlight-vermelho"><b>Obs:</b></span> em situações onde o teste é utilizado para identificação, caso haja alguma 
+                        confirmação a mais, ela deve ser ignorada, visto que o mesmo era para fins de identificação do indivíduo.</p>
                     </div>
                     <hr>
                     <div id="topic6">
@@ -305,11 +323,11 @@
                             Na tabela a seguir estão reforçados os comandos no painel que são utilizados nas referidas funções:</p>
                         <div class="image-container">
                             <div class="image-card">
-                                <div class="zoomable-image">
+                                <div class="zoomable-image" style="width: 550px;">
                                     <img src="/src/images/AB/comandos-qsv.png" alt="Comandos e suas ações dentro da viatura">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Comandos e suas ações dentro da viatura</h5></center>
+                                    Comandos e suas ações dentro da viatura
                                 </div>
                             </div>
                         </div>
@@ -330,7 +348,13 @@
                                     <p>Utilizado durante todo o acompanhamento.</p>
                                 </div>
                                 <div id="intensidade3" class="tab-content" tab-group="sinaissonoros">
-                                    <p>Utilizado quando, durante um acompanhamento a viatura necessita trafegar pelo lado contrário da via.</p>
+                                    <p>Usa-se quando, durante um acompanhamento a viatura necessita trafegar pelo lado contrário da via ou venha a passar em uma região 
+                                        com grande número de terceiros (Praça, Hospital, Mecânica)</p>
+                                    <br>
+                                    <p><div class="imageInLine">
+                                        <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                                    </div><span class="bold highlight-vermelho"><b>Obs: </b></span>atualmente essa intensidade dos sinais sonoros e luminosos só se encontra 
+                                    funcional nas viaturas da unidade SPEED.</p>
                                 </div>
                             </div>
                         </div>
@@ -428,8 +452,18 @@
                                 <img src="/src/images/icons/radio.png" width="15" alt="Imagem de um Rádio" />
                             </div>"QAP Central, Focus iniciando abordagem de código 1 a um Sultan Preto, no QTH do Alta News, necessito do QRR de mais duas unidades"</i></p>
                         </blockquote>
-                        <p>O P2 sairá da viatura e se deslocará até o veículo abordado passando por trás de sua viatura para evitar acidentes. Durante a abordagem a comunicação deverá 
-                            ser clara e conter elementos essenciais, sendo eles:</p>
+                        <p>O P2 sairá da viatura e se deslocará até o veículo abordado passando por trás de sua viatura para evitar acidentes.</p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image" style="width: 650px;">
+                                        <img src="/src/images/AB/desembarque-código-1.gif" alt="Demonstração de deslocamento até o veículo abordado">
+                                </div>
+                                <div class="image-description">
+                                    Demonstração de deslocamento até o veículo abordado
+                                </div>
+                            </div>
+                        </div>                            
+                        <p>Durante a abordagem a comunicação deverá ser clara e conter elementos essenciais, sendo eles:</p>
                         <div class="tab-container">
                             <div class="tabs">
                                 <button class="tab active" tab-group="funcAB1" data-tab="cumprimento" >Cumprimento</button>
@@ -481,16 +515,26 @@
                         <p><div class="imageInLine">
                             <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
                         </div><span class="bold highlight-vermelho"><b>Obs: </b></span>Caso durante a abordagem o cidadão não possua seus documentos, peça gentilmente para que o mesmo 
-                            desça do veiculo para utilizar o aparelho de biometria e retorne ao seu veículo. Caso o mesmo não coopere, a abordagem será escalonada para código 2.</p>
+                            desça do veículo para utilizar o aparelho de biometria e retorne ao seu veículo. Caso o mesmo não coopere, a abordagem será escalonada para código 2.</p>
                         <blockquote>
                             <p><div class="imageInLine">
-                                <img src="/src/images/icons/seta.png" width="22" alt="Seta" />
+                                <img data-theme-image 
+                                    data-light-src="/src/images/icons/seta-d.png" 
+                                    data-dark-src="/src/images/icons/seta-w.png" 
+                                    src="/src/images/icons/seta-d.png" 
+                                    width="22" 
+                                    alt="Ícone de tema dinâmico">
                             </div><span class="highlight-AB"><span class="code"><b>Liberação:</b></span></span></p>
                             <p>Após todas as verificações, caso seja constatado que está tudo nos conformes ou após aplicar a multa/advertência verbal, o cidadão poderá ser liberado.</p>
                             <p><div class="imageInLine">
-                                <img src="/src/images/icons/lupa.png" width="22" alt="Lupa" />
+                                <img data-theme-image 
+                                    data-light-src="/src/images/icons/lupa-d.png" 
+                                    data-dark-src="/src/images/icons/lupa-w.png" 
+                                    src="/src/images/icons/lupa-d.png" 
+                                    width="22" 
+                                    alt="Ícone de tema dinâmico">
                             </div><span class="highlight-AB"><b>Como é feita a liberação?</b></span></p>
-                            <P>Ao encerrar o procedimento, deve-se informar ao cidadão abordado que quando você retornar para a viatura e os giroflex (sinal luminoso) forem desligados, 
+                            <P>Ao encerrar o procedimento, deve-se informar ao cidadão abordado que quando você retornar para a viatura e o giroflex (sinal luminoso) for desligado, 
                                 o mesmo poderá seguir viagem.</P>
                         </blockquote>
                     </div>
@@ -523,7 +567,7 @@
                                     <img src="/src/images/AB/abordage-de-código-1-e-2.png" alt="Posicionamento das Viaturas em Abordagem de Código 1">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Posicionamento das Viaturas em Abordagem de Código 1</h5></center>
+                                    Posicionamento das Viaturas em Abordagem de Código 1
                                 </div>
                             </div>
                         </div>
@@ -646,13 +690,23 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/AB/abordage-de-código-1-e-2.png" alt="Posicionamento das Viaturas em Abordagem de Código 2">
+                                        <img src="/src/images/AB/desembarque-código-2.gif" alt="Posicionamento das Viaturas em Abordagem de Código 2">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Posicionamento das Viaturas em Abordagem de Código 2</h5></center>
+                                    Posicionamento das Viaturas em Abordagem de Código 2
                                 </div>
                             </div>
                         </div>
+                        <!--<div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/AB/abordage-de-código-1-e-2.png" alt="Posicionamento das Viaturas em Abordagem de Código 2">
+                                </div>
+                                <div class="image-description">
+                                    Posicionamento das Viaturas em Abordagem de Código 2
+                                </div>
+                            </div>
+                        </div>-->
                     </div>
                     <hr>
                     <div id="topic13">
@@ -667,23 +721,35 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/AB/abordagem-de-código-3.png" alt="Posicionamento das Viaturas em Abordagem de Código 3">
+                                        <img src="/src/images/AB/desembarque-código-3.gif" alt="Posicionamento das Viaturas em Abordagem de Código 3">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Posicionamento das Viaturas em Abordagem de Código 3</h5></center>
+                                    Posicionamento das Viaturas em Abordagem de Código 3
                                 </div>
                             </div>
                         </div>
+                        <!--<div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image">
+                                    <img src="/src/images/AB/abordagem-de-código-3.png" alt="Posicionamento das Viaturas em Abordagem de Código 3">
+                                </div>
+                                <div class="image-description">
+                                    Posicionamento das Viaturas em Abordagem de Código 3
+                                </div>
+                            </div>
+                        </div>-->
                     </div>    
                 </div>
             </div>
         </div>
     </main>
+    <!--div para funcionalidade do zoom das imagens-->
     <div id="imageModal" class="modal">
         <span class="close-button">&times;</span>
         <img class="modal-content" id="zoomedImage">
         <div id="modalDescription" class="modal-description"></div>
     </div>
+    <!--botões da parte inferior da página-->
     <footer>
         <div class="button-container">
             <a href="/QTH.html" class="qth">Manual de QTH's</a>
@@ -691,5 +757,6 @@
         </div>
     </footer>
     <script src="src/scripts/board.js"></script>
+    <script src="/src/scripts/theme.js"></script>
 </body>
 </html>

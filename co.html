@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
-    <title>Curso de Comunicação Operacional | BPM-AV</title>
+    <title>Curso de Comunicação Operacional | 1°BPM-AV</title>
 
     <link rel="stylesheet" href="/src/styles/globals.css">
+    <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!--menu lateral-->
     <button id="mobileMenuBtn" class="mobile-menu-btn ">
         <i class="fas fa-bars"></i>
     </button>
@@ -73,6 +75,26 @@
             </li>
         </ul>
     </nav>
+    <!--botão tema claro/escuro-->
+    <div class="theme-toggle">
+        <button id="theme-button" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </div>
+    <!--corpo da página-->
     <header>
         <img src="/src/images/CO/header.png" alt="Imagem do header">
     </header>
@@ -125,6 +147,13 @@
                                 <div class="expand-content" id="content-ajuda">
                                     <p>Não há vergonha em admitir que têm dúvida quanto a um procedimento ou modulação. Em todo o momento haverá superiores dispostos e capacitados para 
                                         sanar todas as vossas dúvidas.</p>
+                                    <div class="image-container">
+                                        <div class="image-card">
+                                            <div class="zoomable-image">
+                                                    <img src="/src/images/CO/explicando.gif" alt="Oficial explicando e tirando dúvidas">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -137,7 +166,20 @@
                                 </svg>
                             </button>
                             <div class="expand-content" id="content-modulacao">
-                                <p>É de caráter obrigatório que todo o código Q e os código de 0-6 estejam fixados na mente para a realização dos procedimentos com sucesso quando estiverem numa patrulha.</p>
+                                <p>É de caráter obrigatório que todo o código Q e os código de 0-6 estejam fixados na mente para a realização dos procedimentos com sucesso 
+                                    quando estiverem numa patrulha.</p>
+                                <blockquote>
+                                    <p><span class="highlight-CO"><span class="code">Exemplo de Modulação</span></span></p>
+                                    <div class="imageInLineBox">
+                                        <div class="imageInLine">
+                                            <img src="/src/images/icons/radio.png" alt="Imagem de um Rádio" />
+                                        </div>
+                                        <div class="imageInLine2">
+                                            <p><i>"QAP Central, VSTR 666 iniciando acompanhamento a um S2000 rosa, da QRU de Caixa Eletrônico, no QTH do Campo do Golf, necessito 
+                                                do QRR de mais 2 unidades, preferência SPEED."</i></p>
+                                        </div>
+                                    </div>
+                                </blockquote>
                             </div>
                         </div>
 
@@ -179,26 +221,54 @@
                             <li>Em ordens de oficiais superiores, não conteste as mesmas na rádio</li>
                         </ul>
                     </div>
-                    <br>
                     <hr>
                     <div id="topic3">
                         <h2>Utilização do CP</h2>
                         <p>Diferente da rádio, o <span class="bold highlight-CO">CP - Chat policial</span>, deve ser utilizado para comunicações onde não há necessidade de uma compreensão imediata</p>
-                        <p>Deve ser utilizado para informações como entrada e/ou encerramento de serviço; informações sobre perda de visual de veículos de acompanhamentos; números de B.O, etc...</p>
+                        <p>Deve ser utilizado para informações como entrada e/ou encerramento de serviço; informações sobre perda de visual de veículos de acompanhamentos; 
+                            números de B.O, etc...</p>
+                        <blockquote>
+                            <p><div class="imageInLine">
+                                <img src="/src/images/icons/pager.png" width="18" alt="BPM">
+                            </div><span class="bold highlight-CO"><span class="code">Exemplo de utilzação do cp:</span></span></p>
+                            <ul>
+                                <li><i>"QAP Central, qual o número do B.O da QRU do SultanRS?"</i></li>
+                                <li><i>"QAP Central, alguma unidade com vaga ou oficial sem PTR para iniciar código 0?"</i></li>
+                            </ul>
+                        </blockquote>
+                        <p><div class="imageInLine">
+                            <img src="/src/images/icons/observacao.png" width="22" alt="OBS" />
+                        </div><span class="bold highlight-vermelho"><b>Obs:</b></span> vale lembrar que a má utilização do cp pode acarretar em reciclagem.</p>
                     </div>
                     <hr>
                     <div id="topic4">
                         <h2>Código Q</h2>
-
-                        <center>
-                            <img src = "/src/images/CO/códigos-q.png" width="650">
-                            <h5>Tabela dos Códigos Q utilizados na Polícia do Alta Valley</h5>
-                        </center>
+                        <p>O código Q, para os policiais, faz com que possamos ter <b>maior organização</b> em nossa comunicação através da rádio, ou seja, 
+                            permite uma <b>maior economia de tempo</b>.</p>
+                        <p>Durante qualquer QRU o tempo é um fator que simplesmente tem grande valor! Cada segundo pode acabar fazendo uma enorme diferença para 
+                            a vida de uma possível vítima! Por isso, o seu domínio é de suma importância para quem promove tais atividade, sendo que é fundamental 
+                            ter um domínio total acerca do seu extenso!</p>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image" style="width: 650px;">
+                                        <img src="/src/images/CO/códigos-q.png" alt="Tabela dos Códigos Q utilizados na Polícia do Alta Valley">
+                                </div>
+                                <div class="image-description">
+                                    Tabela dos Códigos Q utilizados na Polícia do Alta Valley
+                                </div>
+                            </div>
+                        </div>
                         <br>
-                        <center>
-                            <img src = "/src/images/CO/legenda-código-q.png" width="400">
-                            <h5>Legenda para coloração da tabela de Códigos Q</h5>
-                        </center>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image" style="width: 400px;">
+                                        <img src="/src/images/CO/legenda-código-q.png" alt="Legenda para coloração da tabela de Códigos Q">
+                                </div>
+                                <div class="image-description">
+                                    Legenda para coloração da tabela de Códigos Q
+                                </div>
+                            </div>
+                        </div>
                         <br>
                         <div class="expand-section">
                             <button class="expand-button" aria-expanded="false" aria-controls="content-QTA">
@@ -217,7 +287,7 @@
                                     <li>
                                         <span class="highlight-amarelo"><b>Breve QTA:</b></span><br>
                                         Utilizado em situações onde iremos sair brevemente da QRU, normalmente é utilizado pela terciária para poder prestar apoio a civis ou
-                                        GTM's atropelados e, pelo GSA para abastacimento (vale lembrar que a GSA é a <b>ÚNICA</b> unidade que poderá sair para abastecimento) ou, 
+                                        GTM's atropelados e, pelo GRA para abastacimento (vale lembrar que a GRA é a <b>ÚNICA</b> unidade que poderá sair para abastecimento) ou, 
                                         embarque de operadores, neste tipo de QTA e nessas situações, a unidade pode retornar para a QRU.
                                     </li>
                                 </ul>
@@ -228,7 +298,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="expand-section">
                             <button class="expand-button" aria-expanded="false" aria-controls="content-QTI">
                                 <span class="highlight-amarelo"><b>⚠️ QTI</b></span>
@@ -237,10 +306,10 @@
                                 </svg>
                             </button>
                             <div class="expand-content" id="content-QTI">
-                                <p>Não garante VAGA! Não informar QTI para verificar denúncia, apenas modular se de fato tiver o visual do acompanhamento.</p>
+                                <p><b>Não garante VAGA!</b> Não se deve informar QTI para verificar denúncia, modular apenas se a ocorrência já estiver ativa e você for 
+                                    prestar apoio.</p>
                             </div>
                         </div>
-                
                         <div class="expand-section">
                             <button class="expand-button" aria-expanded="false" aria-controls="content-QRX">
                                 <span class="highlight-amarelo"><b>⚠️ QRX/Prioridade</b></span>
@@ -254,17 +323,22 @@
                                     <li>Se você estiver realizando uma modulação no rádio e escutar um Oficial dizendo: “QRX Central, Prioridade”, encerre sua modulação IMEDIATAMENTE.</li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                     <hr>
                     <div id="topic5">
                         <h2>Código 0-6</h2>
                         <p>Os códigos de 0 a 6 são utilizados para descrever o nível de gravidade da situação na ocorrência.</p>
-                        <center>
-                            <img src = "/src/images/CO/código-0-a-6.png" width="550">
-                            <h5>Tabela de Código de 0 a 6 usado na Polícia do Alta Valley</h5>
-                        </center>
+                        <div class="image-container">
+                            <div class="image-card">
+                                <div class="zoomable-image" style="width: 550px;">
+                                        <img src="/src/images/CO/código-0-a-6.png" alt="Tabela de Código de 0 a 6 usado na Polícia do Alta Valley">
+                                </div>
+                                <div class="image-description">
+                                    Tabela de Código de 0 a 6 usado na Polícia do Alta Valley
+                                </div>
+                            </div>
+                        </div>
                         <br>
                     </div>
                     <hr>
@@ -272,14 +346,13 @@
                         <h2>Rosa dos Ventos</h2>
                         <p>Além da utilização dos códigos Q e dos códigos de 0 a 6, alguns oficiais, principalmente os da Unidade Interceptor, utilizam em sua modulação a rosa dos ventos 
                             para que assim possam facilitar que saibam a direção que o acompanhamento se encontra indo e imaginarem o possível QTH futuro.</p>
-
                         <div class="image-container">
                             <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/CO/mapa-rosa-dos-ventos.png" alt="Mapa da Rosa dos Ventos">
+                                <div class="zoomable-image" style="width: 650px;">
+                                        <img src="/src/images/CO/mapa-rosa-dos-ventos.png" alt="Mapa da Rosa dos Ventos">
                                 </div>
                                 <div class="image-description">
-                                    <center><h5>Mapa da Rosa dos Ventos</h5></center>
+                                    Mapa da Rosa dos Ventos
                                 </div>
                             </div>
                         </div>
@@ -289,10 +362,15 @@
                         <h2>Demais meios de Comunicação</h2>
                         <blockquote>
                             <p><div class="imageInLine">
-                                <img src="/src/images/icons/seta.png" width="22" alt="Seta" />
+                                <img data-theme-image 
+                                    data-light-src="/src/images/icons/seta-d.png" 
+                                    data-dark-src="/src/images/icons/seta-w.png" 
+                                    src="/src/images/icons/seta-d.png" 
+                                    width="22" 
+                                    alt="Ícone de tema dinâmico">
                             </div><span class="highlight-CO"><span class="code">/911</span></span><br>Canal utilizado para nos comunicarmos com <b>OS CIVIS</b> através de texto.</p>
                             <p><span class="highlight-CO"><b>Exemplo:</b></span><br>Em nosso procedimento para aplicar multas nos veículos abandonados pela cidade, <b>precisamos</b> e 
-                                <b>devemos</b> contatar o cidadão três vezes pelo /911 antes de realizar o procedimento.</p>
+                                <b>devemos</b> contatar o cidadão <b>três vezes através /911</b> antes de realizar o procedimento.</p>
                             <p><div class="imageInLine">
                                 <img src="/src/images/icons/pager.png" width="21" alt="Pager" />
                             </div>"Sr. Alex Teixeira, encontra-se na cidade? Favor responder através do 911 (1/3)</p>
@@ -302,7 +380,12 @@
                         </blockquote>
                         <blockquote>
                             <p><div class="imageInLine">
-                                <img src="/src/images/icons/seta.png" width="22" alt="Seta" />
+                                <img data-theme-image 
+                                    data-light-src="/src/images/icons/seta-d.png" 
+                                    data-dark-src="/src/images/icons/seta-w.png" 
+                                    src="/src/images/icons/seta-d.png" 
+                                    width="22" 
+                                    alt="Ícone de tema dinâmico">
                             </div><span class="highlight-CO"><span class="code">/112</span></span><br>Canal utilizado para nos comunicarmos com OS <b>MÉDICOS</b> através de texto</p>
                             <p><span class="highlight-CO"><b>Exemplo:</b></span><br>Antes de realizarmos qualquer procedimento de reanimação, <b>devemos</b> contatar os médico para saber se os 
                                 mesmos estão disponíveis para auxiliar ou se estamos autorizados a realizar o procedimento.</p>
@@ -315,11 +398,13 @@
             </div>
         </div>
     </main>
+    <!--div para funcionalidade do zoom das imagens-->
     <div id="imageModal" class="modal">
         <span class="close-button">&times;</span>
         <img class="modal-content" id="zoomedImage">
         <div id="modalDescription" class="modal-description"></div>
     </div>
+    <!--botões da parte inferior da página-->
     <footer>
         <div class="button-container">
             <a href="/calculadora.html" class="qth">Calculadora Penal</a>
@@ -327,5 +412,6 @@
         </div>
     </footer>
     <script src="/src/scripts/board.js"></script>
+    <script src="/src/scripts/theme.js"></script>
 </body>
 </html>
