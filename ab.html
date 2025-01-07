@@ -6,10 +6,14 @@
     <title>Curso de Abordagem | 1°BPM-AV</title>
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
-    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <link rel="preload" href="/src/styles/globals.css" as="style">
+    <link rel="preload" href="/src/styles/functions.css" as="style">
+    <link rel="preload" href="/src/styles/partials/colorsHighlight.css" as="style">
+    
+    <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/functions.css">
-    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css" />
-
+    <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -42,8 +46,6 @@
                     </svg>
                 </button>
                 <ul class="submenu">
-                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
-                    </span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
                     </span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
@@ -208,14 +210,15 @@
                             <p>Após a cidadã abordada aceitar realizar o procedimento, você utilizará o comando /revistarcaixa ou irá olhar para a cidadã (segurando 
                                 o alt e mirando na mesma, após isso, apenas selecione a opção de Revistar Caixa) para poder passar uma caixa para a cidadã, para que 
                                 assim ela possa colocar seus itens na mesma.</p>
-                            <div class="image-container">
-                                <div class="image-card">
-                                    <div class="zoomable-image">
-                                            <img src="/src/images/AB/revista-caixa.gif" alt="Demonstração de revista através da caixa">
-                                    </div>
-                                    <div class="image-description">
-                                        Demonstração de revista através da caixa
-                                    </div>
+                            <div class="gif-container">
+                                <div class="zoomable-image">
+                                    <img class="responsive-gif lazy-image" 
+                                        src="/src/images/AB/placeholder/revista-caixa-placeholder.jpg"
+                                        data-src="/src/images/AB/revista-caixa.gif" 
+                                        alt="Exemplo de GIF">
+                                </div>
+                                <div class="image-description">
+                                    Demonstração de revista através da caixa
                                 </div>
                             </div>
                         </blockquote>
@@ -321,10 +324,13 @@
                         <h2>Sinais Luminosos e Sonoros</h2>
                         <p>Para iniciar um acompanhamento, ou efetuar uma ordem de parada, o policial deve estar fazendo o uso correto dos sinais luminosos e sonoros de sua viatura. 
                             Na tabela a seguir estão reforçados os comandos no painel que são utilizados nas referidas funções:</p>
-                        <div class="image-container">
+                        <div class="image-container" style="width: 550px;">
                             <div class="image-card">
-                                <div class="zoomable-image" style="width: 550px;">
-                                    <img src="/src/images/AB/comandos-qsv.png" alt="Comandos e suas ações dentro da viatura">
+                                <div class="zoomable-image">
+                                    <img class="lazy-image" 
+                                        src="/src/images/AB/placeholder/comandos-qsv-placeholder.jpg"
+                                        data-src="/src/images/AB/comandos-qsv.png" 
+                                        alt="Sistema de zoom de imagem">
                                 </div>
                                 <div class="image-description">
                                     Comandos e suas ações dentro da viatura
@@ -453,16 +459,17 @@
                             </div>"QAP Central, Focus iniciando abordagem de código 1 a um Sultan Preto, no QTH do Alta News, necessito do QRR de mais duas unidades"</i></p>
                         </blockquote>
                         <p>O P2 sairá da viatura e se deslocará até o veículo abordado passando por trás de sua viatura para evitar acidentes.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image" style="width: 650px;">
-                                        <img src="/src/images/AB/desembarque-código-1.gif" alt="Demonstração de deslocamento até o veículo abordado">
-                                </div>
-                                <div class="image-description">
-                                    Demonstração de deslocamento até o veículo abordado
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AB/placeholder/desembarque-código-1-placeholder.jpg"
+                                    data-src="/src/images/AB/desembarque-código-1.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
-                        </div>                            
+                            <div class="image-description">
+                                Demonstração de deslocamento até o veículo abordado
+                            </div>
+                        </div>                                                   
                         <p>Durante a abordagem a comunicação deverá ser clara e conter elementos essenciais, sendo eles:</p>
                         <div class="tab-container">
                             <div class="tabs">
@@ -564,7 +571,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/AB/abordage-de-código-1-e-2.png" alt="Posicionamento das Viaturas em Abordagem de Código 1">
+                                    <img class="lazy-image" 
+                                        src="/src/images/AB/placeholder/abordage-de-código-1-e-2-placeholder.jpg"
+                                        data-src="/src/images/AB/abordage-de-código-1-e-2.png" 
+                                        alt="Sistema de zoom de imagem">
                                 </div>
                                 <div class="image-description">
                                     Posicionamento das Viaturas em Abordagem de Código 1
@@ -687,26 +697,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                        <img src="/src/images/AB/desembarque-código-2.gif" alt="Posicionamento das Viaturas em Abordagem de Código 2">
-                                </div>
-                                <div class="image-description">
-                                    Posicionamento das Viaturas em Abordagem de Código 2
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AB/placeholder/desembarque-código-2-placeholder.jpg"
+                                    data-src="/src/images/AB/desembarque-código-2.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
-                        </div>
-                        <!--<div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AB/abordage-de-código-1-e-2.png" alt="Posicionamento das Viaturas em Abordagem de Código 2">
-                                </div>
-                                <div class="image-description">
-                                    Posicionamento das Viaturas em Abordagem de Código 2
-                                </div>
+                            <div class="image-description">
+                                Posicionamento das Viaturas em Abordagem de Código 2
                             </div>
-                        </div>-->
+                        </div> 
                     </div>
                     <hr>
                     <div id="topic13">
@@ -718,26 +719,17 @@
                         <p>Neste tipo de abordagem, não tem limites de unidades para prestar apoio na abordagem, portanto, tal posicionamento vai seguir da 
                             seguinte forma, usaremos o posicionamento de abordagem felony, as 3 viaturas irão estacionar na parte de trás do veículo, uma ao lado da outra 
                             direcionadas ao veículo abordado, desceram todos do veículo e seguiram com o procedimento padrão de abordagem cód. 3.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                        <img src="/src/images/AB/desembarque-código-3.gif" alt="Posicionamento das Viaturas em Abordagem de Código 3">
-                                </div>
-                                <div class="image-description">
-                                    Posicionamento das Viaturas em Abordagem de Código 3
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AB/placeholder/desembarque-código-3-placeholder.jpg"
+                                    data-src="/src/images/AB/desembarque-código-3.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
-                        </div>
-                        <!--<div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AB/abordagem-de-código-3.png" alt="Posicionamento das Viaturas em Abordagem de Código 3">
-                                </div>
-                                <div class="image-description">
-                                    Posicionamento das Viaturas em Abordagem de Código 3
-                                </div>
+                            <div class="image-description">
+                                Posicionamento das Viaturas em Abordagem de Código 3
                             </div>
-                        </div>-->
+                        </div> 
                     </div>    
                 </div>
             </div>

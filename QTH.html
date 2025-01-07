@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
     <title>QTH's | 1°BPM-AV</title>
+    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
+    <link rel="preload" href="/src/styles/globals.css" as="style">
+    <link rel="preload" href="/src/styles/functions.css" as="style">
+    <link rel="preload" href="/src/styles/partials/colorsHighlight.css" as="style">
+    
     <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -43,8 +47,6 @@
                     </svg>
                 </button>
                 <ul class="submenu">
-                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
-                    </span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
                     </span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
@@ -113,7 +115,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/QTH/mapa-qth-sul.png" alt="Pontos de Referência do Sul da Cidade Alta Valley">
+                                    <img class="lazy-image" 
+                                        src="/src/images/QTH/placeholder/mapa-qth-sul-placeholder.jpg"
+                                        data-src="/src/images/QTH/mapa-qth-sul.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Pontos de Referência do Sul da Cidade Alta Valley
@@ -126,7 +131,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/QTH/mapa-qth-norte.png" alt="Pontos de Referência do Norte da Cidade Alta Valley">
+                                    <img class="lazy-image" 
+                                        src="/src/images/QTH/placeholder/mapa-qth-norte-placeholder.jpg"
+                                        data-src="/src/images/QTH/mapa-qth-norte.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Pontos de Referência do Norte da Cidade Alta Valley
@@ -152,7 +160,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/QTH/mapa-rodovias.png" alt="Rodovias da Cidade Alta Valley">
+                                    <img class="lazy-image" 
+                                        src="/src/images/QTH/placeholder/mapa-rodovias-placeholder.jpg"
+                                        data-src="/src/images/QTH/mapa-rodovias.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Rodovias da Cidade Alta Valley

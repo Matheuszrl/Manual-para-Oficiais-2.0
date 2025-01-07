@@ -6,6 +6,10 @@
     <title>Curso de Acompanhamento | 1°BPM-AV</title>
     <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
+    <link rel="preload" href="/src/styles/globals.css" as="style">
+    <link rel="preload" href="/src/styles/functions.css" as="style">
+    <link rel="preload" href="/src/styles/partials/colorsHighlight.css" as="style">
+    
     <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
@@ -42,8 +46,6 @@
                     </svg>
                 </button>
                 <ul class="submenu">
-                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
-                    </span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
                     </span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
@@ -114,11 +116,12 @@
                             para que durante a realização da curva seja necessário virar menos o volante da viatura, de forma que a curva possa ser efetuada com uma maior 
                             velocidade e menor necessidade de frenagem, além que com essa técnica é possível também ter uma melhor visualização do ponto futuro da curva, 
                             sabendo o que vem pela frente e dando um maior tempo para reação.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AC/curvas.gif" alt="Curvas">
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                src="/src/images/AC/placeholder/curvas-placeholder.jpg"
+                                    data-src="/src/images/AC/curvas.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
                         </div>
                         <hr>
@@ -126,22 +129,24 @@
                         <p>A técnica de dosagem do freio e acelerador, consiste no uso de leves toques no freio e não só utilizar do acelerador da viatura como se esta fosse 
                             um carro de corrida. Esta técnica, preferencialmente deve utilizada juntamente a técnica de curvas pois, com a realização das duas técnicas, uma 
                             se beneficiará da outra.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AC/curvas.gif" alt="Curvas">
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AC/placeholder/curvas-placeholder.jpg"
+                                    data-src="/src/images/AC/curvas.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
                         </div>
                         <hr>
                         <b class="highlight-AC">3. Cautela em calçadas:</b>
                         <p>Em calçadas e meios fios temos muitos fatores adversos que podem gerar um acidente com a viatura, sejam pedestres, postes, placas, árvores, 
                             etc. Dito isso, para evitar qualquer colisão com esses elementos é preferível que seja evitado sempre que possível a passagem por esses locais.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AC/calçadas.gif" alt="Calçadas">
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AC/placeholder/calçadas-placeholder.jpg"
+                                    data-src="/src/images/AC/calçadas.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
                         </div>
                         <hr>
@@ -149,11 +154,12 @@
                         <p>Um dos nossos objetivos no 1ºBPM-AV, é o de obter o Código 4, ou seja, o sucesso nos acompanhamentos a indivíduos e, por esse fator, é de 
                             extrema importância a realização do mesmo trajeto do indivíduo porém, não devemos esquecer de que, caso este erre, podemos e devemos 
                             corrigir o erro cometido pelo veículo acompanhado para que este não nos prejudique!</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AC/trajeto.gif" alt="Trajeto">
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AC/placeholder/trajeto-placeholder.jpg"
+                                    data-src="/src/images/AC/trajeto.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
                         </div>
                         <hr>
@@ -223,22 +229,6 @@
                                 </div>
                             </div>
                         </blockquote>
-                        <!--<div class="expand-section">
-                            <button class="expand-button" aria-expanded="false" aria-controls="content-taser">
-                                <img src="/src/images/icons/taser.png" width="25" alt="AB"> <span class="bold highlight-AC">Uso do Taser</span>
-                                <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="9 6 15 12 9 18"></polyline>
-                                </svg>
-                            </button>
-                            <div class="expand-content" id="content-taser">
-                                <p>A utilização do <b>Taser</b> é <b>permitida</b> nos seguintes casos:
-                                    <ul>
-                                        <li>Caso o indivíduo utilize algum meio de comunicação (celular ou rádio) durante o acompanhamento a pé.</li>
-                                        <li>Caso o indivíduo utilize entorpecentes com o intuito de se beneficiar.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>-->
                         <blockquote>
                             <p><div class="imageInLine">
                                 <img src="/src/images/icons/taser.png" width="27" alt="Taser" />
@@ -248,28 +238,30 @@
                             <ul>
                                 <li>Caso o indivíduo utilize algum meio de comunicação (celular ou rádio) durante o acompanhamento a pé.</li>
                             </ul>
-                            <div class="image-container">
-                                <div class="image-card">
-                                    <div class="zoomable-image">
-                                            <img src="/src/images/AC/uso-de-rádio.gif" alt="Demonstração de uso do taser caso o indivíduo use meios de comunicação">
-                                    </div>
-                                    <div class="image-description">
-                                        Demonstração de uso do taser caso o indivíduo use meios de comunicação
-                                    </div>
+                            <div class="gif-container">
+                                <div class="zoomable-image">
+                                    <img class="responsive-gif lazy-image" 
+                                        src="/src/images/AC/placeholder/uso-de-rádio-placeholder.jpg"
+                                        data-src="/src/images/AC/uso-de-rádio.gif" 
+                                        alt="Exemplo de GIF">
+                                </div>
+                                <div class="image-description">
+                                    Demonstração de uso do taser caso o indivíduo use meios de comunicação
                                 </div>
                             </div>
                             <hr>
                             <ul>
                                 <li>Caso o indivíduo utilize entorpecentes com o intuito de se beneficiar.</li>
                             </ul>
-                            <div class="image-container">
-                                <div class="image-card">
-                                    <div class="zoomable-image">
-                                            <img src="/src/images/AC/uso-de-drogas.gif" alt="Demonstração de uso do taser caso o indivíduo use entorpecentes">
-                                    </div>
-                                    <div class="image-description">
-                                        Demonstração de uso do taser caso o indivíduo use entorpecentes
-                                    </div>
+                            <div class="gif-container">
+                                <div class="zoomable-image">
+                                    <img class="responsive-gif lazy-image" 
+                                        src="/src/images/AC/placeholder/uso-de-drogas-placeholder.jpg"
+                                        data-src="/src/images/AC/uso-de-drogas.gif" 
+                                        alt="Exemplo de GIF">
+                                </div>
+                                <div class="image-description">
+                                    Demonstração de uso do taser caso o indivíduo use entorpecentes
                                 </div>
                             </div>
                         </blockquote>
@@ -557,11 +549,12 @@
                             nós do 1° BPM-AV realizamos as seguintes técnicas para mantermos o acompanhamento.</p>
                         <p>Além do que foi citado acima, informamos que se for necessário a realização de um salto / rampa, a manobra 360º pode auxiliar durante, 
                             fazendo com que sua viatura mantenha a estabilidade.</p>
-                        <div class="image-container">
-                            <div class="image-card">
-                                <div class="zoomable-image">
-                                    <img src="/src/images/AC/360.gif" alt="QSV dando 360">
-                                </div>
+                        <div class="gif-container">
+                            <div class="zoomable-image">
+                                <img class="responsive-gif lazy-image" 
+                                    src="/src/images/AC/placeholder/360-placeholder.jpg"
+                                    data-src="/src/images/AC/360.gif" 
+                                    alt="Exemplo de GIF">
                             </div>
                         </div>
                     </div>

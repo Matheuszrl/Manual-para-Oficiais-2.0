@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
     <title>Curso de Comunicação Operacional | 1°BPM-AV</title>
+    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
+    <link rel="preload" href="/src/styles/globals.css" as="style">
+    <link rel="preload" href="/src/styles/functions.css" as="style">
+    <link rel="preload" href="/src/styles/partials/colorsHighlight.css" as="style">
+    
     <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -42,8 +46,6 @@
                     </svg>
                 </button>
                 <ul class="submenu">
-                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
-                    </span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
                     </span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
@@ -147,11 +149,12 @@
                                 <div class="expand-content" id="content-ajuda">
                                     <p>Não há vergonha em admitir que têm dúvida quanto a um procedimento ou modulação. Em todo o momento haverá superiores dispostos e capacitados para 
                                         sanar todas as vossas dúvidas.</p>
-                                    <div class="image-container">
-                                        <div class="image-card">
-                                            <div class="zoomable-image">
-                                                    <img src="/src/images/CO/explicando.gif" alt="Oficial explicando e tirando dúvidas">
-                                            </div>
+                                    <div class="gif-container">
+                                        <div class="zoomable-image">
+                                            <img class="responsive-gif lazy-image" 
+                                                src="/src/images/AC/placeholder/explicando-placeholder.jpg"
+                                                data-src="/src/images/CO/explicando.gif" 
+                                                alt="Exemplo de GIF">
                                         </div>
                                     </div>
                                 </div>
@@ -248,10 +251,13 @@
                         <p>Durante qualquer QRU o tempo é um fator que simplesmente tem grande valor! Cada segundo pode acabar fazendo uma enorme diferença para 
                             a vida de uma possível vítima! Por isso, o seu domínio é de suma importância para quem promove tais atividade, sendo que é fundamental 
                             ter um domínio total acerca do seu extenso!</p>
-                        <div class="image-container">
+                        <div class="image-container" style="width: 650px;">
                             <div class="image-card">
-                                <div class="zoomable-image" style="width: 650px;">
-                                        <img src="/src/images/CO/códigos-q.png" alt="Tabela dos Códigos Q utilizados na Polícia do Alta Valley">
+                                <div class="zoomable-image">
+                                    <img class="lazy-image" 
+                                         src="src/images/CO/placeholder/códigos-q-placeholder.jpg"
+                                         data-src="src/images/CO/códigos-q.png" 
+                                         alt="Sistema de zoom de imagem">
                                 </div>
                                 <div class="image-description">
                                     Tabela dos Códigos Q utilizados na Polícia do Alta Valley
@@ -259,13 +265,16 @@
                             </div>
                         </div>
                         <br>
-                        <div class="image-container">
+                        <div class="image-container" style="width: 450px;">
                             <div class="image-card">
-                                <div class="zoomable-image" style="width: 400px;">
-                                        <img src="/src/images/CO/legenda-código-q.png" alt="Legenda para coloração da tabela de Códigos Q">
+                                <div class="zoomable-image">
+                                    <img class="lazy-image" 
+                                         src="src/images/CO/placeholder/legenda-código-q-placeholder.jpg"
+                                         data-src="src/images/CO/legenda-código-q.png" 
+                                         alt="Sistema de zoom de imagem">
                                 </div>
                                 <div class="image-description">
-                                    Legenda para coloração da tabela de Códigos Q
+                                    Tabela dos Códigos Q utilizados na Polícia do Alta Valley
                                 </div>
                             </div>
                         </div>
@@ -329,10 +338,13 @@
                     <div id="topic5">
                         <h2>Código 0-6</h2>
                         <p>Os códigos de 0 a 6 são utilizados para descrever o nível de gravidade da situação na ocorrência.</p>
-                        <div class="image-container">
+                        <div class="image-container" style="width: 550px;">
                             <div class="image-card">
-                                <div class="zoomable-image" style="width: 550px;">
-                                        <img src="/src/images/CO/código-0-a-6.png" alt="Tabela de Código de 0 a 6 usado na Polícia do Alta Valley">
+                                <div class="zoomable-image">
+                                    <img class="lazy-image" 
+                                         src="src/images/CO/placeholder/código-0-a-6-placeholder.jpg"
+                                         data-src="src/images/CO/código-0-a-6.png" 
+                                         alt="Sistema de zoom de imagem">
                                 </div>
                                 <div class="image-description">
                                     Tabela de Código de 0 a 6 usado na Polícia do Alta Valley
@@ -346,13 +358,13 @@
                         <h2>Rosa dos Ventos</h2>
                         <p>Além da utilização dos códigos Q e dos códigos de 0 a 6, alguns oficiais, principalmente os da Unidade Interceptor, utilizam em sua modulação a rosa dos ventos 
                             para que assim possam facilitar que saibam a direção que o acompanhamento se encontra indo e imaginarem o possível QTH futuro.</p>
-                        <div class="image-container">
+                        <div class="image-container" style="width: 650px;">
                             <div class="image-card">
-                                <div class="zoomable-image" style="width: 650px;">
-                                        <img src="/src/images/CO/mapa-rosa-dos-ventos.png" alt="Mapa da Rosa dos Ventos">
-                                </div>
-                                <div class="image-description">
-                                    Mapa da Rosa dos Ventos
+                                <div class="zoomable-image">
+                                    <img class="lazy-image" 
+                                         src="src/images/CO/placeholder/mapa-rosa-dos-ventos-placeholder.jpg"
+                                         data-src="src/images/CO/mapa-rosa-dos-ventos.png" 
+                                         alt="Sistema de zoom de imagem">
                                 </div>
                             </div>
                         </div>

@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
     <title>Instrução ao Tablet | 1°BPM-AV</title>
+    <link rel="shortcut icon" href="/src/images/icons/logo-cursos.png">
 
+    <link rel="preload" href="/src/styles/globals.css" as="style">
+    <link rel="preload" href="/src/styles/functions.css" as="style">
+    <link rel="preload" href="/src/styles/partials/colorsHighlight.css" as="style">
+    
     <link rel="stylesheet" href="/src/styles/globals.css">
     <link rel="stylesheet" href="/src/styles/functions.css">
     <link rel="stylesheet" href="/src/styles/partials/colorsHighlight.css">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -43,8 +47,6 @@
                     </svg>
                 </button>
                 <ul class="submenu show">
-                    <li><a href="/manual.html"><span class="submenu-icon"><img src="/src/images/icons/manual.png" width="18" alt="MAN">
-                    </span>Manual de Conduta</a></li>
                     <li><a href="/pcd.html"><span class="submenu-icon"><img src="/src/images/icons/pcd.png" width="18" alt="PCD">
                     </span>PCD (Pessoa com Deficiência)</a></li>
                     <li><a href="/tablet.html"><span class="submenu-icon"><img src="/src/images/icons/tablet-pol.png" width="25" alt="TAB">
@@ -119,7 +121,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-inicio.png" alt="Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-inicio-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-inicio.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela Inicial do Tablet Policial (Antes de Entrar em Serviço)
@@ -134,7 +139,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-b.o.png" alt="Tela que irá aparecer após selecionar a aba Ocorrências">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-b.o-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-b.o.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela que irá aparecer após selecionar a aba "Ocorrências"
@@ -148,7 +156,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-b.o-aberto.png" alt="Tela que irá aparecer após clicar no botão Selecionar">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-b.o-aberto-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-b.o-aberto.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela que irá aparecer após clicar no botão "Selecionar"
@@ -194,7 +205,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-b.o-aberto-preenchido.png" alt="Exemplo de como o seu B.O irá ficar após preenchido">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-b.o-aberto-preenchido-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-b.o-aberto-preenchido.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Exemplo de como o seu B.O irá ficar após preenchido
@@ -213,7 +227,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-nome-marca-algema.png" alt="Tela onde irá acessar um B.O aberto para realizar a prisão">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-nome-marca-algema-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-nome-marca-algema.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela onde irá acessar um B.O aberto para realizar a prisão
@@ -227,7 +244,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-prisão.png" alt="Página do B.O aberto">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-prisão-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-prisão.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página do B.O aberto
@@ -315,7 +335,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-prisão-preenchido.png" alt="Página da Prisão de Indivíduos preenchida">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-prisão-preenchido-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-prisão-preenchido.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página da Prisão de Indivíduos preenchida
@@ -353,7 +376,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/itens-apreendidos.png" alt="Itens que podem ou não ser apreendidos">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/itens-apreendidos-placeholder.jpg"
+                                        data-src="/src/images/TB/itens-apreendidos.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Itens que podem ou não ser apreendidos
@@ -375,7 +401,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizar a apreensão">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-nome-marca-carro-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-nome-marca-carro.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela onde irá acessar um B.O aberto para realizar a apreensão
@@ -389,7 +418,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-apreensão-veículo.png" alt="Página que irá aparecer para que possa preencher para apreensão veicular">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-apreensão-veículo-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-apreensão-veículo.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página que irá aparecer para que possa preencher para apreensão veicular
@@ -403,7 +435,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-apreensão-veículo-placa-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-apreensão-veículo-placa.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     "Circulado" em branco é como irá aparecer após inserir o emplacamento
@@ -414,7 +449,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/apreendido.png" alt="Após ser selecionado o veículo e marcada a caixinha para apreender">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/apreendido-placeholder.jpg"
+                                        data-src="/src/images/TB/apreendido.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Após ser selecionado o veículo e marcada a "caixinha" para apreender
@@ -435,7 +473,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-nome-marca-carro.png" alt="Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-nome-marca-carro-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-nome-marca-carro.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Tela onde irá acessar um B.O aberto para realizarmos o registro de roubo
@@ -453,7 +494,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/tablet-apreensão-veículo-placa.png" alt="Circulado em branco é como irá aparecer após inserir o emplacamento">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/tablet-apreensão-veículo-placa-placeholder.jpg"
+                                        data-src="/src/images/TB/tablet-apreensão-veículo-placa.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     "Circulado" em branco é como irá aparecer após inserir o emplacamento
@@ -464,7 +508,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/roubado.png" alt="Após ser selecionado o veículo e marcada a caixinha para registrar como roubado">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/roubado-placeholder.jpg"
+                                        data-src="/src/images/TB/roubado-placa.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Após ser selecionado o veículo e marcada a "caixinha" para registrar como roubado
@@ -484,7 +531,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/veiculo-individuo.png" alt="Como irá aparecer ao acessar a aba Veículos no perfil do cidadão">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/veiculo-individuo-placeholder.jpg"
+                                        data-src="/src/images/TB/veiculo-individuo.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Como irá aparecer ao acessar a aba "Veículos" no perfil do cidadão
@@ -502,7 +552,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/computador-liberação.png" alt="Local da recepção onde é realizada a liberação">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/computador-liberação-placeholder.jpg"
+                                        data-src="/src/images/TB/computador-liberação.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Local da recepção onde é realizada a liberação
@@ -524,7 +577,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/consulta-de-individuos.png" alt="Página para consultar dados dos cidadãos da cidade">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/consulta-de-individuos-placeholder.jpg"
+                                        data-src="/src/images/TB/consulta-de-individuos.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página para consultar dados dos cidadãos da cidade
@@ -537,7 +593,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/consulta-de-individuos-especifico.png" alt="Página da consulta de uma pessoa especifica">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/consulta-de-individuos-especifico-placeholder.jpg"
+                                        data-src="/src/images/TB/consulta-de-individuos-especifico.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página da consulta de uma pessoa especifica
@@ -553,7 +612,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/veiculos.png" alt="Página para consultar veículos dos cidadãos da cidade">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/veiculos-placeholder.jpg"
+                                        data-src="/src/images/TB/veiculos.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página para consultar veículos dos cidadãos da cidade
@@ -566,7 +628,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/veiculos-especificos.png" alt="Página da consulta de um veículo especifico">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/veiculos-especificos-placeholder.jpg"
+                                        data-src="/src/images/TB/veiculos-especificos.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página da consulta de um veículo especifico
@@ -591,7 +656,10 @@
                         <div class="image-container">
                             <div class="image-card">
                                 <div class="zoomable-image">
-                                    <img src="/src/images/TB/código-penal.png" alt="Página para se consultar os códigos penais, agravantes e atenuantes">
+                                    <img class="lazy-image" 
+                                        src="/src/images/TB/placeholder/código-penal-placeholder.jpg"
+                                        data-src="/src/images/TB/código-penal.png" 
+                                        alt="Sistema de zoom de imagens">
                                 </div>
                                 <div class="image-description">
                                     Página para se consultar os códigos penais, agravantes e atenuantes

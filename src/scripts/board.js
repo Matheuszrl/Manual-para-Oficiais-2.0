@@ -59,36 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Quadro de abas
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.tab');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const tabId = tab.getAttribute('data-tab');
-            const tabGroup = tab.getAttribute('tab-group');
-            
-            tabs.forEach(
-                t => {
-                    if (t.getAttribute('tab-group') == tabGroup){
-                        t.classList.remove('active')
-                    }
-                }                
-            );
-            contents.forEach(
-                c => {
-                    if (c.getAttribute('tab-group') == tabGroup){
-                        c.classList.remove('active')
-                    }
-                }             
-            );
-            tab.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        });
-    });
-});
-
 // Gaveteiro expansivo
 document.querySelectorAll('.expand-button').forEach(button => {
     button.addEventListener('click', () => {
@@ -98,43 +68,6 @@ document.querySelectorAll('.expand-button').forEach(button => {
         content.classList.toggle('open');
     });
 });
-
-// Zoom para imagens
-document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('zoomedImage');
-    const closeButton = document.querySelector('.close-button');
-    const zoomableImages = document.querySelectorAll('.zoomable-image img');
-
-    zoomableImages.forEach(img => {
-        img.addEventListener('click', function() {
-            modal.style.display = 'block';
-            modalImg.src = this.src;
-            modalImg.style.width = 'auto';
-            modalImg.style.height = 'auto';
-            modalImg.style.maxWidth = '90%';
-            modalImg.style.maxHeight = '90vh';
-        });
-    });
-
-    closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
-    });
-
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            modal.style.display = 'none';
-        }
-    });
-});
-
-
 
 // Calculadora penal
 document.addEventListener('DOMContentLoaded', () => {
@@ -228,4 +161,125 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});
+
+// Lazy loading de imagens
+const lazyLoadImages = () => {
+    const images = document.querySelectorAll('img.lazy-image');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove('lazy-image');
+                requestAnimationFrame(() => {
+                    img.classList.add('loaded');
+                });
+                observer.unobserve(img);
+            }
+        });
+    }, options);
+
+    images.forEach(img => {
+        imageObserver.observe(img);
+    });
+};
+
+// Carregamento condicional de conteúdo das abas
+const initTabContent = () => {
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabId = tab.getAttribute('data-tab');
+            const tabGroup = tab.getAttribute('tab-group');
+            
+            tabs.forEach(
+                t => {
+                    if (t.getAttribute('tab-group') == tabGroup){
+                        t.classList.remove('active')
+                    }
+                }                
+            );
+            contents.forEach(
+                c => {
+                    if (c.getAttribute('tab-group') == tabGroup){
+                        c.classList.remove('active')
+                    }
+                }             
+            );
+            tab.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+            
+            // Chamar lazyLoadImages após mudar de aba
+            lazyLoadImages();
+        });
+    });
+};
+
+// Zoom para imagens e GIFs
+const initImageZoom = () => {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('zoomedImage');
+    const closeButton = document.querySelector('.close-button');
+    const zoomableImages = document.querySelectorAll('.zoomable-image img');
+
+    const openModal = (src) => {
+        modal.style.display = 'block';
+        modalImg.src = src;
+        
+        // Ajusta o tamanho da imagem para preencher o máximo possível mantendo a proporção
+        const windowRatio = (window.innerWidth * 0.9) / (window.innerHeight * 0.9);
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+            const imageRatio = img.width / img.height;
+            if (imageRatio > windowRatio) {
+                modalImg.style.width = '90vw';
+                modalImg.style.height = 'auto';
+            } else {
+                modalImg.style.height = '90vh';
+                modalImg.style.width = 'auto';
+            }
+        };
+    };
+
+    const closeModal = () => {
+        modal.style.display = 'none';
+        document.body.classList.remove('scroll-lock');
+    };
+
+    zoomableImages.forEach(img => {
+        img.addEventListener('click', function() {
+            openModal(this.src);
+        });
+    });
+
+    closeButton.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+};
+
+// Garantir que as funções são chamadas
+document.addEventListener('DOMContentLoaded', () => {
+    lazyLoadImages();
+    initTabContent();
+    initImageZoom();
 });

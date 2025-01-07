@@ -227,10 +227,13 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 0px 20px 0px 20px;
+    width: 100%;
+    max-width: 700px; /* Ajuste conforme necessário */
+    margin: 0 auto;
 }
 
 .image-card {
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -239,6 +242,7 @@
     transition: transform 0.3s ease;
     border-radius: 8px;
     overflow: hidden;
+    width: 100%;
 }
 
 .zoomable-image:hover {
@@ -249,6 +253,12 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.responsive-gif {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     max-width: 100%;
 }
 
@@ -256,39 +266,42 @@
     display: none;
     position: fixed;
     z-index: 1000;
-    top: 0;
     left: 0;
+    top: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
 }
 
 .modal-content {
-    max-width: 90%;
-    max-height: 90vh;
-    margin: auto;
-    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
 }
 
 .close-button {
     position: absolute;
-    right: 25px;
-    top: 10px;
+    top: 15px;
+    right: 35px;
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    cursor: pointer;
+    transition: 0.3s;
     z-index: 1001;
 }
 
-.close-button:hover {
+.close-button:hover,
+.close-button:focus {
     color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .image-description{
@@ -297,6 +310,38 @@
     font-weight: bold;
     line-height: 1.2;
     margin-top: 0.4rem;
+}
+
+.gif-container {
+    display: grid;
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    max-width: 700px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+.responsive-gif {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.scroll-lock {
+    overflow: hidden;
+}
+
+.lazy-image {
+    opacity: 0;
+    transition: opacity 0.3s, filter 0.3s;
+    filter: blur(10px);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+    filter: blur(0);
 }
 
 /* Quadro de abas */
@@ -352,7 +397,7 @@
 
 /* Responsividades */
 @media (max-width: 768px) {
-    .image-container {
+    .image-container, .gif-container {
         grid-template-columns: 1fr;
     }
 
@@ -408,4 +453,16 @@
     .sidebar {
         left: 0;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lazy-image {
+        transition: none;
+    }
+}
+
+@font-face {
+    font-family: 'MainFont';
+    src: url('/fonts/main-font.woff2') format('woff2');
+    font-display: swap;
 }
