@@ -229,6 +229,7 @@
     text-align: left;
 }
 
+/* RESPONSIVIDADES */
 @media (max-width: 640px) {
     #container-cal {
         padding: 0.5rem;

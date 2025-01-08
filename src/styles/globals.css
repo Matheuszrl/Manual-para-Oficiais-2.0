@@ -1,38 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 :root {
-    /* texts */
-    --textColorWhite: #1a1a1a; /* Texto principal escuro */
-    --descriptionText: rgba(0, 0, 0, 0.7); /* Texto secundário com leve transparência */
-    --redText: #d93025; /* Vermelho adaptado para texto */
-    --textImportant: #e67e22; /* Tom laranja com contraste adequado */
+    /* GERAL */
+    --textColorWhite: #1a1a1a;
+    --descriptionText: rgba(0, 0, 0, 0.7);
+    --redText: #d93025;
+    --textImportant: #e67e22;
+    --backgroundDark: #ffffff;
 
-    /* background */
-    --backgroundDark: #ffffff; /* Fundo principal branco */
-
-    /* scroll da página */
+    /* SCROLL DA PÁGINA */
     --scrollBackground: #ffffff;
     --scrollColor: #cccccc;
 
-    /* highlight */
+    /* HIGHLIGHT */
     --borderHighlightDark: #e0e0e0; /* Borda clara */
     --highlightDark: #f5f5f5; /* Destaque sutil no fundo claro */
     --yellowHighlight: #f4b400; /* Amarelo mais vibrante e visível no fundo claro */
 
-    /* other's */
-    --borderRedHighlight: #ff4c4c; /* Borda vermelha mais clara */
-    --boxRedBackground: rgba(255, 204, 204, 0.5); /* Fundo vermelho opaco com transparência */
-    --toastRedBackground: #ffcccc; /* Fundo vermelho mais suave para alertas */
+    /* CAIXA DE TEXTO (OBSERVAÇÃO - VERMELHA) */
+    --borderRedHighlight: #ff4c4c;
+    --boxRedBackground: rgba(255, 204, 204, 0.5);
+    --toastRedBackground: #ffcccc;
 
-    /* para itens importantes */
-    --borderImportant: #f4a261; /* Laranja suave com bom contraste */
-    --boxImportant: rgba(244, 162, 97, 0.2); /* Fundo opaco mais sutil */
-    --toastImportant: #fff4e5; /* Fundo claro para alertas */    
+    /* CAIXA DE TEXTO (IMPORTANTE - AMARELA) */
+    --borderImportant: #f4a261;
+    --boxImportant: rgba(244, 162, 97, 0.2);
+    --toastImportant: #fff4e5;
 
-    /* tab selecionada */
-    --tabChosen: #e0e0e0; /* Cor mais clara para aba ativa */
-
-    /* gitbook color's */
+    /* GITBOOK COLOR'S */
     --gitbookGoldYellow: #e1c765; /* Amarelo mais claro */
     --gitbookBlue: #2563eb; /* Mantido para consistência */
     --gitbookGreen: #22c55e; /* Mantido para consistência */
@@ -41,19 +36,15 @@
     --gitbookGreen2: #34d399; /* Verde mais vibrante */
     --gitbookBurnedYellow: #ffcc00; /* Amarelo queimado adaptado */
 
-    /* cores primárias */
-    --primary-color: #1d4ed8; /* Azul mais saturado */
-    --primary-hover: #1b4bc2; /* Azul para hover */
-    --gray-100: #f9fafb; /* Cinza muito claro */
-    --gray-600: #6b7280; /* Cinza médio */
-    --gray-700: #4b5563; /* Cinza médio-escuro */
-    --gray-900: #1f2937; /* Cinza bem escuro */
     /* MENU LATERAL */
     --textMenuColor: #1a1a1a;
     --colorHoverMenu: #efeff0;
     --linhaLateralMenu: #eaeaee;
+
     /* QUADRO DE ABAS */
     --text-color-hover: #c2bfbf;
+    --tabChosen: #e0e0e0;
+
     /* CALCULADORA PENAL */
     --principalBackground: #ffffff;
     --principalText: #333333;
@@ -68,39 +59,39 @@
     --resultadosBackground: #f1f1f1;
     --textBackground: #555555;
     --boxInfo: #f9f9f9;
+    --primary-color: #1d4ed8;
+    --gray-600: #6b7280;
+    --gray-900: #1f2937;
 }
 
 [data-theme="dark"] {
-    /* texts */
+    /* GERAL */
     --textColorWhite: #dedede;
     --descriptionText: rgba(201, 201, 201, 0.1);
     --redText: #ef4444;
     --textImportant: #FF9D00;
-
-    /* background */
     --backgroundDark: #2e3035;
 
-    /* scroll da página */
+    /* SCROLL DA PÁGINA */
     --scrollBackground: #2e3035;
     --scrollColor: #6d6b6b;
 
-    /* highlight */
+    /* HIGHLIGHT */
     --borderHighlightDark: #1e1f22;
     --highlightDark: #2b2d31;
     --yellowHighlight: #e88f00;
     
-    /* other's */
+    /* CAIXA DE TEXTO (OBSERVAÇÃO - VERMELHA) */
     --borderRedHighlight: #B00000;
     --boxRedBackground: rgba(107, 0, 0, .4);
     --toastRedBackground: #6B0000;
 
+    /* CAIXA DE TEXTO (IMPORTANTE - AMARELA) */
     --borderImportant: #FF9900;
     --boxImportant: rgba(126, 78, 0, .4);
     --toastImportant: #7E4E00;
 
-    --tabChosen: #1e1f22;
-
-    /* gitbook color's */
+    /* GITBOOK COLOR'S */
     --gitbookGoldYellow: #c3b571;
     --gitbookBlue: #3b82f6;
     --gitbookGreen: #22c55e;
@@ -109,20 +100,17 @@
     --gitbookGreen2: #1ee667;
     --gitbookBurnedYellow: #ffbf00;
 
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
-    --gray-100: #f3f4f6;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-900: #111827;
-
     --borderHR: #1e1f22;
+
     /* MENU LATERAL */
     --textMenuColor: #dedede;
     --colorHoverMenu: #27272a;
     --linhaLateralMenu: #27272a;
+
     /* QUADRO DE ABAS */
     --text-color-hover: #ffffff;
+    --tabChosen: #1e1f22;
+
     /* CALCULADORA PENAL */
     --principalBackground: #1e1e2f;
     --principalText: #ffffff;
@@ -136,6 +124,9 @@
     --resultadosBackground: #2c2f48;
     --textBackground: #d1d1d1;
     --boxInfo: #3f3f5e;
+    --primary-color: #2563eb;
+    --gray-600: #4b5563;
+    --gray-900: #111827;
 }
 
 * {
@@ -155,8 +146,6 @@ body {
     background: var(--backgroundDark);
     color: var(--textColorWhite);
 }
-
-/* Para navegadores baseados no WebKit (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -176,23 +165,18 @@ body {
     background: #999999;
 }
 
-/* Para Firefox */
 html {
     scrollbar-width: thin;
     scrollbar-color: var(--scrollColor) var(--scrollBackground);
 }
 
-/* Adicionando um exemplo de ajuste horizontal */
 ::-webkit-scrollbar-track-piece {
     background: #e6e6e6;
 }
 
 
 header {
-    /* width: 100vw; */
-
     margin: 20px 0;
-
     display: flex;
     justify-content: center;
 }
@@ -240,7 +224,6 @@ h1 {
 }
 
 .content h2 {
-    /* margin-top: 10px; */
     word-wrap: break-word;
     text-align: justify;
     margin-bottom: 20px;
@@ -264,7 +247,7 @@ hr {
     padding: 20px 15px 0 15px;
 }
 
-/* Tema claro/escuro da página */
+/* TEMAS DA PÁGINA */
 .theme-toggle {
     position: fixed;
     top: 1rem;
@@ -318,7 +301,7 @@ hr {
     transform: rotate(0deg);
 }
 
-/* Caixa de opções ao fim da página */
+/* CAIXA DE TROCA DE PÁGINA (FINAL) */
 .button-container {
     width: 90vw;
     max-width: 768px;
@@ -328,7 +311,6 @@ hr {
     transform: translate(-50%);
 
     margin: 20px 0;
-    /* padding: 20px 0; */
 
     display: flex;
     justify-content: space-between;
@@ -355,7 +337,7 @@ hr {
     transition: all .2s;
 }
 
-/* Estilizações de texto */
+/* ESTILIZAÇÕES DE TEXTO */
 li::marker {
     color: var(--borderHighlightDark);
 }
@@ -392,23 +374,12 @@ blockquote {
     tab-size: 4px;
 }
 
-/* Estilizações extras */
-.emoji {
-    width: 50px;
-
-    background: var(--highlightDark);
-    border: 1px solid var(--textColorWhite);
-    border-radius: 5px;
-    
-    padding: 5px;
-}
-
 .linkClean {
     text-decoration: none;
     color: var(--textColorWhite);
 }
 
-/* Responsividades */
+/* RESPONSIVIDADES */
 @media (max-width: 768px) {
     .button-container {
         display: flex;
@@ -424,9 +395,4 @@ blockquote {
     .theme-toggle {
         right: 1rem;
     }
-
-    /*#container {
-        margin-left: 0;
-        padding-top: 60px;
-    }*/
 }

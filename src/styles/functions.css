@@ -1,4 +1,4 @@
-/* Menu lateral */
+/* MENU LATERAL */
 .sidebar {
     position: fixed;
     top: 1.7vh;
@@ -106,7 +106,7 @@
     padding: 10px;
 }
 
-/* Imagem na lateral do texto */
+/* IMAGEM NA LATERAL DO TEXTO */
 .imageInLineBox {
     display: flex;
     justify-content: space-between;
@@ -130,19 +130,11 @@
     text-align: justify;
 }
 
-/* Estilização de avisos */
+/* CAIXA DE TEXTO (OBSERVAÇÃO - VERMELHA) */
 .toastObs {
     color: var(--redText);
     background: var(--toastRedBackground);
     border: 1px solid var(--borderRedHighlight);
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.toastImportant {
-    color: var(--textImportant);
-    background: var(--toastImportant);
-    border: 1px solid var(--borderImportant);
     border-radius: 5px;
     padding: 5px;
 }
@@ -161,6 +153,15 @@
     margin-bottom: 5px;
 }
 
+/* CAIXA DE TEXTO (IMPORTANTE - AMARELA) */
+.toastImportant {
+    color: var(--textImportant);
+    background: var(--toastImportant);
+    border: 1px solid var(--borderImportant);
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .boxImportant {
     color: var(--textColorWhite);
     background: var(--boxImportant);
@@ -175,7 +176,7 @@
     margin-bottom: 5px;
 }
 
-/* Gaveteiro expansivo */
+/* GAVETEIRO EXPANSIVO */
 .expand-section {
     margin-bottom: 8px;
     border: 1px solid var(--borderHighlightDark);
@@ -221,14 +222,14 @@
     background-color: rgba(55, 65, 81, 0.3);
 }
 
-/* Zoom de imagens */
+/* ZOOM DE IMAGENS */
 .image-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 0px 20px 0px 20px;
     width: 100%;
-    max-width: 700px; /* Ajuste conforme necessário */
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -316,7 +317,7 @@
     display: grid;
     padding: 0px 20px 0px 20px;
     width: 100%;
-    max-width: 700px; /* Ajuste conforme necessário */
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -344,7 +345,7 @@
     filter: blur(0);
 }
 
-/* Quadro de abas */
+/* QUADRO DE ABAS */
 .tab-container {
     background-color: var(--backgroundDark);
     border-radius: 5px;
@@ -395,7 +396,7 @@
     margin: 0;
 }
 
-/* Responsividades */
+/* RESPONSIVIDADES */
 @media (max-width: 768px) {
     .image-container, .gif-container {
         grid-template-columns: 1fr;

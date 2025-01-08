@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adiciona a funcionalidade de marcar o item ativo
     const menuItems = document.querySelectorAll('.menu a, .submenu a');
-    const currentPath = window.location.pathname; // Caminho da URL atual.
+    const currentPath = window.location.pathname;
     menuItems.forEach(item => {
         if (item.getAttribute('href') === currentPath) {
             item.classList.add('active');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.remove('active');
         }
             
-            // Fecha o menu em telas menores após clicar em um item
+        // Fecha o menu em telas menores após clicar em um item
         if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
             sidebar.classList.remove('open');
             menu.classList.remove('show');
@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-    // Close mobile menu when resizing to desktop view
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
             sidebar.classList.remove('open');
@@ -99,12 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const result = calculatePenalties(values, minimumPenalties);
 
-        // Clear previous results
         resultItems.innerHTML = '';
 
         let totalPenalty = 0;
 
-        // Add results for items with added values
         Object.entries(result).forEach(([key, value]) => {
             if (value.total > minimumPenalties[key]) {
                 const resultItem = document.createElement('div');
@@ -119,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Add total penalty
         const totalItem = document.createElement('div');
         totalItem.className = 'total-result';
         totalItem.innerHTML = `
@@ -128,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         resultItems.appendChild(totalItem);
 
-        // Show result card
         resultCard.classList.remove('hidden');
     });
 
@@ -138,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
         resultItems.innerHTML = '';
     });
 
-    // Input validation
     const inputs = form.querySelectorAll('input[type="number"]');
     inputs.forEach(input => {
         input.addEventListener('input', (e) => {
@@ -147,14 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Clear default value on focus
         input.addEventListener('focus', (e) => {
             if (e.target.value === '0') {
                 e.target.value = '';
             }
         });
 
-        // Reset to 0 if empty on blur
         input.addEventListener('blur', (e) => {
             if (e.target.value === '') {
                 e.target.value = '0';
@@ -191,7 +183,6 @@ const lazyLoadImages = () => {
     });
 };
 
-// Carregamento condicional de conteúdo das abas
 const initTabContent = () => {
     const tabs = document.querySelectorAll('.tab');
     const contents = document.querySelectorAll('.tab-content');
@@ -218,7 +209,6 @@ const initTabContent = () => {
             tab.classList.add('active');
             document.getElementById(tabId).classList.add('active');
             
-            // Chamar lazyLoadImages após mudar de aba
             lazyLoadImages();
         });
     });
@@ -235,7 +225,6 @@ const initImageZoom = () => {
         modal.style.display = 'block';
         modalImg.src = src;
         
-        // Ajusta o tamanho da imagem para preencher o máximo possível mantendo a proporção
         const windowRatio = (window.innerWidth * 0.9) / (window.innerHeight * 0.9);
         const img = new Image();
         img.src = src;
